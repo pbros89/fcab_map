@@ -1,0 +1,5 @@
+{"items":
+[
+{"cod_via_cedida":119080,"ramal_origen":"RSOCOMPA","fec_ini":"07-04-2022 08:35","km_ini":36,"km_fin":40,"descripcion":"FERRONOR","usr_responsable":"FERRONOR: LUIS BARRIOS","usr_creador":"FERNANDO.ECHEVERRIA","estado_vc":"ASIGNADA","fec_fin_estimada":"07-04-2022 11:00","cruceta":"N","numero_via_cedida":20}
+,{"cod_via_cedida":119081,"ramal_origen":"RPAMPA","fec_ini":"07-04-2022 09:13","km_ini":15,"km_fin":16,"descripcion":"ICIL","usr_responsable":"JAVIER ZEGARRA","usr_creador":"FERNANDO.ECHEVERRIA","estado_vc":"ASIGNADA","fec_fin_estimada":"07-04-2022 09:45","cruceta":"N","numero_via_cedida":21}
+]}
