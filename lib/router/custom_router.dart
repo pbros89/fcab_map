@@ -1,13 +1,22 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:fcab_map/screens/admin_users/admin_users_page.dart';
+import 'package:fcab_map/screens/auth/change_password/change_password_page.dart';
+import 'package:fcab_map/screens/auth/register/register_page.dart';
 import 'package:fcab_map/screens/map/map_page.dart';
 import 'package:fcab_map/screens/setting/setting_page.dart';
 import 'package:flutter/material.dart';
+
+import '../screens/auth/login/login_page.dart';
 
 part 'custom_router.gr.dart';
 
 @MaterialAutoRouter(
     replaceInRouteName: 'Page, Route, Screen',
     routes: <AutoRoute>[
+      AutoRoute(page: LoginPage, path: '/auth/login'),
+      AutoRoute(page: RegisterPage, path: '/auth/register'),
+      AutoRoute(page: ChangePasswordPage, path: '/auth/change_password'),
+      AutoRoute(page: AdminUsersPage, path: '/admin_user'),
       AutoRoute(page: MapPage, initial: true, path: '/map'),
       AutoRoute(page: SettingPage, path: '/setting')
     ])

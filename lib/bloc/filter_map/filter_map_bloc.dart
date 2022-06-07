@@ -5,10 +5,7 @@ part 'filter_map_event.dart';
 part 'filter_map_state.dart';
 
 class FilterMapBloc extends Bloc<FilterMapEvent, FilterMapState> {
-  bool showEstaciones = false;
-  bool showRamales = false;
-  bool showPrecauciones = false;
-  bool showTrenes = false;
+
 
   FilterMapBloc() : super(const FilterMapInitial()) {
     on<FilterMapInitEvent>((event, emit) async {
@@ -24,9 +21,13 @@ class FilterMapBloc extends Bloc<FilterMapEvent, FilterMapState> {
         emit.call(const FilterMapLoading());
         emit.call(FilterMapLoaded(
             showEstaciones: event.showEstaciones,
-            showRamales: event.showRamales,
             showPrecauciones: event.showPrecauciones,
-            showTrenes: event.showTrenes));
+            showTrenes: event.showTrenes,
+            showTerminales: event.showTerminales,
+            showViasCedidas: event.showViasCedidas,
+            showViasLibres: event.showViasLibres,
+            showDetectoresDesrielo: event.showDetectoresDesrielo
+            ));
       } catch (e) {
         emit.call(FilterMapError(message: e.toString()));
       }

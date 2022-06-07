@@ -1,0 +1,37 @@
+{"items":
+[
+{"nro_tren":1711,"nro_tripulacion":23,"nom_oper":"ANYELO ENRIQUE TAPIA SALAS","hora_toma":"05:50","codrut":"12833822-5","tipo_operador":"OPE1"}
+,{"nro_tren":201,"nro_tripulacion":32,"nom_oper":"AXEL ISAAC CARVAJAL MOLINA","hora_toma":"08:50","codrut":"20006310-4","tipo_operador":"OPE2"}
+,{"nro_tren":241,"nro_tripulacion":29,"nom_oper":"CAMILO JESUS GARRIDO FIGUEROA","hora_toma":"08:20","codrut":"17724924-6","tipo_operador":"OPE2"}
+,{"nro_tren":242,"nro_tripulacion":13,"nom_oper":"CARLOS FELIPE  BUENO OYARZUN","hora_toma":"02:50","codrut":"19692607-0","tipo_operador":"OPE2"}
+,{"nro_tren":151,"nro_tripulacion":79,"nom_oper":"CARLOS MANUEL POZO RUZ","hora_toma":"09:00","codrut":"07922948-2","tipo_operador":"OPE1"}
+,{"nro_tren":1209,"nro_tripulacion":27,"nom_oper":"CESAR ANTONIO SANTANDER TORRES","hora_toma":"07:50","codrut":"17734942-9","tipo_operador":"OPE1"}
+,{"nro_tren":1711,"nro_tripulacion":23,"nom_oper":"EMANUEL ENRIQUE  RAMOS MAZA","hora_toma":"05:50","codrut":"20084974-4","tipo_operador":"OPE2"}
+,{"nro_tren":1253,"nro_tripulacion":48,"nom_oper":"FRANCISCO JAVIER JOS CRUZ MANQUEZ","hora_toma":"04:10","codrut":"17245992-7","tipo_operador":"OPE2"}
+,{"nro_tren":82,"nro_tripulacion":22,"nom_oper":"HAROLDO GUTIERREZ GONZALEZ","hora_toma":"05:45","codrut":"23482871-1","tipo_operador":"OPE1"}
+,{"nro_tren":1712,"nro_tripulacion":15,"nom_oper":"HUGO ANTONIO SORIANO .","hora_toma":"02:05","codrut":"23930632-2","tipo_operador":"OPE2"}
+,{"nro_tren":206,"nro_tripulacion":33,"nom_oper":"ISAIAS CALEB FLORES CAQUEO","hora_toma":"09:00","codrut":"16467413-4","tipo_operador":"OPE2"}
+,{"nro_tren":82,"nro_tripulacion":22,"nom_oper":"JAVIER ALEJANDRO DONOSO SOLAR","hora_toma":"05:45","codrut":"12838055-8","tipo_operador":"OPE2"}
+,{"nro_tren":102,"nro_tripulacion":31,"nom_oper":"JAVIER ALEJANDRO FLORES BRAVO","hora_toma":"08:55","codrut":"17902654-6","tipo_operador":"OPE2"}
+,{"nro_tren":102,"nro_tripulacion":31,"nom_oper":"JHOAN SEBASTIAN SANCHEZ SALAS","hora_toma":"08:55","codrut":"25206392-7","tipo_operador":"OPE1"}
+,{"nro_tren":206,"nro_tripulacion":33,"nom_oper":"JHONNY AYALA CALLE","hora_toma":"09:00","codrut":"24143701-9","tipo_operador":"OPE1"}
+,{"nro_tren":210,"nro_tripulacion":73,"nom_oper":"JOHNNY ANTONIO LEDEZMA CORTES","hora_toma":"09:30","codrut":"12348868-7","tipo_operador":"OPE1"}
+,{"nro_tren":210,"nro_tripulacion":73,"nom_oper":"JUAN DE DIOS BAEZ TABILO","hora_toma":"09:30","codrut":"18482833-2","tipo_operador":"OPE2"}
+,{"nro_tren":1253,"nro_tripulacion":48,"nom_oper":"JUAN OSVALDO CRUZ IGLESIAS","hora_toma":"04:10","codrut":"15695742-9","tipo_operador":"OPE1"}
+,{"nro_tren":71,"nro_tripulacion":25,"nom_oper":"JULIO ANDRES CEPEDA CASTILLO","hora_toma":"06:30","codrut":"15011285-0","tipo_operador":"OPE1"}
+,{"nro_tren":201,"nro_tripulacion":32,"nom_oper":"LEONARDO BORIS BARRA PEÑA","hora_toma":"08:50","codrut":"07653558-2","tipo_operador":"OPE1"}
+,{"nro_tren":1204,"nro_tripulacion":19,"nom_oper":"LUIS BERNARDO CHACON URREA","hora_toma":"04:45","codrut":"10206950-1","tipo_operador":"OPE1"}
+,{"nro_tren":54,"nro_tripulacion":81,"nom_oper":"LUIS FERNANDO ARAYA SANTANDER","hora_toma":"10:25","codrut":"09545081-4","tipo_operador":"OPE1"}
+,{"nro_tren":50,"nro_tripulacion":74,"nom_oper":"MARCELO ALONSO CACERES PASTEN","hora_toma":"09:13","codrut":"18790411-0","tipo_operador":"OPE1"}
+,{"nro_tren":1204,"nro_tripulacion":19,"nom_oper":"MARCO ANTONIO CRESPO LOAYZA","hora_toma":"04:45","codrut":"24886773-6","tipo_operador":"OPE2"}
+,{"nro_tren":157,"nro_tripulacion":78,"nom_oper":"OSCAR ERNESTO ARANEDA ROJAS","hora_toma":"09:59","codrut":"18919006-9","tipo_operador":"OPE1"}
+,{"nro_tren":50,"nro_tripulacion":74,"nom_oper":"OSCAR NAZARIO RODRIGUEZ BLAMEY","hora_toma":"09:13","codrut":"15020566-2","tipo_operador":"OPE2"}
+,{"nro_tren":242,"nro_tripulacion":13,"nom_oper":"PABLO ANTONIO SALINAS ESCOBAR","hora_toma":"02:50","codrut":"18502502-0","tipo_operador":"OPE1"}
+,{"nro_tren":1706,"nro_tripulacion":26,"nom_oper":"PEDRO MIGUEL  GIMENEZ -","hora_toma":"06:15","codrut":"22468008-2","tipo_operador":"OPE1"}
+,{"nro_tren":241,"nro_tripulacion":29,"nom_oper":"RAFAEL PATRICIO PIZARRO BAHAMONDES","hora_toma":"08:20","codrut":"16438037-8","tipo_operador":"OPE1"}
+,{"nro_tren":54,"nro_tripulacion":81,"nom_oper":"RICARDO ALEJANDRO  AGUILAR ZEPEDA","hora_toma":"10:25","codrut":"17938827-8","tipo_operador":"OPE2"}
+,{"nro_tren":1209,"nro_tripulacion":27,"nom_oper":"ROBERTO ANTONIO FARFAN VEGA","hora_toma":"07:50","codrut":"11329676-3","tipo_operador":"OPE2"}
+,{"nro_tren":1712,"nro_tripulacion":15,"nom_oper":"ROBERTO RAMON DELALE .","hora_toma":"02:05","codrut":"22450359-8","tipo_operador":"OPE1"}
+,{"nro_tren":1706,"nro_tripulacion":26,"nom_oper":"RUBEN DARIO COLQUE .","hora_toma":"06:15","codrut":"22485416-1","tipo_operador":"OPE2"}
+,{"nro_tren":153,"nro_tripulacion":77,"nom_oper":"VICENTE BENITO ARCOS FERREIRA","hora_toma":"09:30","codrut":"16705384-K","tipo_operador":"OPE1"}
+]}

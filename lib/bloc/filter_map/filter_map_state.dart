@@ -2,16 +2,22 @@ part of 'filter_map_bloc.dart';
 
 abstract class FilterMapState extends Equatable {
   final bool showEstaciones;
-  final bool showRamales;
   final bool showPrecauciones;
   final bool showTrenes;
+  final bool showTerminales;
+  final bool showViasCedidas;
+  final bool showViasLibres;
+  final bool showDetectoresDesrielo;
   final bool isLoaded;
 
   const FilterMapState({
     required this.showEstaciones,
-    required this.showRamales,
     required this.showPrecauciones,
     required this.showTrenes,
+    required this.showTerminales,
+    required this.showViasCedidas,
+    required this.showViasLibres,
+    required this.showDetectoresDesrielo, 
     required this.isLoaded,
   });
   @override
@@ -22,9 +28,12 @@ class FilterMapInitial extends FilterMapState {
   const FilterMapInitial()
       : super(
             showEstaciones: false,
-            showRamales: false,
             showPrecauciones: false,
             showTrenes: false,
+            showTerminales: false,
+            showViasCedidas:  false,
+            showViasLibres:  false,
+            showDetectoresDesrielo:  false,
             isLoaded: true);
 }
 
@@ -32,23 +41,32 @@ class FilterMapLoading extends FilterMapState {
   const FilterMapLoading()
       : super(
             showEstaciones: false,
-            showRamales: false,
             showPrecauciones: false,
             showTrenes: false,
+            showTerminales: false,
+            showViasCedidas:  false,
+            showViasLibres:  false,
+            showDetectoresDesrielo:  false,
             isLoaded: false);
 }
 
 class FilterMapLoaded extends FilterMapState {
   const FilterMapLoaded(
       {required bool showEstaciones,
-      required bool showRamales,
       required bool showPrecauciones,
-      required bool showTrenes})
+      required bool showTerminales,
+      required bool showTrenes,
+      required bool showViasCedidas,
+      required bool showViasLibres,
+      required bool showDetectoresDesrielo,})
       : super(
             showEstaciones: showEstaciones,
-            showRamales: showRamales,
             showPrecauciones: showPrecauciones,
             showTrenes: showTrenes,
+            showTerminales: showTerminales,
+            showViasCedidas:  showViasCedidas,
+            showViasLibres:  showViasLibres,
+            showDetectoresDesrielo:  showDetectoresDesrielo,
             isLoaded: true);
 }
 
@@ -56,9 +74,12 @@ class FilterMapError extends FilterMapState {
   final String message;
   const FilterMapError({required this.message})
       : super(
-            showEstaciones: false,
-            showRamales: false,
+             showEstaciones: false,
             showPrecauciones: false,
             showTrenes: false,
+            showTerminales: false,
+            showViasCedidas:  false,
+            showViasLibres:  false,
+            showDetectoresDesrielo:  false,
             isLoaded: false);
 }

@@ -1,0 +1,60 @@
+{"items":
+[
+{"estacion":"AVICTO","linea":"LINEA_02","loco":13320,"mar_mante":"OPERATIVA"}
+,{"estacion":"AVICTO","linea":"LINEA_02","loco":13322,"mar_mante":"OPERATIVA"}
+,{"estacion":"AZALDI","linea":"LINEA_3RA","loco":13102,"color":"AMARILLO","obs_marca":"AFK","mar_mante":"MANTACT"}
+,{"estacion":"CALAMA","linea":"LINEA_2DA","loco":2402,"color":"ROJO","obs_marca":"2402 QUEDA","mar_mante":"MANTINACT"}
+,{"estacion":"CHUQUI","linea":"LINEA_DESVIO","loco":1403,"color":"AMARILLO","obs_marca":"L-1403 ACUSA UN RAT","mar_mante":"MANTACT"}
+,{"estacion":"CHUQUI","linea":"LINEA_DESVIO","loco":1430,"color":"AMARILLO","obs_marca":"L1430 SE ENCIENDE LUZ DE PATINAMIENTO ENTRE LOS 27 A 39 KPH. INFORMA A CMA.","mar_mante":"MANTACT"}
+,{"estacion":"MEL","linea":"LINEA_3RA","loco":1402,"mar_mante":"OPERATIVA"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":602,"mar_mante":"OPERATIVA"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":603,"mar_mante":"OPERATIVA"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":950,"mar_mante":"OPERATIVA"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":951,"mar_mante":"OPERATIVA"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":952,"mar_mante":"OPERATIVA"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1202,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1401,"color":"ROJO","obs_marca":"ML 30-04-2022.","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1406,"color":"ROJO","obs_marca":"CAMBIO DE GP","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1409,"color":"ROJO","obs_marca":"CAMBIO DE MD","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1413,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA (NO SE PUEDE MOVER LA LOCOMOTORA)","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1420,"color":"ROJO","obs_marca":"ML 01-05-2022","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1421,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA (NO SE PUEDE MOVER LA LOCOMOTORA)","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1426,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA (NO SE PUEDE MOVER LA LOCOMOTORA)","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1428,"color":"ROJO","obs_marca":"NO RECUPERA PRESIONES ","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1433,"color":"ROJO","obs_marca":"L-1433 NO LEVANTA AMPERAJE","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1434,"color":"ROJO","obs_marca":"DIAGNOSTICO POR RAT ","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1435,"color":"ROJO","obs_marca":"Fuga de aceite.","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1436,"color":"ROJO","obs_marca":"ML 14-11-2021.","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1445,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1446,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA (MOVER AL FINAL DE LAS LOCOMOTORAS)","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1447,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":1452,"color":"ROJO","obs_marca":"REPARACIÓN POR DESRIELO","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":2002,"color":"ROJO","obs_marca":"DESRIELO MAYOR (NO SE PUEDE MOVER LA LOCOMOTORA)","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":2404,"color":"AMARILLO","obs_marca":"CAMBIO DE GENERADOR AUXLIAR (SUPERNUMERARIA LOCOMOTORA)","mar_mante":"MANTACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":2406,"color":"AMARILLO","obs_marca":"L-2406 EXCESO DE DINAMICO","mar_mante":"MANTACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":2605,"color":"AMARILLO","obs_marca":"trabamiento de rueda. (SUPERNUMERARIA LOCOMOTORA)","mar_mante":"MANTACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":3202,"color":"ROJO","obs_marca":"CAMBIO PR","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_1","loco":3211,"color":"AMARILLO","obs_marca":"L-3211 QUEDA FUERA DE SERVICIO (SUPERNUMERARIA LOCOMOTORA)","mar_mante":"MANTACT"}
+,{"estacion":"PNORTE","linea":"LINEA_11","loco":34,"mar_mante":"OPERATIVA"}
+,{"estacion":"PNORTE","linea":"LINEA_2","loco":953,"color":"ROJO","obs_marca":"LOCOMOTORA 953 FUERA DE SERVICIO.","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_2","loco":954,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_2","loco":1405,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA (NO SE PUEDE MOVER LA LOCOMOTORA)","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_3","loco":1201,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA ","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_3","loco":1203,"color":"ROJO","obs_marca":"LOCOMOTORA 1203 FUERA DE SERVICIO POR 3 RELE A TIERRA","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_3","loco":1424,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA (NO SE PUEDE MOVER LA LOCOMOTORA)","mar_mante":"MANTINACT"}
+,{"estacion":"PNORTE","linea":"LINEA_3","loco":1425,"color":"ROJO","obs_marca":"LOCOMOTORA DE BAJA (NO SE PUEDE MOVER LA LOCOMOTORA)","mar_mante":"MANTINACT"}
+,{"estacion":"PRAT","linea":"CASA_MAQUINAS","loco":1414,"color":"ROJO","obs_marca":"FUERA DE SERVICIO (NO SE PUEDE MOVER LA LOCOMOTORA)","mar_mante":"MANTINACT"}
+,{"estacion":"SPENCE","linea":"LINEA_1","loco":152,"mar_mante":"OPERATIVA"}
+,{"estacion":"SPENCE","linea":"LINEA_1","loco":318,"mar_mante":"OPERATIVA"}
+,{"estacion":"SPENCE","linea":"LINEA_1","loco":319,"mar_mante":"OPERATIVA"}
+,{"estacion":"TERMEJ","linea":"CARGUIO_EMP","loco":3203,"color":"ROJO","obs_marca":"REVISION DESRIELO","mar_mante":"MANTINACT"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","loco":100,"mar_mante":"OPERATIVA"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","loco":1010,"mar_mante":"OPERATIVA"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","loco":1013,"mar_mante":"OPERATIVA"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","loco":1014,"mar_mante":"OPERATIVA"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","loco":1015,"mar_mante":"OPERATIVA"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","loco":1018,"mar_mante":"MAMOV"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","loco":1020,"mar_mante":"OPERATIVA"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","loco":1021,"mar_mante":"OPERATIVA"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","loco":1023,"mar_mante":"OPERATIVA"}
+]}

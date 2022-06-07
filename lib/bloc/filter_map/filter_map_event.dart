@@ -11,12 +11,18 @@ class FilterMapInitEvent extends FilterMapEvent {}
 
 class FilterMapChangeEvent extends FilterMapEvent {
   final bool showEstaciones;
-  final bool showRamales;
   final bool showPrecauciones;
+  final bool showTerminales;
   final bool showTrenes;
+  final bool showViasCedidas;
+  final bool showViasLibres;
+  final bool showDetectoresDesrielo;
   const FilterMapChangeEvent(
       {required this.showEstaciones,
-      required this.showRamales,
       required this.showPrecauciones,
-      required this.showTrenes});
+      required this.showTerminales,
+      required this.showTrenes,
+      required this.showViasCedidas,
+      required this.showViasLibres,
+      required this.showDetectoresDesrielo});
 }

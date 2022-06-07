@@ -1,0 +1,37 @@
+{"items":
+[
+{"pfk_cod_servicio":"ACSPC","pfk_cod_terminal":"SPENCE","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"2M3_CAMION","pk_fecha_control":"21\/11\/11","nivel_acido":862.48,"obs_acido":" ","ton_acido":0}
+,{"pfk_cod_servicio":"ACSPC","pfk_cod_terminal":"SPENCE","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"3TONSCAMIO","pk_fecha_control":"21\/11\/11","nivel_acido":466.21,"obs_acido":" ","ton_acido":0}
+,{"pfk_cod_servicio":"ACMET","pfk_cod_terminal":"ARRIEROS","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK13","pk_fecha_control":"31\/10\/11","nivel_acido":90.2,"obs_acido":" ","ton_acido":3157}
+,{"pfk_cod_servicio":"ACMET","pfk_cod_terminal":"ARRIEROS","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK34","pk_fecha_control":"31\/10\/11","nivel_acido":90.7,"obs_acido":" ","ton_acido":8344.4}
+,{"pfk_cod_servicio":"ACMET","pfk_cod_terminal":"ARRIEROS","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK35","pk_fecha_control":"31\/10\/11","nivel_acido":89.7,"obs_acido":" ","ton_acido":8252.4}
+,{"pfk_cod_servicio":"ACMET","pfk_cod_terminal":"ARRIEROS","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK5","pk_fecha_control":"31\/10\/11","nivel_acido":89.6,"obs_acido":" ","ton_acido":3136}
+,{"pfk_cod_servicio":"MINSANCRIS","pfk_cod_terminal":"MINMEJI","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"T1","pk_fecha_control":"02\/08\/15","nivel_acido":8,"obs_acido":" ","ton_acido":0}
+,{"pfk_cod_servicio":"ACZALD","pfk_cod_terminal":"ACZALD","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"2M3_CAMION","pk_fecha_control":"01\/09\/11","nivel_acido":0,"obs_acido":" ","ton_acido":0}
+,{"pfk_cod_servicio":"ACZALD","pfk_cod_terminal":"ACZALD","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"3TONSCAMIO","pk_fecha_control":"01\/09\/11","nivel_acido":0,"obs_acido":" ","ton_acido":0}
+,{"pfk_cod_servicio":"ACSPC","pfk_cod_terminal":"SPENCE","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"1CANTCAMIO","pk_fecha_control":"31\/12\/17","nivel_acido":70,"ton_acido":28}
+,{"pfk_cod_servicio":"ACZALD","pfk_cod_terminal":"ACZALD","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"1CANTCAMIO","pk_fecha_control":"02\/09\/11","nivel_acido":0,"ton_acido":0}
+,{"pfk_cod_servicio":"ACZALD","pfk_cod_terminal":"ACZALD","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK_SISTEMA","pk_fecha_control":"15\/05\/21","nivel_acido":77,"ton_acido":3080}
+,{"pfk_cod_servicio":"ACZALD","pfk_cod_terminal":"CMZ","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK_SISTEMA","pk_fecha_control":"07\/01\/22","nivel_acido":78,"ton_acido":3120,"origen":"CONTROL_TERMINAL","id_origen":1368}
+,{"pfk_cod_servicio":"ACGABY","pfk_cod_terminal":"TERMBAQ","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK01","pk_fecha_control":"18\/05\/22","nivel_acido":27,"ton_acido":844}
+,{"pfk_cod_servicio":"ACSPC","pfk_cod_terminal":"SPENCE","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"4CONSUMOS","pk_fecha_control":"18\/05\/22","nivel_acido":110,"ton_acido":1100}
+,{"pfk_cod_servicio":"ACGABY","pfk_cod_terminal":"GABYMINA","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK05","pk_fecha_control":"15\/05\/22","nivel_acido":72,"ton_acido":5040}
+,{"pfk_cod_servicio":"ACABRA","pfk_cod_terminal":"ACABRA","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK_680","pk_fecha_control":"18\/05\/22","nivel_acido":72.5,"ton_acido":7027.425,"origen":"CONTROL_TERMINAL","id_origen":1855}
+,{"pfk_cod_servicio":"ACABRA","pfk_cod_terminal":"ACABRA","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK_681","pk_fecha_control":"18\/05\/22","nivel_acido":69.2,"ton_acido":6707.556,"origen":"CONTROL_TERMINAL","id_origen":1855}
+,{"pfk_cod_servicio":"ACABRA","pfk_cod_terminal":"ACABRA","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK_686","pk_fecha_control":"18\/05\/22","nivel_acido":70.8,"ton_acido":6862.644,"origen":"CONTROL_TERMINAL","id_origen":1855}
+,{"pfk_cod_servicio":"ACGABY","pfk_cod_terminal":"GABYMINA","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK03","pk_fecha_control":"15\/05\/22","nivel_acido":71,"ton_acido":4970}
+,{"pfk_cod_servicio":"ACMEL","pfk_cod_terminal":"MEL","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK3CONSUM","pk_fecha_control":"14\/10\/20","nivel_acido":0,"ton_acido":0}
+,{"pfk_cod_servicio":"ACGABY","pfk_cod_terminal":"GABYMINA","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK04","pk_fecha_control":"15\/05\/22","nivel_acido":71,"ton_acido":4970}
+,{"pfk_cod_servicio":"ACCENTI","pfk_cod_terminal":"TERMCENTI","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK1","pk_fecha_control":"15\/05\/22","nivel_acido":66,"ton_acido":3300}
+,{"pfk_cod_servicio":"ACGABY","pfk_cod_terminal":"GABYMINA","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"CONS_TOTAL","pk_fecha_control":"15\/05\/22","nivel_acido":91,"ton_acido":0}
+,{"pfk_cod_servicio":"ACSPC","pfk_cod_terminal":"SPENCE","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK122","pk_fecha_control":"18\/05\/22","nivel_acido":78,"ton_acido":3900,"origen":"CONTROL_TERMINAL","id_origen":1856}
+,{"pfk_cod_servicio":"ACMEL","pfk_cod_terminal":"MEL","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK261CONSU","pk_fecha_control":"31\/03\/21","nivel_acido":428,"ton_acido":0}
+,{"pfk_cod_servicio":"ACZALD","pfk_cod_terminal":"ACZALD","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"4CONSUMOS","pk_fecha_control":"13\/05\/21","nivel_acido":1422,"ton_acido":14220}
+,{"pfk_cod_servicio":"ACABRA","pfk_cod_terminal":"ACABRA","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"CONS_TOTAL","pk_fecha_control":"18\/05\/22","nivel_acido":1289,"ton_acido":0}
+,{"pfk_cod_servicio":"ACMEL","pfk_cod_terminal":"MEL","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK260CONSU","pk_fecha_control":"31\/03\/21","nivel_acido":428,"ton_acido":0}
+,{"pfk_cod_servicio":"ACMEL","pfk_cod_terminal":"MEL","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK2CONSUM","pk_fecha_control":"14\/10\/20","nivel_acido":0,"ton_acido":0}
+,{"pfk_cod_servicio":"ACMEL","pfk_cod_terminal":"MEL","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK_2","pk_fecha_control":"18\/05\/22","nivel_acido":74,"ton_acido":3001.44,"origen":"CONTROL_TERMINAL","id_origen":1857}
+,{"pfk_cod_servicio":"ACMEL","pfk_cod_terminal":"MEL","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK_3","pk_fecha_control":"18\/05\/22","nivel_acido":0,"ton_acido":0,"origen":"CONTROL_TERMINAL","id_origen":1857}
+,{"pfk_cod_servicio":"ACMEL","pfk_cod_terminal":"MEL","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK_260","pk_fecha_control":"18\/05\/22","nivel_acido":60.6,"ton_acido":2457.936,"origen":"CONTROL_TERMINAL","id_origen":1857}
+,{"pfk_cod_servicio":"ACMEL","pfk_cod_terminal":"MEL","pfk_tipo_terminal":"DESCARGA","pfk_cod_estanque":"TK_261","pk_fecha_control":"18\/05\/22","nivel_acido":49.4,"ton_acido":2003.664,"origen":"CONTROL_TERMINAL","id_origen":1857}
+]}

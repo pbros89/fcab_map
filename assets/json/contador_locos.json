@@ -1,0 +1,19 @@
+{"items":
+[
+{"estacion":"AVICTO","linea":"LINEA_02","cant":2,"mar_mante":"OPERATIVA", "color":"VERDE"}
+,{"estacion":"AZALDI","linea":"LINEA_3RA","cant":1,"mar_mante":"MANTACT","color":"AMARILLO"}
+,{"estacion":"CALAMA","linea":"LINEA_2DA","cant":1,"mar_mante":"MANTINACT","color":"ROJO"}
+,{"estacion":"CHUQUI","linea":"LINEA_DESVIO","cant":2,"mar_mante":"MANTACT","color":"AMARILLO"}
+,{"estacion":"MEL","linea":"LINEA_3RA","cant":1,"mar_mante":"OPERATIVA", "color":"VERDE"}
+,{"estacion":"PNORTE","linea":"LINEA_1","cant":4,"mar_mante":"MANTACT","color":"AMARILLO"}
+,{"estacion":"PNORTE","linea":"LINEA_1","cant":5,"mar_mante":"OPERATIVA", "color":"VERDE"}
+,{"estacion":"PNORTE","linea":"LINEA_1","cant":19,"mar_mante":"MANTINACT","color":"ROJO"}
+,{"estacion":"PNORTE","linea":"LINEA_11","cant":1,"mar_mante":"OPERATIVA", "color":"VERDE"}
+,{"estacion":"PNORTE","linea":"LINEA_2","cant":3,"mar_mante":"MANTINACT","color":"ROJO"}
+,{"estacion":"PNORTE","linea":"LINEA_3","cant":4,"mar_mante":"MANTINACT","color":"ROJO"}
+,{"estacion":"PRAT","linea":"CASA_MAQUINAS","cant":1,"mar_mante":"MANTINACT","color":"ROJO"}
+,{"estacion":"SPENCE","linea":"LINEA_1","cant":3,"mar_mante":"OPERATIVA", "color":"VERDE"}
+,{"estacion":"TERMEJ","linea":"CARGUIO_EMP","cant":1,"mar_mante":"MANTINACT","color":"ROJO"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","cant":1,"mar_mante":"MAMOV", "color":"VERDE"}
+,{"estacion":"UJINA","linea":"LINEA_MUERTA","cant":8,"mar_mante":"OPERATIVA", "color":"VERDE"}
+]}

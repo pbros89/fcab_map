@@ -12,6 +12,7 @@ class DrawerMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       elevation: 0,
+      
       backgroundColor: Colors.transparent,
       child: BlocBuilder<GlobalSettingBloc, GlobalSettingState>(
         builder: (context, state) {
@@ -23,15 +24,13 @@ class DrawerMenu extends StatelessWidget {
               children: [
                 const UserAccountHeader(),
                 ListTile(
-                  hoverColor: Colors.white.withOpacity(0.3),
                   leading: const Icon(Icons.person),
                   title: const Text(
-                    "Administración Usuarios",
+                    "Administración de Usuarios",
                   ),
-                  onTap: () => context.router.pushNamed('/map'),
+                  onTap: () => context.router.pushNamed('/admin_user'),
                 ),
                 ListTile(
-                  hoverColor: Colors.white.withOpacity(0.3),
                   leading: const Icon(Icons.map),
                   title: const Text(
                     "Mapa FCAB",
@@ -39,7 +38,6 @@ class DrawerMenu extends StatelessWidget {
                   onTap: () => context.router.pushNamed('/map'),
                 ),
                 ListTile(
-                  hoverColor: Colors.white.withOpacity(0.3),
                   leading: const Icon(Icons.settings),
                   title: const Text(
                     "Configuraciones",
@@ -47,12 +45,13 @@ class DrawerMenu extends StatelessWidget {
                   onTap: () => context.router.pushNamed('/setting'),
                 ),
                 ListTile(
-                  hoverColor: Colors.red.withOpacity(0.3),
                   leading: const Icon(Icons.exit_to_app),
                   title: const Text(
                     "Salir",
                   ),
-                  onTap: () {},
+                  onTap: ()  {
+                    context.router.popUntilRoot();
+                  }
                 )
               ],
             ),

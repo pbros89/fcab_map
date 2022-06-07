@@ -1,0 +1,222 @@
+[
+  {
+    "COD_ESTACION": "EMPALME",
+    "PUNTO": 1,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "E",
+    "ESTE": 352624,
+    "NORTE": 7442125,
+    "VALIDAR": "S",
+    "KM": 63.36
+  },
+  {
+    "COD_ESTACION": "EMPALME",
+    "PUNTO": 3,
+    "COD_RAMAL": "RINTERAC",
+    "TIPO": "E",
+    "ESTE": 353532,
+    "NORTE": 7443865,
+    "VALIDAR": "S",
+    "KM": 1.1
+  },
+  {
+    "COD_ESTACION": "EMPALME",
+    "PUNTO": 2,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "E",
+    "ESTE": 352377,
+    "NORTE": 7444552,
+    "VALIDAR": "S",
+    "KM": 65.94
+  },
+  {
+    "COD_ESTACION": "EMPSPENC",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 473415,
+    "NORTE": 7473829,
+    "VALIDAR": "S",
+    "KM": 179.14
+  },
+  {
+    "COD_ESTACION": "EMPSPENC",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 471519,
+    "NORTE": 7472340,
+    "VALIDAR": "S",
+    "KM": 176.73
+  },
+  {
+    "COD_ESTACION": "EMPSPENC",
+    "PUNTO": 3,
+    "COD_RAMAL": "RSPENCE",
+    "TIPO": "E",
+    "ESTE": 471623,
+    "NORTE": 7473946,
+    "VALIDAR": "S",
+    "KM": 1.407
+  },
+  {
+    "COD_ESTACION": "LANEGR",
+    "PUNTO": 3,
+    "COD_RAMAL": "RALTONOR",
+    "TIPO": "E",
+    "ESTE": 365587,
+    "NORTE": 7370037,
+    "VALIDAR": "S",
+    "KM": 1.278
+  },
+  {
+    "COD_ESTACION": "LANEGR",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 364566,
+    "NORTE": 7371761,
+    "VALIDAR": "S",
+    "KM": 19.34
+  },
+  {
+    "COD_ESTACION": "LANEGR",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 366471,
+    "NORTE": 7372252,
+    "VALIDAR": "S",
+    "KM": 22.3
+  },
+  {
+    "COD_ESTACION": "OHIGGI",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 371785,
+    "NORTE": 7386266,
+    "VALIDAR": "S",
+    "KM": 38.56
+  },
+  {
+    "COD_ESTACION": "OHIGGI",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 372056,
+    "NORTE": 7382524,
+    "VALIDAR": "S",
+    "KM": 34.45
+  },
+  {
+    "COD_ESTACION": "OHIGGI",
+    "PUNTO": 3,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "E",
+    "ESTE": 372927,
+    "NORTE": 7383175,
+    "VALIDAR": "S",
+    "KM": 1.72
+  },
+  {
+    "COD_ESTACION": "LANORIA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 463094,
+    "NORTE": 7462993,
+    "VALIDAR": "S",
+    "KM": 163.98
+  },
+  {
+    "COD_ESTACION": "LANORIA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 464865,
+    "NORTE": 7465619,
+    "VALIDAR": "S",
+    "KM": 167.15
+  },
+  {
+    "COD_ESTACION": "LANORIA",
+    "PUNTO": 3,
+    "COD_RAMAL": "RMSG",
+    "TIPO": "E",
+    "ESTE": 463668,
+    "NORTE": 7465301,
+    "VALIDAR": "S",
+    "KM": 0.83
+  },
+  {
+    "COD_ESTACION": "K49",
+    "PUNTO": 1,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "S",
+    "ESTE": 489591,
+    "NORTE": 7323995,
+    "VALIDAR": "S",
+    "KM": 48.88
+  },
+  {
+    "COD_ESTACION": "K49",
+    "PUNTO": 2,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "S",
+    "ESTE": 489948,
+    "NORTE": 7323913,
+    "VALIDAR": "S",
+    "KM": 50.55
+  },
+  {
+    "COD_ESTACION": "K49",
+    "PUNTO": 3,
+    "COD_RAMAL": "RCMZ",
+    "TIPO": "S",
+    "ESTE": 490820,
+    "NORTE": 7324730,
+    "VALIDAR": "S",
+    "KM": 0.81
+  },
+  {
+    "COD_ESTACION": "K49",
+    "PUNTO": 4,
+    "COD_RAMAL": "RCMZ",
+    "TIPO": "S",
+    "ESTE": 490820,
+    "NORTE": 7324730,
+    "VALIDAR": "S",
+    "KM": 0.81
+  },
+  {
+    "COD_ESTACION": "SSALVA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 516127,
+    "NORTE": 7528220,
+    "VALIDAR": "S",
+    "KM": 254.44
+  },
+  {
+    "COD_ESTACION": "SSALVA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 518579,
+    "NORTE": 7530750,
+    "VALIDAR": "S",
+    "KM": 257.98
+  },
+  {
+    "COD_ESTACION": "SSALVA",
+    "PUNTO": 3,
+    "COD_RAMAL": "RCHUQUI",
+    "TIPO": "S",
+    "ESTE": 516497,
+    "NORTE": 7530327,
+    "VALIDAR": "S",
+    "KM": 1.66
+  }
+]

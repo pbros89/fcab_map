@@ -1,0 +1,6 @@
+{"items":
+[
+{"estacion":"ALDEA","fecha_crea":"25\/04\/2022 01:15:49","restriccion":"POR DESRIELO\nCLAAUSURADO ENLACES 1 Y 2.  PREC 260 Y 261.","usuario_crea":"VICTOR.JARA","tipo":"CRUZA","habilitado":"NO","chek":0,"automatica_mr":"NO"}
+,{"estacion":"CUMBRE","fecha_crea":"01\/05\/2022 21:02:13","restriccion":"CLAUSURADO ENLACE 4 , SOLO TRANSITO POR LINEA PRINCIPAL","usuario_crea":"ALBERTO.PALMA","tipo":"CRUZA","habilitado":"NO","chek":0,"automatica_mr":"NO"}
+,{"estacion":"GAVIOTA","fecha_crea":"23\/04\/2022 22:28:07","restriccion":"POR DESRIELO.\nPRECAUCIÓN 103","usuario_crea":"VICTOR.JARA","tipo":"CRUZA","habilitado":"NO","chek":0,"automatica_mr":"NO"}
+]}

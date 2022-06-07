@@ -1,19 +1,25 @@
 part of 'map_bloc.dart';
 
 abstract class MapState extends Equatable {
-  final List<String> ramales;
-  final Map<String, List<RamalPoint>> ramalesData;
-  final List<EstacionPoint> estacionesData;
-  final List<TrenPoint> trenesData;
-  final List<PrecaucionPoint> precaucionesData;
+  final List<EstacionPoint> estaciones;
+  final List<EstacionInactiva> estacionesInactivas;
+  final List<TerminalPoint> terminales;
+  final List<TrenPoint> trenes;
+  final List<PrecaucionLine> precauciones;
+  final List<ViaCedidaLine> viasCedidas;
+  final List<ViaLibreLine> viasLibres;
+  final List detectoresDesrielo;
   final bool isLoaded;
 
-  const MapState(
-      {required this.ramales,
-      required this.ramalesData,
-      required this.estacionesData,
-      required this.trenesData,
-      required this.precaucionesData,
+  const MapState({
+      required this.estaciones,
+      required this.estacionesInactivas,
+      required this.terminales,
+      required this.trenes,
+      required this.precauciones,
+      required this.viasCedidas,
+      required this.viasLibres,
+      required this.detectoresDesrielo,
       required this.isLoaded});
 
   @override
@@ -23,38 +29,50 @@ abstract class MapState extends Equatable {
 class MapInitialState extends MapState {
   MapInitialState()
       : super(
-            ramales: [],
-            ramalesData: {},
-            estacionesData: [],
-            trenesData: [],
-            precaucionesData: [],
+            estaciones: [],
+            estacionesInactivas: [],
+            terminales: [],
+            trenes: [],
+            precauciones: [],
+            viasCedidas: [],
+            viasLibres: [],
+            detectoresDesrielo: [],
             isLoaded: true);
 }
 
 class MapLoadingState extends MapState {
   MapLoadingState()
       : super(
-            ramales: [],
-            ramalesData: {},
-            estacionesData: [],
-            trenesData: [],
-            precaucionesData: [],
+            estaciones: [],
+            estacionesInactivas: [],
+            terminales: [],
+            trenes: [],
+            precauciones: [],
+            viasCedidas: [],
+            viasLibres: [],
+            detectoresDesrielo: [],
             isLoaded: true);
 }
 
 class MapLoadedState extends MapState {
-  const MapLoadedState(
-      {required List<String> ramales,
-      required Map<String, List<RamalPoint>> ramalesData,
-      required List<EstacionPoint> estacionesData,
-      required List<TrenPoint> trenesData,
-      required List<PrecaucionPoint> precaucionesData})
+  const MapLoadedState({
+      required List<EstacionPoint> estaciones,
+      required List<EstacionInactiva> estacionesInactivas,
+      required List<TerminalPoint> terminales,
+      required List<TrenPoint> trenes,
+      required List<ViaCedidaLine> viasCedidas,
+      required List<PrecaucionLine> precauciones,
+      required List<ViaLibreLine> viasLibres,
+      required List detectoresDesrielo})
       : super(
-            ramales: ramales,
-            ramalesData: ramalesData,
-            estacionesData: estacionesData,
-            trenesData: trenesData,
-            precaucionesData: precaucionesData,
+            estaciones: estaciones,
+            estacionesInactivas: estacionesInactivas,
+            terminales: terminales,
+            trenes: trenes,
+            precauciones: precauciones,
+            viasCedidas: viasCedidas,
+            viasLibres: viasLibres,
+            detectoresDesrielo: detectoresDesrielo,
             isLoaded: true);
 }
 
@@ -63,10 +81,13 @@ class MapErrorState extends MapState {
 
   MapErrorState({required this.message})
       : super(
-            ramales: [],
-            ramalesData: {},
-            estacionesData: [],
-            trenesData: [],
-            precaucionesData: [],
+            estaciones: [],
+            estacionesInactivas: [],
+            trenes: [],
+            terminales: [],
+            precauciones: [],
+            viasCedidas: [],
+            viasLibres: [],
+            detectoresDesrielo: [],
             isLoaded: true);
 }

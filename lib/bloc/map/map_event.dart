@@ -8,15 +8,25 @@ abstract class MapEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-class MapLoadDataEvent extends MapEvent {
+class MapLoadEvent extends MapEvent {
   final bool showEstaciones;
-  final bool showRamales;
+  final bool showTerminales;
+  final bool showViasLibres;
   final bool showPrecauciones;
   final bool showTrenes;
+  final bool showViasCedidas;
+  final bool showDetectoresDesrielo;
+  final String ramal;
 
-  const MapLoadDataEvent(
+  const MapLoadEvent(
       {required this.showEstaciones,
-      required this.showRamales,
+      required this.showTerminales,
       required this.showPrecauciones,
-      required this.showTrenes});
+      required this.showTrenes,
+      required this.showViasCedidas,
+      required this.showViasLibres, 
+      required this.showDetectoresDesrielo, 
+      this.ramal = '', });
 }
+
+

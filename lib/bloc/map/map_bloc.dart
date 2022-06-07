@@ -2,12 +2,15 @@
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:fcab_map/models/estacion_inactiva.dart';
 import 'package:fcab_map/models/estacion_point.dart';
-import 'package:fcab_map/models/precaucion_point.dart';
-import 'package:fcab_map/models/ramal_point.dart';
+import 'package:fcab_map/models/precaucion_line.dart';
+import 'package:fcab_map/models/terminal_point.dart';
 import 'package:fcab_map/models/tren_point.dart';
-import 'package:fcab_map/services/geo_service_mock.dart';
-import 'package:fcab_map/utils/geo_utils.dart';
+import 'package:fcab_map/models/via_cedida_line.dart';
+import 'package:fcab_map/models/via_libre_line.dart';
+import 'package:fcab_map/services/mock/geo_service_mock.dart';
+import 'package:flutter_map/plugin_api.dart';
 import 'package:meta/meta.dart';
 
 part 'map_event.dart';
@@ -15,71 +18,69 @@ part 'map_state.dart';
 
 class MapBloc extends Bloc<MapEvent, MapState> {
   final GeoServiceMock _geoServiceMock = GeoServiceMock();
+  MapController? mapController;
 
   MapBloc() : super(MapInitialState()) {
-    on<MapLoadDataEvent>((event, emit) async {
+    on<MapLoadEvent>((event, emit) async {
       try {
         emit.call(MapLoadingState());
-        List<EstacionPoint> estacionesData = [];
-        Map<String, List<RamalPoint>> ramalesData = {};
-        List<PrecaucionPoint> precaucionesData = [];
-        List<TrenPoint> trenesData = [];
-        List<String> ramales = ['RCUABRA'];
+        List<EstacionPoint> estaciones = [];
+        List<EstacionInactiva> estacionesInactivas = [];
+        List<TerminalPoint> terminales = [];
+        List<PrecaucionLine> precauciones = [];
+        List<TrenPoint> trenes = [];
+        List<ViaCedidaLine> viasCedidas = [];
+        List<ViaLibreLine> viasLibres = [];
+        List detectoresDesrielo = [];
 
         //CARGANDO DATA DE RAMALES SELECCIONADOS
 
+        //await Future.delayed(const Duration(seconds: 2),);
+
         if (event.showEstaciones) {
-          estacionesData = await _geoServiceMock.loadEstacionesPoint();
+          estaciones = await _geoServiceMock.loadEstacionesPoint();
+          estacionesInactivas = await _geoServiceMock.loadEstacionesInactivas();
         }
 
         if (event.showPrecauciones) {
-          precaucionesData = await _geoServiceMock.loadPrecaucionesPoint();
+          precauciones = await _geoServiceMock.loadPrecaucionesActivas();
         }
 
         if (event.showTrenes) {
-          trenesData = await _geoServiceMock.loadTrenesPoint();
+          trenes = await _geoServiceMock.loadTrenesPoint();
         }
 
-        String table = "<table>";
-        table += "<tr><td>COD_RAMAL</td>";
-        table += "<td>UTM_X</td>";
-        table += "<td>UTM_Y</td>";
-        table += "<td>KILOMETRO</td>";
-        table += "<td>LAT</td>";
-        table += "<td>LON</td></tr>";
-
-        if (event.showRamales) {
-          for (String ramal in ramales) {
-            List<RamalPoint> points =
-                await _geoServiceMock.loadRamalPoints(codRamal: ramal);
-            String table = "<html><head></head><body><table>";
-            table += "<tr><td>COD_RAMAL</td>";
-            table += "<td>UTM_X</td>";
-            table += "<td>UTM_Y</td>";
-            table += "<td>KILOMETRO</td>";
-            table += "<td>LAT</td>";
-            table += "<td>LON</td></tr>";
-            points.forEach((element) {
-              table += "<tr><td>" + element.codRamal + "</td>";
-              table += "<td>" + element.utmX.toString() + "</td>";
-              table += "<td>" + element.utmY.toString() + "</td>";
-              table += "<td>" + element.kilometraje.toString() + "</td>";
-              table += "<td>" + element.lat.toString() + "</td>";
-              table += "<td>" + element.lon.toString() + "</td></tr>";
-            });
-            ramalesData[ramal] = points;
-            table += "</table></body></html>";
-
-            print(table);
-          }
+        if (event.showTerminales) {
+          terminales = await _geoServiceMock.loadTerminalesPoint();
         }
+
+        if (event.showEstaciones) {
+          estaciones = await _geoServiceMock.loadEstacionesPoint();
+          estacionesInactivas = await _geoServiceMock.loadEstacionesInactivas();
+        }
+
+        if (event.showViasCedidas) {
+          viasCedidas = await _geoServiceMock.loadViasCedidas();
+        }
+
+        if (event.showViasLibres) {
+          viasLibres = await _geoServiceMock.loadViasLibres();
+        }
+
+
+        //List lista = await _geoServiceMock.loadUTMGEO('gps_estacion');
+        
 
         emit.call(MapLoadedState(
-            ramales: ramales,
-            ramalesData: ramalesData,
-            estacionesData: estacionesData,
-            trenesData: trenesData,
-            precaucionesData: precaucionesData));
+            estaciones: estaciones,
+            estacionesInactivas: estacionesInactivas,
+            trenes: trenes,
+            precauciones: precauciones, 
+            terminales: terminales,
+            viasCedidas: viasCedidas,
+            viasLibres: viasLibres,
+            detectoresDesrielo: detectoresDesrielo));
+
       } on Exception catch (e) {
         print(e);
         emit.call(MapErrorState(message: e.toString()));

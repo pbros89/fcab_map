@@ -1,5 +1,10 @@
 import 'dart:math';
 
+import 'package:fcab_map/bloc/map/map_bloc.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:latlong2/latlong.dart';
+
 List<String> ramalesMock = [
   'PPAL',
   'RESCONDI',
@@ -69,3 +74,11 @@ List<double> UtmToGeo(double utm_x, double utm_y) {
   coordenadas_calculadas.add(longitudCalculada);
   return coordenadas_calculadas;
 }
+
+
+void goToMap(BuildContext context, LatLng latLng) {
+    final provider =BlocProvider.of<MapBloc>(context);
+    provider.mapController
+        ?.move(latLng, 13);
+    Navigator.pop(context);
+  }

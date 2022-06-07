@@ -54,7 +54,6 @@
 ,{"cod_ramal":"RGABY","cod_estacion":"BAQUED","km_ini":0,"km_fin":0,"km_posicionamiento":0,"utm_x":414528.084,"utm_y":7419866.033}
 ,{"cod_ramal":"RINTERAC","cod_estacion":"EMPALME","km_ini":0,"km_fin":0,"km_posicionamiento":0,"utm_x":357286.94,"utm_y":7446153.836}
 ,{"cod_ramal":"RINTERAC","cod_estacion":"TERMEJ","km_ini":2.9,"km_fin":5.02,"km_posicionamiento":3.96,"utm_x":358045.912,"utm_y":7447501.237}
-,{"cod_ramal":"RINTERAC","cod_estacion":"EMPCPM","km_ini":6.62,"km_fin":6.625,"km_posicionamiento":6.6225,"utm_x":358045.912,"utm_y":7447501.237}
 ,{"cod_ramal":"RMEJIL","cod_estacion":"PNORTE","km_ini":0,"km_fin":0,"km_posicionamiento":0,"utm_x":358262.952,"utm_y":7386528.865}
 ,{"cod_ramal":"RMEJIL","cod_estacion":"K_5.200","km_ini":5.07,"km_fin":5.74,"km_posicionamiento":5.405,"utm_x":359013.702,"utm_y":7391631.356}
 ,{"cod_ramal":"RMEJIL","cod_estacion":"CMOREN","km_ini":18.9,"km_fin":19.32,"km_posicionamiento":19.11,"utm_x":355207.52,"utm_y":7404070.335}

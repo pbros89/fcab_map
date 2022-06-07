@@ -1,0 +1,1422 @@
+[
+  {
+    "COD_ESTACION": "ARRIEROS",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 469727,
+    "NORTE": 7470920,
+    "VALIDAR": "S",
+    "KM": 174.44
+  },
+  {
+    "COD_ESTACION": "ARRIEROS",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 471601,
+    "NORTE": 7472401,
+    "VALIDAR": "S",
+    "KM": 176.83
+  },
+  {
+    "COD_ESTACION": "AVICTO",
+    "PUNTO": 1,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "P",
+    "ESTE": 462606,
+    "NORTE": 7334390,
+    "VALIDAR": "S",
+    "KM": 2.54
+  },
+  {
+    "COD_ESTACION": "AVICTO",
+    "PUNTO": 2,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "P",
+    "ESTE": 463587,
+    "NORTE": 7333255,
+    "VALIDAR": "S",
+    "KM": 4.28
+  },
+  {
+    "COD_ESTACION": "BAQUED",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 412866,
+    "NORTE": 7418802,
+    "VALIDAR": "S",
+    "KM": 95.7
+  },
+  {
+    "COD_ESTACION": "BAQUED",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 415094,
+    "NORTE": 7420328,
+    "VALIDAR": "S",
+    "KM": 98.41
+  },
+  {
+    "COD_ESTACION": "CALAMA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 508117,
+    "NORTE": 7515357,
+    "VALIDAR": "S",
+    "KM": 238.2
+  },
+  {
+    "COD_ESTACION": "CALAMA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 508358,
+    "NORTE": 7517597,
+    "VALIDAR": "S",
+    "KM": 240.47
+  },
+  {
+    "COD_ESTACION": "CERRIL",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 424256,
+    "NORTE": 7428785,
+    "VALIDAR": "S",
+    "KM": 110.97
+  },
+  {
+    "COD_ESTACION": "CERRIL",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 422614,
+    "NORTE": 7426828,
+    "VALIDAR": "S",
+    "KM": 108.42
+  },
+  {
+    "COD_ESTACION": "CERRIT",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 485803,
+    "NORTE": 7496827,
+    "VALIDAR": "S",
+    "KM": 207
+  },
+  {
+    "COD_ESTACION": "CERRIT",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 483117,
+    "NORTE": 7496457,
+    "VALIDAR": "S",
+    "KM": 204.24
+  },
+  {
+    "COD_ESTACION": "CHELA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 460856,
+    "NORTE": 7459817,
+    "VALIDAR": "S",
+    "KM": 160.1
+  },
+  {
+    "COD_ESTACION": "CHELA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 459208,
+    "NORTE": 7457983,
+    "VALIDAR": "S",
+    "KM": 157.63
+  },
+  {
+    "COD_ESTACION": "CMOREN",
+    "PUNTO": 2,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 355466,
+    "NORTE": 7404746,
+    "VALIDAR": "S",
+    "KM": 19.88
+  },
+  {
+    "COD_ESTACION": "CMOREN",
+    "PUNTO": 1,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 355408,
+    "NORTE": 7403290,
+    "VALIDAR": "S",
+    "KM": 18.28
+  },
+  {
+    "COD_ESTACION": "CNEGRO",
+    "PUNTO": 1,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 435879,
+    "NORTE": 7354326,
+    "VALIDAR": "S",
+    "KM": 76.92
+  },
+  {
+    "COD_ESTACION": "CNEGRO",
+    "PUNTO": 2,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 437150,
+    "NORTE": 7355539,
+    "VALIDAR": "S",
+    "KM": 78.78
+  },
+  {
+    "COD_ESTACION": "COCHRA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 471601,
+    "NORTE": 7472401,
+    "VALIDAR": "S",
+    "KM": 176.83
+  },
+  {
+    "COD_ESTACION": "COCHRA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 474595,
+    "NORTE": 7474864,
+    "VALIDAR": "S",
+    "KM": 180.7
+  },
+  {
+    "COD_ESTACION": "CUEVIT",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 403824,
+    "NORTE": 7413277,
+    "VALIDAR": "S",
+    "KM": 85.09
+  },
+  {
+    "COD_ESTACION": "CUEVIT",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 401721,
+    "NORTE": 7411689,
+    "VALIDAR": "S",
+    "KM": 82.46
+  },
+  {
+    "COD_ESTACION": "CUMBRE",
+    "PUNTO": 2,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 370274,
+    "NORTE": 7404061,
+    "VALIDAR": "S",
+    "KM": 34.34
+  },
+  {
+    "COD_ESTACION": "CUMBRE",
+    "PUNTO": 1,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 368479,
+    "NORTE": 7406024,
+    "VALIDAR": "S",
+    "KM": 31.54
+  },
+  {
+    "COD_ESTACION": "DESESP",
+    "PUNTO": 2,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 366729,
+    "NORTE": 7409964,
+    "VALIDAR": "S",
+    "KM": 21.69
+  },
+  {
+    "COD_ESTACION": "DESESP",
+    "PUNTO": 1,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 367262,
+    "NORTE": 7412178,
+    "VALIDAR": "S",
+    "KM": 19.23
+  },
+  {
+    "COD_ESTACION": "DES_K14",
+    "PUNTO": 1,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "N",
+    "ESTE": 470471,
+    "NORTE": 7330476,
+    "VALIDAR": "S",
+    "KM": 13.02
+  },
+  {
+    "COD_ESTACION": "DES_K14",
+    "PUNTO": 2,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "N",
+    "ESTE": 472690,
+    "NORTE": 7330704,
+    "VALIDAR": "S",
+    "KM": 15.26
+  },
+  {
+    "COD_ESTACION": "DES_K38",
+    "PUNTO": 1,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "N",
+    "ESTE": 487532,
+    "NORTE": 7328895,
+    "VALIDAR": "S",
+    "KM": 36.89
+  },
+  {
+    "COD_ESTACION": "DES_K38",
+    "PUNTO": 2,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "N",
+    "ESTE": 487137,
+    "NORTE": 7326646,
+    "VALIDAR": "S",
+    "KM": 39.27
+  },
+  {
+    "COD_ESTACION": "EMPALME",
+    "PUNTO": 1,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "E",
+    "ESTE": 352627,
+    "NORTE": 7442208,
+    "VALIDAR": "S",
+    "KM": 63.44
+  },
+  {
+    "COD_ESTACION": "EMPALME",
+    "PUNTO": 2,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "E",
+    "ESTE": 352377,
+    "NORTE": 7444552,
+    "VALIDAR": "S",
+    "KM": 65.94
+  },
+  {
+    "COD_ESTACION": "EMPALME",
+    "PUNTO": 3,
+    "COD_RAMAL": "RINTERAC",
+    "TIPO": "E",
+    "ESTE": 353473,
+    "NORTE": 7443777,
+    "VALIDAR": "S",
+    "KM": 1
+  },
+  {
+    "COD_ESTACION": "EMPMINPO",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 368276,
+    "NORTE": 7377407,
+    "VALIDAR": "S",
+    "KM": 27.83
+  },
+  {
+    "COD_ESTACION": "EMPMINPO",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 370174,
+    "NORTE": 7380556,
+    "VALIDAR": "S",
+    "KM": 31.56
+  },
+  {
+    "COD_ESTACION": "EMPSPENC",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 471601,
+    "NORTE": 7472401,
+    "VALIDAR": "S",
+    "KM": 176.83
+  },
+  {
+    "COD_ESTACION": "EMPSPENC",
+    "PUNTO": 3,
+    "COD_RAMAL": "RSPENCE",
+    "TIPO": "N",
+    "ESTE": 471685,
+    "NORTE": 7473866,
+    "VALIDAR": "S",
+    "KM": 1.407
+  },
+  {
+    "COD_ESTACION": "EMPSPENC",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 474595,
+    "NORTE": 7474864,
+    "VALIDAR": "S",
+    "KM": 180.7
+  },
+  {
+    "COD_ESTACION": "K115",
+    "PUNTO": 2,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 459539,
+    "NORTE": 7333966,
+    "VALIDAR": "S",
+    "KM": 115.92
+  },
+  {
+    "COD_ESTACION": "K115",
+    "PUNTO": 1,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 457430,
+    "NORTE": 7333889,
+    "VALIDAR": "S",
+    "KM": 113.79
+  },
+  {
+    "COD_ESTACION": "K195",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 480831,
+    "NORTE": 7490090,
+    "VALIDAR": "S",
+    "KM": 197.3
+  },
+  {
+    "COD_ESTACION": "K195",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 479624,
+    "NORTE": 7487879,
+    "VALIDAR": "S",
+    "KM": 194.78
+  },
+  {
+    "COD_ESTACION": "K_5.200",
+    "PUNTO": 1,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 358572,
+    "NORTE": 7390556,
+    "VALIDAR": "S",
+    "KM": 4.23
+  },
+  {
+    "COD_ESTACION": "K_5.200",
+    "PUNTO": 2,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 358884,
+    "NORTE": 7392794,
+    "VALIDAR": "S",
+    "KM": 6.58
+  },
+  {
+    "COD_ESTACION": "K6.5",
+    "PUNTO": 1,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 358358,
+    "NORTE": 7414909,
+    "VALIDAR": "S",
+    "KM": 5.08
+  },
+  {
+    "COD_ESTACION": "K6.5",
+    "PUNTO": 2,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 360371,
+    "NORTE": 7414945,
+    "VALIDAR": "S",
+    "KM": 7.47
+  },
+  {
+    "COD_ESTACION": "K8",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 357032,
+    "NORTE": 7379071,
+    "VALIDAR": "S",
+    "KM": 7.47
+  },
+  {
+    "COD_ESTACION": "K8",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 358254,
+    "NORTE": 7378277,
+    "VALIDAR": "S",
+    "KM": 9.05
+  },
+  {
+    "COD_ESTACION": "K97",
+    "PUNTO": 1,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 442189,
+    "NORTE": 7341558,
+    "VALIDAR": "S",
+    "KM": 96.39
+  },
+  {
+    "COD_ESTACION": "K97",
+    "PUNTO": 2,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 443615,
+    "NORTE": 7340885,
+    "VALIDAR": "S",
+    "KM": 97.97
+  },
+  {
+    "COD_ESTACION": "LANEGR",
+    "PUNTO": 3,
+    "COD_RAMAL": "RALTONOR",
+    "TIPO": "E",
+    "ESTE": 365578,
+    "NORTE": 7370137,
+    "VALIDAR": "S",
+    "KM": 1.136
+  },
+  {
+    "COD_ESTACION": "LANEGR",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 366427,
+    "NORTE": 7372161,
+    "VALIDAR": "S",
+    "KM": 22.2
+  },
+  {
+    "COD_ESTACION": "LANEGR",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 364638,
+    "NORTE": 7371690,
+    "VALIDAR": "S",
+    "KM": 19.45
+  },
+  {
+    "COD_ESTACION": "LATA",
+    "PUNTO": 2,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 398884,
+    "NORTE": 7370409,
+    "VALIDAR": "S",
+    "KM": 34.37
+  },
+  {
+    "COD_ESTACION": "LATA",
+    "PUNTO": 1,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 396686,
+    "NORTE": 7371864,
+    "VALIDAR": "S",
+    "KM": 31.68
+  },
+  {
+    "COD_ESTACION": "LATORR",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 390171,
+    "NORTE": 7406423,
+    "VALIDAR": "S",
+    "KM": 69.48
+  },
+  {
+    "COD_ESTACION": "LATORR",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 393169,
+    "NORTE": 7406656,
+    "VALIDAR": "S",
+    "KM": 72.51
+  },
+  {
+    "COD_ESTACION": "LLANOS",
+    "PUNTO": 2,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 417948,
+    "NORTE": 7365383,
+    "VALIDAR": "S",
+    "KM": 54.56
+  },
+  {
+    "COD_ESTACION": "LLANOS",
+    "PUNTO": 1,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 415905,
+    "NORTE": 7366957,
+    "VALIDAR": "S",
+    "KM": 51.97
+  },
+  {
+    "COD_ESTACION": "RENACIMIEN",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 418447,
+    "NORTE": 7423055,
+    "VALIDAR": "S",
+    "KM": 102.15
+  },
+  {
+    "COD_ESTACION": "RENACIMIEN",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 419483,
+    "NORTE": 7423912,
+    "VALIDAR": "S",
+    "KM": 104.659
+  },
+  {
+    "COD_ESTACION": "NIVEL",
+    "PUNTO": 2,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 353959,
+    "NORTE": 7431702,
+    "VALIDAR": "S",
+    "KM": 52.63
+  },
+  {
+    "COD_ESTACION": "NIVEL",
+    "PUNTO": 1,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 354674,
+    "NORTE": 7429242,
+    "VALIDAR": "S",
+    "KM": 50.07
+  },
+  {
+    "COD_ESTACION": "OHIGGI",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 371827,
+    "NORTE": 7386172,
+    "VALIDAR": "S",
+    "KM": 38.46
+  },
+  {
+    "COD_ESTACION": "OHIGGI",
+    "PUNTO": 3,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "E",
+    "ESTE": 372913,
+    "NORTE": 7383266,
+    "VALIDAR": "S",
+    "KM": 1.63
+  },
+  {
+    "COD_ESTACION": "OHIGGI",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 372105,
+    "NORTE": 7382609,
+    "VALIDAR": "S",
+    "KM": 34.55
+  },
+  {
+    "COD_ESTACION": "PALEST",
+    "PUNTO": 1,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 423418,
+    "NORTE": 7360943,
+    "VALIDAR": "S",
+    "KM": 61.61
+  },
+  {
+    "COD_ESTACION": "PALEST",
+    "PUNTO": 2,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 425459,
+    "NORTE": 7359291,
+    "VALIDAR": "S",
+    "KM": 64.23
+  },
+  {
+    "COD_ESTACION": "PAMPA",
+    "PUNTO": 1,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 356954,
+    "NORTE": 7418535,
+    "VALIDAR": "S",
+    "KM": 1.01
+  },
+  {
+    "COD_ESTACION": "PAMPA",
+    "PUNTO": 2,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 357072,
+    "NORTE": 7419345,
+    "VALIDAR": "S",
+    "KM": 39.38
+  },
+  {
+    "COD_ESTACION": "PAMPA",
+    "PUNTO": 3,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 355988,
+    "NORTE": 7421180,
+    "VALIDAR": "S",
+    "KM": 41.52
+  },
+  {
+    "COD_ESTACION": "POBLET",
+    "PUNTO": 1,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "N",
+    "ESTE": 482475,
+    "NORTE": 7331567,
+    "VALIDAR": "S",
+    "KM": 27.13
+  },
+  {
+    "COD_ESTACION": "POBLET",
+    "PUNTO": 2,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "N",
+    "ESTE": 483575,
+    "NORTE": 7333228,
+    "VALIDAR": "S",
+    "KM": 29.26
+  },
+  {
+    "COD_ESTACION": "PORTEZ",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 370174,
+    "NORTE": 7380556,
+    "VALIDAR": "S",
+    "KM": 31.56
+  },
+  {
+    "COD_ESTACION": "PORTEZ",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 368276,
+    "NORTE": 7377407,
+    "VALIDAR": "S",
+    "KM": 27.83
+  },
+  {
+    "COD_ESTACION": "PRAT",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 379344,
+    "NORTE": 7402625,
+    "VALIDAR": "S",
+    "KM": 57.18
+  },
+  {
+    "COD_ESTACION": "PRAT",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 381556,
+    "NORTE": 7405054,
+    "VALIDAR": "S",
+    "KM": 60.47
+  },
+  {
+    "COD_ESTACION": "PRAT",
+    "PUNTO": 3,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "S",
+    "ESTE": 379106,
+    "NORTE": 7403781,
+    "VALIDAR": "S",
+    "KM": 47.57
+  },
+  {
+    "COD_ESTACION": "RIOLOA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 503929,
+    "NORTE": 7508920,
+    "VALIDAR": "S",
+    "KM": 229.95
+  },
+  {
+    "COD_ESTACION": "RIOLOA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 505889,
+    "NORTE": 7510445,
+    "VALIDAR": "S",
+    "KM": 232.43
+  },
+  {
+    "COD_ESTACION": "SALINA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 438667,
+    "NORTE": 7439895,
+    "VALIDAR": "S",
+    "KM": 129.81
+  },
+  {
+    "COD_ESTACION": "SALINA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 436547,
+    "NORTE": 7438734,
+    "VALIDAR": "S",
+    "KM": 127.39
+  },
+  {
+    "COD_ESTACION": "SIERRA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 468187,
+    "NORTE": 7469710,
+    "VALIDAR": "S",
+    "KM": 172.48
+  },
+  {
+    "COD_ESTACION": "SIERRA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 466337,
+    "NORTE": 7467802,
+    "VALIDAR": "S",
+    "KM": 169.78
+  },
+  {
+    "COD_ESTACION": "TERMEJ",
+    "PUNTO": 1,
+    "COD_RAMAL": "RINTERAC",
+    "TIPO": "N",
+    "ESTE": 353883,
+    "NORTE": 7444356,
+    "VALIDAR": "S",
+    "KM": 1.71
+  },
+  {
+    "COD_ESTACION": "TERMEJ",
+    "PUNTO": 2,
+    "COD_RAMAL": "RINTERAC",
+    "TIPO": "N",
+    "ESTE": 357483,
+    "NORTE": 7446281,
+    "VALIDAR": "S",
+    "KM": 5.85
+  },
+  {
+    "COD_ESTACION": "UNION",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 450672,
+    "NORTE": 7449251,
+    "VALIDAR": "S",
+    "KM": 145.41
+  },
+  {
+    "COD_ESTACION": "UNION",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 448753,
+    "NORTE": 7447382,
+    "VALIDAR": "S",
+    "KM": 142.73
+  },
+  {
+    "COD_ESTACION": "LOSMORROS",
+    "PUNTO": 1,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 361894,
+    "NORTE": 7415073,
+    "VALIDAR": "S",
+    "KM": 9.17
+  },
+  {
+    "COD_ESTACION": "LOSMORROS",
+    "PUNTO": 2,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 366078,
+    "NORTE": 7415709,
+    "VALIDAR": "S",
+    "KM": 14.25
+  },
+  {
+    "COD_ESTACION": "LANORIA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 463151,
+    "NORTE": 7463076,
+    "VALIDAR": "S",
+    "KM": 164.08
+  },
+  {
+    "COD_ESTACION": "LANORIA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 464806,
+    "NORTE": 7465536,
+    "VALIDAR": "S",
+    "KM": 167.05
+  },
+  {
+    "COD_ESTACION": "LANORIA",
+    "PUNTO": 3,
+    "COD_RAMAL": "RMSG",
+    "TIPO": "E",
+    "ESTE": 463747,
+    "NORTE": 7465242,
+    "VALIDAR": "S",
+    "KM": 0.73
+  },
+  {
+    "COD_ESTACION": "HGALLO",
+    "PUNTO": 1,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 382982,
+    "NORTE": 7375845,
+    "VALIDAR": "S",
+    "KM": 16.21
+  },
+  {
+    "COD_ESTACION": "HGALLO",
+    "PUNTO": 2,
+    "COD_RAMAL": "RAVICTO",
+    "TIPO": "N",
+    "ESTE": 385244,
+    "NORTE": 7375198,
+    "VALIDAR": "S",
+    "KM": 18.59
+  },
+  {
+    "COD_ESTACION": "SGALVAN",
+    "PUNTO": 1,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 366634,
+    "NORTE": 7405308,
+    "VALIDAR": "S",
+    "KM": 26.78
+  },
+  {
+    "COD_ESTACION": "SGALVAN",
+    "PUNTO": 2,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 367556,
+    "NORTE": 7406688,
+    "VALIDAR": "S",
+    "KM": 29.29
+  },
+  {
+    "COD_ESTACION": "GAVIOTA",
+    "PUNTO": 1,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 374569,
+    "NORTE": 7403523,
+    "VALIDAR": "S",
+    "KM": 41.98
+  },
+  {
+    "COD_ESTACION": "GAVIOTA",
+    "PUNTO": 2,
+    "COD_RAMAL": "RPAMPA",
+    "TIPO": "N",
+    "ESTE": 376287,
+    "NORTE": 7404904,
+    "VALIDAR": "S",
+    "KM": 44.3
+  },
+  {
+    "COD_ESTACION": "PASCUA",
+    "PUNTO": 1,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "N",
+    "ESTE": 476337,
+    "NORTE": 7331297,
+    "VALIDAR": "S",
+    "KM": 19.02
+  },
+  {
+    "COD_ESTACION": "PASCUA",
+    "PUNTO": 2,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "N",
+    "ESTE": 478007,
+    "NORTE": 7332435,
+    "VALIDAR": "S",
+    "KM": 21.05
+  },
+  {
+    "COD_ESTACION": "K49",
+    "PUNTO": 1,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "S",
+    "ESTE": 489689,
+    "NORTE": 7324007,
+    "VALIDAR": "S",
+    "KM": 48.98
+  },
+  {
+    "COD_ESTACION": "K49",
+    "PUNTO": 2,
+    "COD_RAMAL": "RSOCOMPA",
+    "TIPO": "S",
+    "ESTE": 490013,
+    "NORTE": 7323990,
+    "VALIDAR": "S",
+    "KM": 50.45
+  },
+  {
+    "COD_ESTACION": "K49",
+    "PUNTO": 3,
+    "COD_RAMAL": "RCMZ",
+    "TIPO": "S",
+    "ESTE": 490780,
+    "NORTE": 7324640,
+    "VALIDAR": "S",
+    "KM": 0.67
+  },
+  {
+    "COD_ESTACION": "K49",
+    "PUNTO": 4,
+    "COD_RAMAL": "RCMZ",
+    "TIPO": "S",
+    "ESTE": 490780,
+    "NORTE": 7324640,
+    "VALIDAR": "S",
+    "KM": 0.67
+  },
+  {
+    "COD_ESTACION": "ASCOTA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 574089,
+    "NORTE": 7597049,
+    "VALIDAR": "S",
+    "KM": 364.53
+  },
+  {
+    "COD_ESTACION": "ASCOTA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 575532,
+    "NORTE": 7598595,
+    "VALIDAR": "S",
+    "KM": 366.73
+  },
+  {
+    "COD_ESTACION": "CARCOT",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 560972,
+    "NORTE": 7629471,
+    "VALIDAR": "S",
+    "KM": 406.71
+  },
+  {
+    "COD_ESTACION": "CARCOT",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 561055,
+    "NORTE": 7631110,
+    "VALIDAR": "S",
+    "KM": 408.43
+  },
+  {
+    "COD_ESTACION": "CEBOLL",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 569202,
+    "NORTE": 7618344,
+    "VALIDAR": "S",
+    "KM": 391.44
+  },
+  {
+    "COD_ESTACION": "CEBOLL",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 567634,
+    "NORTE": 7619632,
+    "VALIDAR": "S",
+    "KM": 393.46
+  },
+  {
+    "COD_ESTACION": "CERE",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 524689,
+    "NORTE": 7540057,
+    "VALIDAR": "S",
+    "KM": 269.37
+  },
+  {
+    "COD_ESTACION": "CERE",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 524468,
+    "NORTE": 7542733,
+    "VALIDAR": "S",
+    "KM": 272.05
+  },
+  {
+    "COD_ESTACION": "CONCHI",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 538712,
+    "NORTE": 7562768,
+    "VALIDAR": "S",
+    "KM": 299.05
+  },
+  {
+    "COD_ESTACION": "CONCHI",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "S",
+    "ESTE": 539210,
+    "NORTE": 7565160,
+    "VALIDAR": "S",
+    "KM": 301.7
+  },
+  {
+    "COD_ESTACION": "CONCHI",
+    "PUNTO": 3,
+    "COD_RAMAL": "RABRA",
+    "TIPO": "S",
+    "ESTE": 538501,
+    "NORTE": 7564978,
+    "VALIDAR": "S",
+    "KM": 0.92
+  },
+  {
+    "COD_ESTACION": "K286",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 533522,
+    "NORTE": 7551037,
+    "VALIDAR": "S",
+    "KM": 285.56
+  },
+  {
+    "COD_ESTACION": "K286",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 535465,
+    "NORTE": 7552630,
+    "VALIDAR": "S",
+    "KM": 288.07
+  },
+  {
+    "COD_ESTACION": "OLLAGUE",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 576844,
+    "NORTE": 7652420,
+    "VALIDAR": "S",
+    "KM": 439.24
+  },
+  {
+    "COD_ESTACION": "OLLAGUE",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 579010,
+    "NORTE": 7653908,
+    "VALIDAR": "S",
+    "KM": 441.89
+  },
+  {
+    "COD_ESTACION": "POLAPI",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 559820,
+    "NORTE": 7592540,
+    "VALIDAR": "S",
+    "KM": 344.4
+  },
+  {
+    "COD_ESTACION": "POLAPI",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 558595,
+    "NORTE": 7593145,
+    "VALIDAR": "S",
+    "KM": 346.1
+  },
+  {
+    "COD_ESTACION": "SMARTI",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 566126,
+    "NORTE": 7631988,
+    "VALIDAR": "S",
+    "KM": 414.55
+  },
+  {
+    "COD_ESTACION": "SMARTI",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 567202,
+    "NORTE": 7633967,
+    "VALIDAR": "S",
+    "KM": 416.93
+  },
+  {
+    "COD_ESTACION": "SPEDRO",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 546598,
+    "NORTE": 7572705,
+    "VALIDAR": "S",
+    "KM": 316.61
+  },
+  {
+    "COD_ESTACION": "SPEDRO",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 547905,
+    "NORTE": 7574456,
+    "VALIDAR": "S",
+    "KM": 318.85
+  },
+  {
+    "COD_ESTACION": "SSALVA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 516174,
+    "NORTE": 7528305,
+    "VALIDAR": "S",
+    "KM": 254.54
+  },
+  {
+    "COD_ESTACION": "SSALVA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "E",
+    "ESTE": 518503,
+    "NORTE": 7530683,
+    "VALIDAR": "S",
+    "KM": 257.88
+  },
+  {
+    "COD_ESTACION": "SSALVA",
+    "PUNTO": 3,
+    "COD_RAMAL": "RCHUQUI",
+    "TIPO": "E",
+    "ESTE": 516595,
+    "NORTE": 7530310,
+    "VALIDAR": "S",
+    "KM": 1.56
+  },
+  {
+    "COD_ESTACION": "LOSVIENTOS",
+    "PUNTO": 1,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 354084,
+    "NORTE": 7435590,
+    "VALIDAR": "S",
+    "KM": 56.66
+  },
+  {
+    "COD_ESTACION": "LOSVIENTOS",
+    "PUNTO": 2,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 353545,
+    "NORTE": 7437993,
+    "VALIDAR": "S",
+    "KM": 59.12
+  },
+  {
+    "COD_ESTACION": "PNORTE",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 358468,
+    "NORTE": 7385587,
+    "VALIDAR": "S",
+    "KM": 0.04
+  },
+  {
+    "COD_ESTACION": "PNORTE",
+    "PUNTO": 2,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 358610,
+    "NORTE": 7387293,
+    "VALIDAR": "S",
+    "KM": 0.85
+  },
+  {
+    "COD_ESTACION": "BAQUED",
+    "PUNTO": 3,
+    "COD_RAMAL": "RGABY",
+    "TIPO": "N",
+    "ESTE": 414935,
+    "NORTE": 7419319,
+    "VALIDAR": "S",
+    "KM": 0.79
+  },
+  {
+    "COD_ESTACION": "LACUENCA",
+    "PUNTO": 1,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 355178,
+    "NORTE": 7424398,
+    "VALIDAR": "S",
+    "KM": 45.03
+  },
+  {
+    "COD_ESTACION": "LACUENCA",
+    "PUNTO": 2,
+    "COD_RAMAL": "RMEJIL",
+    "TIPO": "N",
+    "ESTE": 355316,
+    "NORTE": 7426788,
+    "VALIDAR": "S",
+    "KM": 47.53
+  },
+  {
+    "COD_ESTACION": "ALDEA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 428580,
+    "NORTE": 7432670,
+    "VALIDAR": "S",
+    "KM": 116.87
+  },
+  {
+    "COD_ESTACION": "ALDEA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 430608,
+    "NORTE": 7434092,
+    "VALIDAR": "S",
+    "KM": 119.43
+  },
+  {
+    "COD_ESTACION": "DONAELENA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 442791,
+    "NORTE": 7442731,
+    "VALIDAR": "S",
+    "KM": 134.92
+  },
+  {
+    "COD_ESTACION": "DONAELENA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 445203,
+    "NORTE": 7443646,
+    "VALIDAR": "S",
+    "KM": 137.54
+  },
+  {
+    "COD_ESTACION": "ESPERANZA",
+    "PUNTO": 1,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 454379,
+    "NORTE": 7452864,
+    "VALIDAR": "S",
+    "KM": 149.977
+  },
+  {
+    "COD_ESTACION": "ESPERANZA",
+    "PUNTO": 2,
+    "COD_RAMAL": "PPAL",
+    "TIPO": "N",
+    "ESTE": 455330,
+    "NORTE": 7453785,
+    "VALIDAR": "S",
+    "KM": 152.483
+  }
+]
