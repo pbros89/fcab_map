@@ -2,11 +2,14 @@ part of 'create_user_bloc.dart';
 
 @immutable
 abstract class CreateUserState {
-  final String usuario;
-  final String email;
+  final int rut;
+  final String nombre;
+  final String cuenta;
+  final String correo;
+  final String password;
   final String estado;
 
-  const CreateUserState({this.usuario = '', this.email = '', this.estado = 'ACTIVO'});
+  const CreateUserState({this.rut = 0, this.nombre = '', this.cuenta = '', this.correo = '', this.password = '', this.estado = 'A'});
 }
 
 class CreateUserInitial extends CreateUserState {}

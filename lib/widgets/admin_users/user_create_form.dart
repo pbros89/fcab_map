@@ -52,25 +52,69 @@ class _MyWidgetState extends State<UserCreateForm> {
                       ),
                       const SizedBox(height: 10,),
                       FormBuilderTextField(
-                        name: 'txtUsuario',
+                        name: 'txtRut',
                         decoration: const InputDecoration(
-                          labelText: 'Usuario',
+                          labelText: 'Rut',
                         ),
                         keyboardType: TextInputType.number,
                         validator: FormBuilderValidators.compose([
                           FormBuilderValidators.required(
-                              errorText: 'Usuario es requerido'),
+                              errorText: 'Rut requerido'),
+                          FormBuilderValidators.min( 1111111,
+                              errorText: 'Rut incorrecto'),
+                          FormBuilderValidators.max( 99999999,
+                              errorText: 'Rut incorrecto'),
+                        ]),
+                      ),
+                      const SizedBox(height: 10,),
+                      FormBuilderTextField(
+                        name: 'txtNombre',
+                        decoration: const InputDecoration(
+                          labelText: 'Nombre',
+                        ),
+                        keyboardType: TextInputType.text,
+                        validator: FormBuilderValidators.compose([
+                          FormBuilderValidators.required(
+                              errorText: 'Nombre es requerida'),
                           FormBuilderValidators.maxLength(100,
                               errorText: 'No puede superar los 100 caracteres'),
                         ]),
                       ),
                       const SizedBox(height: 10,),
                       FormBuilderTextField(
-                        name: 'txtEmail',
+                        name: 'txtCuenta',
                         decoration: const InputDecoration(
-                          labelText: 'Email',
+                          labelText: 'Cuenta',
                         ),
-                        keyboardType: TextInputType.number,
+                        keyboardType: TextInputType.text,
+                        validator: FormBuilderValidators.compose([
+                          FormBuilderValidators.required(
+                              errorText: 'Cuenta es requerida'),
+                          FormBuilderValidators.maxLength(100,
+                              errorText: 'No puede superar los 100 caracteres'),
+                        ]),
+                      ),
+                      const SizedBox(height: 10,),
+                      FormBuilderTextField(
+                        name: 'txtPassword',
+                        decoration: const InputDecoration(
+                          labelText: 'Clave',
+                        ),
+                        keyboardType: TextInputType.text,
+                        validator: FormBuilderValidators.compose([
+                          FormBuilderValidators.required(
+                              errorText: 'Clave es requerida'),
+                          FormBuilderValidators.maxLength(100,
+                              errorText: 'No puede superar los 100 caracteres'),
+                        ]),
+                      ),
+                      const SizedBox(height: 10,),
+                      FormBuilderTextField(
+                        name: 'txtCorreo',
+                        decoration: const InputDecoration(
+                          labelText: 'Correo',
+                        ),
+                        keyboardType: TextInputType.emailAddress,
                         validator: FormBuilderValidators.compose([
                           FormBuilderValidators.required(
                               errorText: 'Email es requerido'),
@@ -96,7 +140,7 @@ class _MyWidgetState extends State<UserCreateForm> {
                         items: listEstadosUsuarios
                             .map((estado) => DropdownMenuItem(
                                   value: estado,
-                                  child: Text('$estado'),
+                                  child: Text(estado),
                                 ))
                             .toList(),
                       ),
@@ -138,8 +182,13 @@ class _MyWidgetState extends State<UserCreateForm> {
     _formKey.currentState?.validate();
     if (_formKey.currentState?.isValid ?? false) {
       final fields = _formKey.currentState?.fields ?? {};
-      provider.add(CreateUserSubmitEvent(fields['txtUsuario'].toString(),
-          fields['txtEmail'].toString(), fields['cmbEstado'].toString()));
+      provider.add(CreateUserSubmitEvent(
+        fields['txtCuenta'].toString(),
+        fields['txtCorreo'].toString(), 
+        fields['cmbEstado'].toString(),
+        int.parse(fields['txtRut'].toString()),
+        fields['txtNombre'].toString(),
+        fields['txtPassword'].toString()));
     }
   }
 

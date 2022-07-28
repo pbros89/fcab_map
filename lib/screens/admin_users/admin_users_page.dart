@@ -23,7 +23,10 @@ class AdminUsersPage extends StatelessWidget {
     provider.add(SearchAdminUserEvent());
 
     return Scaffold(
-        appBar: AppBar(actions: [AccebilityMenu()],),
+        appBar: AppBar(
+          title: const Text('Administración de usuarios'),
+          centerTitle: false,
+          actions: [AccebilityMenu()],),
         drawer: const DrawerMenu(),
         body: BaseScreen(
           child: BlocBuilder<AdminUserBloc, AdminUserState>(

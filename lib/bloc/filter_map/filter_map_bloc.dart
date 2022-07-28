@@ -6,7 +6,6 @@ part 'filter_map_state.dart';
 
 class FilterMapBloc extends Bloc<FilterMapEvent, FilterMapState> {
 
-
   FilterMapBloc() : super(const FilterMapInitial()) {
     on<FilterMapInitEvent>((event, emit) async {
       try {
@@ -26,7 +25,11 @@ class FilterMapBloc extends Bloc<FilterMapEvent, FilterMapState> {
             showTerminales: event.showTerminales,
             showViasCedidas: event.showViasCedidas,
             showViasLibres: event.showViasLibres,
-            showDetectoresDesrielo: event.showDetectoresDesrielo
+            showDetectoresDesrielo: event.showDetectoresDesrielo,
+            codRamal: event.codRamal,
+            tipoPrecaucion: event.tipoPrecaucion,
+            timingRefresh: event.timingRefresh,
+            typeView: event.typeView
             ));
       } catch (e) {
         emit.call(FilterMapError(message: e.toString()));

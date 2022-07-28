@@ -12,38 +12,11 @@ part of 'contador_loco.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ContadorLoco _$ContadorLocoFromJson(Map<String, dynamic> json) {
   return _ContadorLoco.fromJson(json);
 }
-
-/// @nodoc
-class _$ContadorLocoTearOff {
-  const _$ContadorLocoTearOff();
-
-  _ContadorLoco call(
-      {@JsonKey(name: 'estacion', defaultValue: '') required String estacion,
-      @JsonKey(name: 'linea', defaultValue: '') required String linea,
-      @JsonKey(name: 'color', defaultValue: '') required String color,
-      @JsonKey(name: 'cant', defaultValue: 0) required int cant,
-      @JsonKey(name: 'mar_mante', defaultValue: '') required String marMante}) {
-    return _ContadorLoco(
-      estacion: estacion,
-      linea: linea,
-      color: color,
-      cant: cant,
-      marMante: marMante,
-    );
-  }
-
-  ContadorLoco fromJson(Map<String, Object?> json) {
-    return ContadorLoco.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ContadorLoco = _$ContadorLocoTearOff();
 
 /// @nodoc
 mixin _$ContadorLoco {
@@ -119,11 +92,11 @@ class _$ContadorLocoCopyWithImpl<$Res> implements $ContadorLocoCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ContadorLocoCopyWith<$Res>
+abstract class _$$_ContadorLocoCopyWith<$Res>
     implements $ContadorLocoCopyWith<$Res> {
-  factory _$ContadorLocoCopyWith(
-          _ContadorLoco value, $Res Function(_ContadorLoco) then) =
-      __$ContadorLocoCopyWithImpl<$Res>;
+  factory _$$_ContadorLocoCopyWith(
+          _$_ContadorLoco value, $Res Function(_$_ContadorLoco) then) =
+      __$$_ContadorLocoCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'estacion', defaultValue: '') String estacion,
@@ -134,14 +107,15 @@ abstract class _$ContadorLocoCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ContadorLocoCopyWithImpl<$Res> extends _$ContadorLocoCopyWithImpl<$Res>
-    implements _$ContadorLocoCopyWith<$Res> {
-  __$ContadorLocoCopyWithImpl(
-      _ContadorLoco _value, $Res Function(_ContadorLoco) _then)
-      : super(_value, (v) => _then(v as _ContadorLoco));
+class __$$_ContadorLocoCopyWithImpl<$Res>
+    extends _$ContadorLocoCopyWithImpl<$Res>
+    implements _$$_ContadorLocoCopyWith<$Res> {
+  __$$_ContadorLocoCopyWithImpl(
+      _$_ContadorLoco _value, $Res Function(_$_ContadorLoco) _then)
+      : super(_value, (v) => _then(v as _$_ContadorLoco));
 
   @override
-  _ContadorLoco get _value => super._value as _ContadorLoco;
+  _$_ContadorLoco get _value => super._value as _$_ContadorLoco;
 
   @override
   $Res call({
@@ -151,7 +125,7 @@ class __$ContadorLocoCopyWithImpl<$Res> extends _$ContadorLocoCopyWithImpl<$Res>
     Object? cant = freezed,
     Object? marMante = freezed,
   }) {
-    return _then(_ContadorLoco(
+    return _then(_$_ContadorLoco(
       estacion: estacion == freezed
           ? _value.estacion
           : estacion // ignore: cast_nullable_to_non_nullable
@@ -214,7 +188,7 @@ class _$_ContadorLoco implements _ContadorLoco {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ContadorLoco &&
+            other is _$_ContadorLoco &&
             const DeepCollectionEquality().equals(other.estacion, estacion) &&
             const DeepCollectionEquality().equals(other.linea, linea) &&
             const DeepCollectionEquality().equals(other.color, color) &&
@@ -222,6 +196,7 @@ class _$_ContadorLoco implements _ContadorLoco {
             const DeepCollectionEquality().equals(other.marMante, marMante));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -233,8 +208,8 @@ class _$_ContadorLoco implements _ContadorLoco {
 
   @JsonKey(ignore: true)
   @override
-  _$ContadorLocoCopyWith<_ContadorLoco> get copyWith =>
-      __$ContadorLocoCopyWithImpl<_ContadorLoco>(this, _$identity);
+  _$$_ContadorLocoCopyWith<_$_ContadorLoco> get copyWith =>
+      __$$_ContadorLocoCopyWithImpl<_$_ContadorLoco>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -245,36 +220,36 @@ class _$_ContadorLoco implements _ContadorLoco {
 abstract class _ContadorLoco implements ContadorLoco {
   factory _ContadorLoco(
       {@JsonKey(name: 'estacion', defaultValue: '')
-          required String estacion,
+          required final String estacion,
       @JsonKey(name: 'linea', defaultValue: '')
-          required String linea,
+          required final String linea,
       @JsonKey(name: 'color', defaultValue: '')
-          required String color,
+          required final String color,
       @JsonKey(name: 'cant', defaultValue: 0)
-          required int cant,
+          required final int cant,
       @JsonKey(name: 'mar_mante', defaultValue: '')
-          required String marMante}) = _$_ContadorLoco;
+          required final String marMante}) = _$_ContadorLoco;
 
   factory _ContadorLoco.fromJson(Map<String, dynamic> json) =
       _$_ContadorLoco.fromJson;
 
   @override
   @JsonKey(name: 'estacion', defaultValue: '')
-  String get estacion;
+  String get estacion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'linea', defaultValue: '')
-  String get linea;
+  String get linea => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'color', defaultValue: '')
-  String get color;
+  String get color => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cant', defaultValue: 0)
-  int get cant;
+  int get cant => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'mar_mante', defaultValue: '')
-  String get marMante;
+  String get marMante => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ContadorLocoCopyWith<_ContadorLoco> get copyWith =>
+  _$$_ContadorLocoCopyWith<_$_ContadorLoco> get copyWith =>
       throw _privateConstructorUsedError;
 }

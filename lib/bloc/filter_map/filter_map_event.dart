@@ -5,6 +5,7 @@ abstract class FilterMapEvent extends Equatable {
 
   @override
   List<Object> get props => [];
+  
 }
 
 class FilterMapInitEvent extends FilterMapEvent {}
@@ -17,6 +18,10 @@ class FilterMapChangeEvent extends FilterMapEvent {
   final bool showViasCedidas;
   final bool showViasLibres;
   final bool showDetectoresDesrielo;
+  final String codRamal;
+  final String tipoPrecaucion;
+  final int timingRefresh;
+  final String typeView;
   const FilterMapChangeEvent(
       {required this.showEstaciones,
       required this.showPrecauciones,
@@ -24,5 +29,9 @@ class FilterMapChangeEvent extends FilterMapEvent {
       required this.showTrenes,
       required this.showViasCedidas,
       required this.showViasLibres,
-      required this.showDetectoresDesrielo});
+      required this.showDetectoresDesrielo,
+      required this.codRamal,
+      required this.tipoPrecaucion,
+      required this.timingRefresh,
+      required this.typeView});
 }

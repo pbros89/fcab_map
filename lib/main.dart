@@ -1,4 +1,5 @@
 import 'package:fcab_map/bloc/auth/change_password/change_password_bloc.dart';
+import 'package:fcab_map/bloc/auth/clave_secret/clave_secret_bloc.dart';
 import 'package:fcab_map/bloc/auth/login/login_bloc.dart';
 import 'package:fcab_map/bloc/chip_estacion/chip_estacion_bloc.dart';
 import 'package:fcab_map/bloc/chip_terminal/chip_terminal_bloc.dart';
@@ -15,8 +16,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
+import 'bloc/chip_detector_desrielo/chip_detector_desrielo_bloc.dart';
+import 'bloc/chip_precauciones/chip_precauciones_bloc.dart';
 import 'bloc/chip_via_libre/chip_via_libre_bloc.dart';
 import 'bloc/detail_terminal/detail_terminal_bloc.dart';
+import 'bloc/detail_via_libre/detail_via_libre_bloc.dart';
 import 'bloc/simple_bloc_observer.dart';
 import 'bloc/user/admin_user/admin_user_bloc.dart';
 
@@ -40,23 +44,28 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => LoginBloc()),
+        BlocProvider(create: (_) => ClaveSecretBloc()),
         BlocProvider(create: (_) => ChangePasswordBloc()),
-        BlocProvider(create: (_) => GlobalSettingBloc()..add(InitEvent())),
+        BlocProvider(create: (_) => GlobalSettingBloc()),
         BlocProvider(
             create: (_) =>
                 DetailEstacionBloc()..add(DetailEstacionInitEvent())),
-        BlocProvider(create: (_) => MapBloc()),
+        BlocProvider(create: (_) => MapBloc()..add(const MapInitEvent())),
         BlocProvider(create: (_) => FilterMapBloc()..add(FilterMapInitEvent())),
         BlocProvider(create: (_) => ChipEstacionBloc()),
         BlocProvider(create: (_) => ChipViaCedidaBloc()),
         BlocProvider(create: (_) => ChipTrenBloc()),
         BlocProvider(create: (_) => ChipTerminalBloc()),
         BlocProvider(create: (_) => ChipViaLibreBloc()),
+         BlocProvider(create: (_) => ChipPrecaucionesBloc()),
+        BlocProvider(create: (_) => ChipDetectorDesrieloBloc()),
         BlocProvider(
             create: (_) => DetailTrenBloc()..add(DetailTrenInitEvent())),
         BlocProvider(
             create: (_) =>
                 DetailTerminalBloc()..add(DetailTerminalInitEvent())),
+        BlocProvider(
+            create: (_) => DetailViaLibreBloc()..add(DetailViaLibreInitEvent())),
         BlocProvider(create: (_) => AdminUserBloc()..add(InitAdminUserEvent()))
       ],
       child: BlocBuilder<GlobalSettingBloc, GlobalSettingState>(

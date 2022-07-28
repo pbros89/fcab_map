@@ -8,6 +8,7 @@ class ContadorCarro with _$ContadorCarro {
   factory ContadorCarro({
     @JsonKey(name: 'estacion', defaultValue: '') required String estacion,
     @JsonKey(name: 'linea', defaultValue: '') required String linea,
+    @JsonKey(name: 'tipo_carro', defaultValue: '') required String tipoCarro,
     @JsonKey(name: 'cant', defaultValue: 0) required int cant,
     @JsonKey(name: 'cod_servicio', defaultValue: '') required String codServicio,
     @JsonKey(name: 'marca_mante', defaultValue: 'SINESTADO') required String marcaMante,

@@ -12,102 +12,11 @@ part of 'via_libre_line.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ViaLibreLine _$ViaLibreLineFromJson(Map<String, dynamic> json) {
   return _ViaLibreLine.fromJson(json);
 }
-
-/// @nodoc
-class _$ViaLibreLineTearOff {
-  const _$ViaLibreLineTearOff();
-
-  _ViaLibreLine call(
-      {@JsonKey(name: 'nro_vl', defaultValue: 0)
-          required int nroVl,
-      @JsonKey(name: 'fecha_vl', defaultValue: '')
-          required String fechaVl,
-      @JsonKey(name: 'nro_prog_trenes', defaultValue: 0)
-          required int nroProgTrenes,
-      @JsonKey(name: 'nro_tren', defaultValue: 0)
-          required int nroTren,
-      @JsonKey(name: 'fecha_tren', defaultValue: '')
-          required String fechaTren,
-      @JsonKey(name: 'ramal_origen', defaultValue: '')
-          required String ramalOrigen,
-      @JsonKey(name: 'est_origen', defaultValue: '')
-          required String estOrigen,
-      @JsonKey(name: 'km_inicial_vl', defaultValue: 0.0)
-          required double kmInicialVl,
-      @JsonKey(name: 'ramal_destino', defaultValue: '')
-          required String ramalDestino,
-      @JsonKey(name: 'km_final_vl', defaultValue: 0.0)
-          required double kmFinalVl,
-      @JsonKey(name: 'estado_vl', defaultValue: '')
-          required String estadoVl,
-      @JsonKey(name: 'fecha_salida', defaultValue: '')
-          required String fechaSalida,
-      @JsonKey(name: 'op_responsable', defaultValue: 0)
-          required int opResponsable,
-      @JsonKey(name: 'ramal_pos', defaultValue: '')
-          required String ramalPos,
-      @JsonKey(name: 'est_pos', defaultValue: '')
-          required String estPos,
-      @JsonKey(name: 'km_pos_vl', defaultValue: 0.0)
-          required double kmPosVl,
-      @JsonKey(name: 'fecha_pos_vl', defaultValue: '')
-          required String fechaPosVl,
-      @JsonKey(name: 'observacion', defaultValue: '')
-          required String observacion,
-      @JsonKey(name: 'cod_usr', defaultValue: '')
-          required String codUsr,
-      @JsonKey(name: 'vl_ferronor', defaultValue: 0)
-          required int vlFerronor,
-      @JsonKey(name: 'orden_disco', defaultValue: '')
-          required String ordenDisco,
-      @JsonKey(name: 'maniobra', defaultValue: '')
-          required String maniobra,
-      @JsonKey(name: 'cruza', defaultValue: '')
-          required String cruza,
-      @JsonKey(name: 'fecha_creacion', defaultValue: '')
-          required String fechaCreacion,
-      List<RamalPoint> ramalPoints = const []}) {
-    return _ViaLibreLine(
-      nroVl: nroVl,
-      fechaVl: fechaVl,
-      nroProgTrenes: nroProgTrenes,
-      nroTren: nroTren,
-      fechaTren: fechaTren,
-      ramalOrigen: ramalOrigen,
-      estOrigen: estOrigen,
-      kmInicialVl: kmInicialVl,
-      ramalDestino: ramalDestino,
-      kmFinalVl: kmFinalVl,
-      estadoVl: estadoVl,
-      fechaSalida: fechaSalida,
-      opResponsable: opResponsable,
-      ramalPos: ramalPos,
-      estPos: estPos,
-      kmPosVl: kmPosVl,
-      fechaPosVl: fechaPosVl,
-      observacion: observacion,
-      codUsr: codUsr,
-      vlFerronor: vlFerronor,
-      ordenDisco: ordenDisco,
-      maniobra: maniobra,
-      cruza: cruza,
-      fechaCreacion: fechaCreacion,
-      ramalPoints: ramalPoints,
-    );
-  }
-
-  ViaLibreLine fromJson(Map<String, Object?> json) {
-    return ViaLibreLine.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ViaLibreLine = _$ViaLibreLineTearOff();
 
 /// @nodoc
 mixin _$ViaLibreLine {
@@ -342,11 +251,11 @@ class _$ViaLibreLineCopyWithImpl<$Res> implements $ViaLibreLineCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ViaLibreLineCopyWith<$Res>
+abstract class _$$_ViaLibreLineCopyWith<$Res>
     implements $ViaLibreLineCopyWith<$Res> {
-  factory _$ViaLibreLineCopyWith(
-          _ViaLibreLine value, $Res Function(_ViaLibreLine) then) =
-      __$ViaLibreLineCopyWithImpl<$Res>;
+  factory _$$_ViaLibreLineCopyWith(
+          _$_ViaLibreLine value, $Res Function(_$_ViaLibreLine) then) =
+      __$$_ViaLibreLineCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'nro_vl', defaultValue: 0) int nroVl,
@@ -377,14 +286,15 @@ abstract class _$ViaLibreLineCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ViaLibreLineCopyWithImpl<$Res> extends _$ViaLibreLineCopyWithImpl<$Res>
-    implements _$ViaLibreLineCopyWith<$Res> {
-  __$ViaLibreLineCopyWithImpl(
-      _ViaLibreLine _value, $Res Function(_ViaLibreLine) _then)
-      : super(_value, (v) => _then(v as _ViaLibreLine));
+class __$$_ViaLibreLineCopyWithImpl<$Res>
+    extends _$ViaLibreLineCopyWithImpl<$Res>
+    implements _$$_ViaLibreLineCopyWith<$Res> {
+  __$$_ViaLibreLineCopyWithImpl(
+      _$_ViaLibreLine _value, $Res Function(_$_ViaLibreLine) _then)
+      : super(_value, (v) => _then(v as _$_ViaLibreLine));
 
   @override
-  _ViaLibreLine get _value => super._value as _ViaLibreLine;
+  _$_ViaLibreLine get _value => super._value as _$_ViaLibreLine;
 
   @override
   $Res call({
@@ -414,7 +324,7 @@ class __$ViaLibreLineCopyWithImpl<$Res> extends _$ViaLibreLineCopyWithImpl<$Res>
     Object? fechaCreacion = freezed,
     Object? ramalPoints = freezed,
   }) {
-    return _then(_ViaLibreLine(
+    return _then(_$_ViaLibreLine(
       nroVl: nroVl == freezed
           ? _value.nroVl
           : nroVl // ignore: cast_nullable_to_non_nullable
@@ -512,7 +422,7 @@ class __$ViaLibreLineCopyWithImpl<$Res> extends _$ViaLibreLineCopyWithImpl<$Res>
           : fechaCreacion // ignore: cast_nullable_to_non_nullable
               as String,
       ramalPoints: ramalPoints == freezed
-          ? _value.ramalPoints
+          ? _value._ramalPoints
           : ramalPoints // ignore: cast_nullable_to_non_nullable
               as List<RamalPoint>,
     ));
@@ -571,7 +481,8 @@ class _$_ViaLibreLine implements _ViaLibreLine {
           required this.cruza,
       @JsonKey(name: 'fecha_creacion', defaultValue: '')
           required this.fechaCreacion,
-      this.ramalPoints = const []});
+      final List<RamalPoint> ramalPoints = const []})
+      : _ramalPoints = ramalPoints;
 
   factory _$_ViaLibreLine.fromJson(Map<String, dynamic> json) =>
       _$$_ViaLibreLineFromJson(json);
@@ -648,9 +559,13 @@ class _$_ViaLibreLine implements _ViaLibreLine {
   @override
   @JsonKey(name: 'fecha_creacion', defaultValue: '')
   final String fechaCreacion;
-  @JsonKey()
+  final List<RamalPoint> _ramalPoints;
   @override
-  final List<RamalPoint> ramalPoints;
+  @JsonKey()
+  List<RamalPoint> get ramalPoints {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_ramalPoints);
+  }
 
   @override
   String toString() {
@@ -661,7 +576,7 @@ class _$_ViaLibreLine implements _ViaLibreLine {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ViaLibreLine &&
+            other is _$_ViaLibreLine &&
             const DeepCollectionEquality().equals(other.nroVl, nroVl) &&
             const DeepCollectionEquality().equals(other.fechaVl, fechaVl) &&
             const DeepCollectionEquality()
@@ -698,9 +613,10 @@ class _$_ViaLibreLine implements _ViaLibreLine {
             const DeepCollectionEquality()
                 .equals(other.fechaCreacion, fechaCreacion) &&
             const DeepCollectionEquality()
-                .equals(other.ramalPoints, ramalPoints));
+                .equals(other._ramalPoints, _ramalPoints));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -728,13 +644,13 @@ class _$_ViaLibreLine implements _ViaLibreLine {
         const DeepCollectionEquality().hash(maniobra),
         const DeepCollectionEquality().hash(cruza),
         const DeepCollectionEquality().hash(fechaCreacion),
-        const DeepCollectionEquality().hash(ramalPoints)
+        const DeepCollectionEquality().hash(_ramalPoints)
       ]);
 
   @JsonKey(ignore: true)
   @override
-  _$ViaLibreLineCopyWith<_ViaLibreLine> get copyWith =>
-      __$ViaLibreLineCopyWithImpl<_ViaLibreLine>(this, _$identity);
+  _$$_ViaLibreLineCopyWith<_$_ViaLibreLine> get copyWith =>
+      __$$_ViaLibreLineCopyWithImpl<_$_ViaLibreLine>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -745,134 +661,134 @@ class _$_ViaLibreLine implements _ViaLibreLine {
 abstract class _ViaLibreLine implements ViaLibreLine {
   factory _ViaLibreLine(
       {@JsonKey(name: 'nro_vl', defaultValue: 0)
-          required int nroVl,
+          required final int nroVl,
       @JsonKey(name: 'fecha_vl', defaultValue: '')
-          required String fechaVl,
+          required final String fechaVl,
       @JsonKey(name: 'nro_prog_trenes', defaultValue: 0)
-          required int nroProgTrenes,
+          required final int nroProgTrenes,
       @JsonKey(name: 'nro_tren', defaultValue: 0)
-          required int nroTren,
+          required final int nroTren,
       @JsonKey(name: 'fecha_tren', defaultValue: '')
-          required String fechaTren,
+          required final String fechaTren,
       @JsonKey(name: 'ramal_origen', defaultValue: '')
-          required String ramalOrigen,
+          required final String ramalOrigen,
       @JsonKey(name: 'est_origen', defaultValue: '')
-          required String estOrigen,
+          required final String estOrigen,
       @JsonKey(name: 'km_inicial_vl', defaultValue: 0.0)
-          required double kmInicialVl,
+          required final double kmInicialVl,
       @JsonKey(name: 'ramal_destino', defaultValue: '')
-          required String ramalDestino,
+          required final String ramalDestino,
       @JsonKey(name: 'km_final_vl', defaultValue: 0.0)
-          required double kmFinalVl,
+          required final double kmFinalVl,
       @JsonKey(name: 'estado_vl', defaultValue: '')
-          required String estadoVl,
+          required final String estadoVl,
       @JsonKey(name: 'fecha_salida', defaultValue: '')
-          required String fechaSalida,
+          required final String fechaSalida,
       @JsonKey(name: 'op_responsable', defaultValue: 0)
-          required int opResponsable,
+          required final int opResponsable,
       @JsonKey(name: 'ramal_pos', defaultValue: '')
-          required String ramalPos,
+          required final String ramalPos,
       @JsonKey(name: 'est_pos', defaultValue: '')
-          required String estPos,
+          required final String estPos,
       @JsonKey(name: 'km_pos_vl', defaultValue: 0.0)
-          required double kmPosVl,
+          required final double kmPosVl,
       @JsonKey(name: 'fecha_pos_vl', defaultValue: '')
-          required String fechaPosVl,
+          required final String fechaPosVl,
       @JsonKey(name: 'observacion', defaultValue: '')
-          required String observacion,
+          required final String observacion,
       @JsonKey(name: 'cod_usr', defaultValue: '')
-          required String codUsr,
+          required final String codUsr,
       @JsonKey(name: 'vl_ferronor', defaultValue: 0)
-          required int vlFerronor,
+          required final int vlFerronor,
       @JsonKey(name: 'orden_disco', defaultValue: '')
-          required String ordenDisco,
+          required final String ordenDisco,
       @JsonKey(name: 'maniobra', defaultValue: '')
-          required String maniobra,
+          required final String maniobra,
       @JsonKey(name: 'cruza', defaultValue: '')
-          required String cruza,
+          required final String cruza,
       @JsonKey(name: 'fecha_creacion', defaultValue: '')
-          required String fechaCreacion,
-      List<RamalPoint> ramalPoints}) = _$_ViaLibreLine;
+          required final String fechaCreacion,
+      final List<RamalPoint> ramalPoints}) = _$_ViaLibreLine;
 
   factory _ViaLibreLine.fromJson(Map<String, dynamic> json) =
       _$_ViaLibreLine.fromJson;
 
   @override
   @JsonKey(name: 'nro_vl', defaultValue: 0)
-  int get nroVl;
+  int get nroVl => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fecha_vl', defaultValue: '')
-  String get fechaVl;
+  String get fechaVl => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'nro_prog_trenes', defaultValue: 0)
-  int get nroProgTrenes;
+  int get nroProgTrenes => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'nro_tren', defaultValue: 0)
-  int get nroTren;
+  int get nroTren => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fecha_tren', defaultValue: '')
-  String get fechaTren;
+  String get fechaTren => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'ramal_origen', defaultValue: '')
-  String get ramalOrigen;
+  String get ramalOrigen => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'est_origen', defaultValue: '')
-  String get estOrigen;
+  String get estOrigen => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_inicial_vl', defaultValue: 0.0)
-  double get kmInicialVl;
+  double get kmInicialVl => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'ramal_destino', defaultValue: '')
-  String get ramalDestino;
+  String get ramalDestino => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_final_vl', defaultValue: 0.0)
-  double get kmFinalVl;
+  double get kmFinalVl => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'estado_vl', defaultValue: '')
-  String get estadoVl;
+  String get estadoVl => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fecha_salida', defaultValue: '')
-  String get fechaSalida;
+  String get fechaSalida => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'op_responsable', defaultValue: 0)
-  int get opResponsable;
+  int get opResponsable => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'ramal_pos', defaultValue: '')
-  String get ramalPos;
+  String get ramalPos => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'est_pos', defaultValue: '')
-  String get estPos;
+  String get estPos => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_pos_vl', defaultValue: 0.0)
-  double get kmPosVl;
+  double get kmPosVl => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fecha_pos_vl', defaultValue: '')
-  String get fechaPosVl;
+  String get fechaPosVl => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'observacion', defaultValue: '')
-  String get observacion;
+  String get observacion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cod_usr', defaultValue: '')
-  String get codUsr;
+  String get codUsr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'vl_ferronor', defaultValue: 0)
-  int get vlFerronor;
+  int get vlFerronor => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'orden_disco', defaultValue: '')
-  String get ordenDisco;
+  String get ordenDisco => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'maniobra', defaultValue: '')
-  String get maniobra;
+  String get maniobra => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cruza', defaultValue: '')
-  String get cruza;
+  String get cruza => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fecha_creacion', defaultValue: '')
-  String get fechaCreacion;
+  String get fechaCreacion => throw _privateConstructorUsedError;
   @override
-  List<RamalPoint> get ramalPoints;
+  List<RamalPoint> get ramalPoints => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ViaLibreLineCopyWith<_ViaLibreLine> get copyWith =>
+  _$$_ViaLibreLineCopyWith<_$_ViaLibreLine> get copyWith =>
       throw _privateConstructorUsedError;
 }

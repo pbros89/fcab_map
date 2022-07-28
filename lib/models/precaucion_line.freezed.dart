@@ -12,63 +12,11 @@ part of 'precaucion_line.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 PrecaucionLine _$PrecaucionLineFromJson(Map<String, dynamic> json) {
   return _PrecaucionLine.fromJson(json);
 }
-
-/// @nodoc
-class _$PrecaucionLineTearOff {
-  const _$PrecaucionLineTearOff();
-
-  _PrecaucionLine call(
-      {@JsonKey(name: 'tipo', defaultValue: '')
-          required String tipo,
-      @JsonKey(name: 'cod_ramal', defaultValue: '')
-          required String codRamal,
-      @JsonKey(name: 'km_desde', defaultValue: 0.0)
-          required double kmDesde,
-      @JsonKey(name: 'km_hasta', defaultValue: 0.0)
-          required double kmHasta,
-      @JsonKey(name: 'numero', defaultValue: 0)
-          required int numero,
-      @JsonKey(name: 'velocidad', defaultValue: 0)
-          required int velocidad,
-      @JsonKey(name: 'causa', defaultValue: '')
-          required String causa,
-      @JsonKey(name: 'observacion', defaultValue: '')
-          required String observacion,
-      @JsonKey(name: 'activa', defaultValue: '')
-          required String activa,
-      @JsonKey(name: 'factiva', defaultValue: '')
-          required String factiva,
-      @JsonKey(name: 'sentido', defaultValue: '')
-          required String sentido,
-      List<RamalPoint> listPoints = const []}) {
-    return _PrecaucionLine(
-      tipo: tipo,
-      codRamal: codRamal,
-      kmDesde: kmDesde,
-      kmHasta: kmHasta,
-      numero: numero,
-      velocidad: velocidad,
-      causa: causa,
-      observacion: observacion,
-      activa: activa,
-      factiva: factiva,
-      sentido: sentido,
-      listPoints: listPoints,
-    );
-  }
-
-  PrecaucionLine fromJson(Map<String, Object?> json) {
-    return PrecaucionLine.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PrecaucionLine = _$PrecaucionLineTearOff();
 
 /// @nodoc
 mixin _$PrecaucionLine {
@@ -200,11 +148,11 @@ class _$PrecaucionLineCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$PrecaucionLineCopyWith<$Res>
+abstract class _$$_PrecaucionLineCopyWith<$Res>
     implements $PrecaucionLineCopyWith<$Res> {
-  factory _$PrecaucionLineCopyWith(
-          _PrecaucionLine value, $Res Function(_PrecaucionLine) then) =
-      __$PrecaucionLineCopyWithImpl<$Res>;
+  factory _$$_PrecaucionLineCopyWith(
+          _$_PrecaucionLine value, $Res Function(_$_PrecaucionLine) then) =
+      __$$_PrecaucionLineCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'tipo', defaultValue: '') String tipo,
@@ -222,15 +170,15 @@ abstract class _$PrecaucionLineCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PrecaucionLineCopyWithImpl<$Res>
+class __$$_PrecaucionLineCopyWithImpl<$Res>
     extends _$PrecaucionLineCopyWithImpl<$Res>
-    implements _$PrecaucionLineCopyWith<$Res> {
-  __$PrecaucionLineCopyWithImpl(
-      _PrecaucionLine _value, $Res Function(_PrecaucionLine) _then)
-      : super(_value, (v) => _then(v as _PrecaucionLine));
+    implements _$$_PrecaucionLineCopyWith<$Res> {
+  __$$_PrecaucionLineCopyWithImpl(
+      _$_PrecaucionLine _value, $Res Function(_$_PrecaucionLine) _then)
+      : super(_value, (v) => _then(v as _$_PrecaucionLine));
 
   @override
-  _PrecaucionLine get _value => super._value as _PrecaucionLine;
+  _$_PrecaucionLine get _value => super._value as _$_PrecaucionLine;
 
   @override
   $Res call({
@@ -247,7 +195,7 @@ class __$PrecaucionLineCopyWithImpl<$Res>
     Object? sentido = freezed,
     Object? listPoints = freezed,
   }) {
-    return _then(_PrecaucionLine(
+    return _then(_$_PrecaucionLine(
       tipo: tipo == freezed
           ? _value.tipo
           : tipo // ignore: cast_nullable_to_non_nullable
@@ -293,7 +241,7 @@ class __$PrecaucionLineCopyWithImpl<$Res>
           : sentido // ignore: cast_nullable_to_non_nullable
               as String,
       listPoints: listPoints == freezed
-          ? _value.listPoints
+          ? _value._listPoints
           : listPoints // ignore: cast_nullable_to_non_nullable
               as List<RamalPoint>,
     ));
@@ -315,7 +263,8 @@ class _$_PrecaucionLine implements _PrecaucionLine {
       @JsonKey(name: 'activa', defaultValue: '') required this.activa,
       @JsonKey(name: 'factiva', defaultValue: '') required this.factiva,
       @JsonKey(name: 'sentido', defaultValue: '') required this.sentido,
-      this.listPoints = const []});
+      final List<RamalPoint> listPoints = const []})
+      : _listPoints = listPoints;
 
   factory _$_PrecaucionLine.fromJson(Map<String, dynamic> json) =>
       _$$_PrecaucionLineFromJson(json);
@@ -353,9 +302,13 @@ class _$_PrecaucionLine implements _PrecaucionLine {
   @override
   @JsonKey(name: 'sentido', defaultValue: '')
   final String sentido;
-  @JsonKey()
+  final List<RamalPoint> _listPoints;
   @override
-  final List<RamalPoint> listPoints;
+  @JsonKey()
+  List<RamalPoint> get listPoints {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_listPoints);
+  }
 
   @override
   String toString() {
@@ -366,7 +319,7 @@ class _$_PrecaucionLine implements _PrecaucionLine {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PrecaucionLine &&
+            other is _$_PrecaucionLine &&
             const DeepCollectionEquality().equals(other.tipo, tipo) &&
             const DeepCollectionEquality().equals(other.codRamal, codRamal) &&
             const DeepCollectionEquality().equals(other.kmDesde, kmDesde) &&
@@ -380,9 +333,10 @@ class _$_PrecaucionLine implements _PrecaucionLine {
             const DeepCollectionEquality().equals(other.factiva, factiva) &&
             const DeepCollectionEquality().equals(other.sentido, sentido) &&
             const DeepCollectionEquality()
-                .equals(other.listPoints, listPoints));
+                .equals(other._listPoints, _listPoints));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -397,12 +351,12 @@ class _$_PrecaucionLine implements _PrecaucionLine {
       const DeepCollectionEquality().hash(activa),
       const DeepCollectionEquality().hash(factiva),
       const DeepCollectionEquality().hash(sentido),
-      const DeepCollectionEquality().hash(listPoints));
+      const DeepCollectionEquality().hash(_listPoints));
 
   @JsonKey(ignore: true)
   @override
-  _$PrecaucionLineCopyWith<_PrecaucionLine> get copyWith =>
-      __$PrecaucionLineCopyWithImpl<_PrecaucionLine>(this, _$identity);
+  _$$_PrecaucionLineCopyWith<_$_PrecaucionLine> get copyWith =>
+      __$$_PrecaucionLineCopyWithImpl<_$_PrecaucionLine>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -413,69 +367,69 @@ class _$_PrecaucionLine implements _PrecaucionLine {
 abstract class _PrecaucionLine implements PrecaucionLine {
   factory _PrecaucionLine(
       {@JsonKey(name: 'tipo', defaultValue: '')
-          required String tipo,
+          required final String tipo,
       @JsonKey(name: 'cod_ramal', defaultValue: '')
-          required String codRamal,
+          required final String codRamal,
       @JsonKey(name: 'km_desde', defaultValue: 0.0)
-          required double kmDesde,
+          required final double kmDesde,
       @JsonKey(name: 'km_hasta', defaultValue: 0.0)
-          required double kmHasta,
+          required final double kmHasta,
       @JsonKey(name: 'numero', defaultValue: 0)
-          required int numero,
+          required final int numero,
       @JsonKey(name: 'velocidad', defaultValue: 0)
-          required int velocidad,
+          required final int velocidad,
       @JsonKey(name: 'causa', defaultValue: '')
-          required String causa,
+          required final String causa,
       @JsonKey(name: 'observacion', defaultValue: '')
-          required String observacion,
+          required final String observacion,
       @JsonKey(name: 'activa', defaultValue: '')
-          required String activa,
+          required final String activa,
       @JsonKey(name: 'factiva', defaultValue: '')
-          required String factiva,
+          required final String factiva,
       @JsonKey(name: 'sentido', defaultValue: '')
-          required String sentido,
-      List<RamalPoint> listPoints}) = _$_PrecaucionLine;
+          required final String sentido,
+      final List<RamalPoint> listPoints}) = _$_PrecaucionLine;
 
   factory _PrecaucionLine.fromJson(Map<String, dynamic> json) =
       _$_PrecaucionLine.fromJson;
 
   @override
   @JsonKey(name: 'tipo', defaultValue: '')
-  String get tipo;
+  String get tipo => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cod_ramal', defaultValue: '')
-  String get codRamal;
+  String get codRamal => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_desde', defaultValue: 0.0)
-  double get kmDesde;
+  double get kmDesde => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_hasta', defaultValue: 0.0)
-  double get kmHasta;
+  double get kmHasta => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'numero', defaultValue: 0)
-  int get numero;
+  int get numero => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'velocidad', defaultValue: 0)
-  int get velocidad;
+  int get velocidad => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'causa', defaultValue: '')
-  String get causa;
+  String get causa => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'observacion', defaultValue: '')
-  String get observacion;
+  String get observacion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'activa', defaultValue: '')
-  String get activa;
+  String get activa => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'factiva', defaultValue: '')
-  String get factiva;
+  String get factiva => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'sentido', defaultValue: '')
-  String get sentido;
+  String get sentido => throw _privateConstructorUsedError;
   @override
-  List<RamalPoint> get listPoints;
+  List<RamalPoint> get listPoints => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$PrecaucionLineCopyWith<_PrecaucionLine> get copyWith =>
+  _$$_PrecaucionLineCopyWith<_$_PrecaucionLine> get copyWith =>
       throw _privateConstructorUsedError;
 }

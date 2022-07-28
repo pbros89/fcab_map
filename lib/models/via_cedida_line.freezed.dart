@@ -12,66 +12,11 @@ part of 'via_cedida_line.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ViaCedidaLine _$ViaCedidaLineFromJson(Map<String, dynamic> json) {
   return _ViaCedidaLine.fromJson(json);
 }
-
-/// @nodoc
-class _$ViaCedidaLineTearOff {
-  const _$ViaCedidaLineTearOff();
-
-  _ViaCedidaLine call(
-      {@JsonKey(name: 'cod_via_cedida', defaultValue: 0)
-          required int codViaCedida,
-      @JsonKey(name: 'ramal_origen', defaultValue: '')
-          required String ramalOrigen,
-      @JsonKey(name: 'fec_ini', defaultValue: '')
-          required String fecIni,
-      @JsonKey(name: 'km_ini', defaultValue: 0)
-          required int kmIni,
-      @JsonKey(name: 'km_fin', defaultValue: 0)
-          required int kmFin,
-      @JsonKey(name: 'descripcion', defaultValue: '')
-          required String descripcion,
-      @JsonKey(name: 'usr_responsable', defaultValue: '')
-          required String usrResponsable,
-      @JsonKey(name: 'usr_creador', defaultValue: '')
-          required String usrCreador,
-      @JsonKey(name: 'estado_vc', defaultValue: '')
-          required String estadoVc,
-      @JsonKey(name: 'fec_fin_estimada', defaultValue: '')
-          required String fecFinEstimada,
-      @JsonKey(name: 'cruzeta', defaultValue: '')
-          required String cruzeta,
-      @JsonKey(name: 'numero_via_cedida', defaultValue: 0)
-          required int numeroViaCedida,
-      List<RamalPoint> ramalPoints = const []}) {
-    return _ViaCedidaLine(
-      codViaCedida: codViaCedida,
-      ramalOrigen: ramalOrigen,
-      fecIni: fecIni,
-      kmIni: kmIni,
-      kmFin: kmFin,
-      descripcion: descripcion,
-      usrResponsable: usrResponsable,
-      usrCreador: usrCreador,
-      estadoVc: estadoVc,
-      fecFinEstimada: fecFinEstimada,
-      cruzeta: cruzeta,
-      numeroViaCedida: numeroViaCedida,
-      ramalPoints: ramalPoints,
-    );
-  }
-
-  ViaCedidaLine fromJson(Map<String, Object?> json) {
-    return ViaCedidaLine.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ViaCedidaLine = _$ViaCedidaLineTearOff();
 
 /// @nodoc
 mixin _$ViaCedidaLine {
@@ -223,11 +168,11 @@ class _$ViaCedidaLineCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$ViaCedidaLineCopyWith<$Res>
+abstract class _$$_ViaCedidaLineCopyWith<$Res>
     implements $ViaCedidaLineCopyWith<$Res> {
-  factory _$ViaCedidaLineCopyWith(
-          _ViaCedidaLine value, $Res Function(_ViaCedidaLine) then) =
-      __$ViaCedidaLineCopyWithImpl<$Res>;
+  factory _$$_ViaCedidaLineCopyWith(
+          _$_ViaCedidaLine value, $Res Function(_$_ViaCedidaLine) then) =
+      __$$_ViaCedidaLineCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'cod_via_cedida', defaultValue: 0)
@@ -258,15 +203,15 @@ abstract class _$ViaCedidaLineCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ViaCedidaLineCopyWithImpl<$Res>
+class __$$_ViaCedidaLineCopyWithImpl<$Res>
     extends _$ViaCedidaLineCopyWithImpl<$Res>
-    implements _$ViaCedidaLineCopyWith<$Res> {
-  __$ViaCedidaLineCopyWithImpl(
-      _ViaCedidaLine _value, $Res Function(_ViaCedidaLine) _then)
-      : super(_value, (v) => _then(v as _ViaCedidaLine));
+    implements _$$_ViaCedidaLineCopyWith<$Res> {
+  __$$_ViaCedidaLineCopyWithImpl(
+      _$_ViaCedidaLine _value, $Res Function(_$_ViaCedidaLine) _then)
+      : super(_value, (v) => _then(v as _$_ViaCedidaLine));
 
   @override
-  _ViaCedidaLine get _value => super._value as _ViaCedidaLine;
+  _$_ViaCedidaLine get _value => super._value as _$_ViaCedidaLine;
 
   @override
   $Res call({
@@ -284,7 +229,7 @@ class __$ViaCedidaLineCopyWithImpl<$Res>
     Object? numeroViaCedida = freezed,
     Object? ramalPoints = freezed,
   }) {
-    return _then(_ViaCedidaLine(
+    return _then(_$_ViaCedidaLine(
       codViaCedida: codViaCedida == freezed
           ? _value.codViaCedida
           : codViaCedida // ignore: cast_nullable_to_non_nullable
@@ -334,7 +279,7 @@ class __$ViaCedidaLineCopyWithImpl<$Res>
           : numeroViaCedida // ignore: cast_nullable_to_non_nullable
               as int,
       ramalPoints: ramalPoints == freezed
-          ? _value.ramalPoints
+          ? _value._ramalPoints
           : ramalPoints // ignore: cast_nullable_to_non_nullable
               as List<RamalPoint>,
     ));
@@ -369,7 +314,8 @@ class _$_ViaCedidaLine implements _ViaCedidaLine {
           required this.cruzeta,
       @JsonKey(name: 'numero_via_cedida', defaultValue: 0)
           required this.numeroViaCedida,
-      this.ramalPoints = const []});
+      final List<RamalPoint> ramalPoints = const []})
+      : _ramalPoints = ramalPoints;
 
   factory _$_ViaCedidaLine.fromJson(Map<String, dynamic> json) =>
       _$$_ViaCedidaLineFromJson(json);
@@ -410,9 +356,13 @@ class _$_ViaCedidaLine implements _ViaCedidaLine {
   @override
   @JsonKey(name: 'numero_via_cedida', defaultValue: 0)
   final int numeroViaCedida;
-  @JsonKey()
+  final List<RamalPoint> _ramalPoints;
   @override
-  final List<RamalPoint> ramalPoints;
+  @JsonKey()
+  List<RamalPoint> get ramalPoints {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_ramalPoints);
+  }
 
   @override
   String toString() {
@@ -423,7 +373,7 @@ class _$_ViaCedidaLine implements _ViaCedidaLine {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ViaCedidaLine &&
+            other is _$_ViaCedidaLine &&
             const DeepCollectionEquality()
                 .equals(other.codViaCedida, codViaCedida) &&
             const DeepCollectionEquality()
@@ -444,9 +394,10 @@ class _$_ViaCedidaLine implements _ViaCedidaLine {
             const DeepCollectionEquality()
                 .equals(other.numeroViaCedida, numeroViaCedida) &&
             const DeepCollectionEquality()
-                .equals(other.ramalPoints, ramalPoints));
+                .equals(other._ramalPoints, _ramalPoints));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -462,12 +413,12 @@ class _$_ViaCedidaLine implements _ViaCedidaLine {
       const DeepCollectionEquality().hash(fecFinEstimada),
       const DeepCollectionEquality().hash(cruzeta),
       const DeepCollectionEquality().hash(numeroViaCedida),
-      const DeepCollectionEquality().hash(ramalPoints));
+      const DeepCollectionEquality().hash(_ramalPoints));
 
   @JsonKey(ignore: true)
   @override
-  _$ViaCedidaLineCopyWith<_ViaCedidaLine> get copyWith =>
-      __$ViaCedidaLineCopyWithImpl<_ViaCedidaLine>(this, _$identity);
+  _$$_ViaCedidaLineCopyWith<_$_ViaCedidaLine> get copyWith =>
+      __$$_ViaCedidaLineCopyWithImpl<_$_ViaCedidaLine>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -478,74 +429,74 @@ class _$_ViaCedidaLine implements _ViaCedidaLine {
 abstract class _ViaCedidaLine implements ViaCedidaLine {
   factory _ViaCedidaLine(
       {@JsonKey(name: 'cod_via_cedida', defaultValue: 0)
-          required int codViaCedida,
+          required final int codViaCedida,
       @JsonKey(name: 'ramal_origen', defaultValue: '')
-          required String ramalOrigen,
+          required final String ramalOrigen,
       @JsonKey(name: 'fec_ini', defaultValue: '')
-          required String fecIni,
+          required final String fecIni,
       @JsonKey(name: 'km_ini', defaultValue: 0)
-          required int kmIni,
+          required final int kmIni,
       @JsonKey(name: 'km_fin', defaultValue: 0)
-          required int kmFin,
+          required final int kmFin,
       @JsonKey(name: 'descripcion', defaultValue: '')
-          required String descripcion,
+          required final String descripcion,
       @JsonKey(name: 'usr_responsable', defaultValue: '')
-          required String usrResponsable,
+          required final String usrResponsable,
       @JsonKey(name: 'usr_creador', defaultValue: '')
-          required String usrCreador,
+          required final String usrCreador,
       @JsonKey(name: 'estado_vc', defaultValue: '')
-          required String estadoVc,
+          required final String estadoVc,
       @JsonKey(name: 'fec_fin_estimada', defaultValue: '')
-          required String fecFinEstimada,
+          required final String fecFinEstimada,
       @JsonKey(name: 'cruzeta', defaultValue: '')
-          required String cruzeta,
+          required final String cruzeta,
       @JsonKey(name: 'numero_via_cedida', defaultValue: 0)
-          required int numeroViaCedida,
-      List<RamalPoint> ramalPoints}) = _$_ViaCedidaLine;
+          required final int numeroViaCedida,
+      final List<RamalPoint> ramalPoints}) = _$_ViaCedidaLine;
 
   factory _ViaCedidaLine.fromJson(Map<String, dynamic> json) =
       _$_ViaCedidaLine.fromJson;
 
   @override
   @JsonKey(name: 'cod_via_cedida', defaultValue: 0)
-  int get codViaCedida;
+  int get codViaCedida => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'ramal_origen', defaultValue: '')
-  String get ramalOrigen;
+  String get ramalOrigen => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fec_ini', defaultValue: '')
-  String get fecIni;
+  String get fecIni => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_ini', defaultValue: 0)
-  int get kmIni;
+  int get kmIni => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_fin', defaultValue: 0)
-  int get kmFin;
+  int get kmFin => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'descripcion', defaultValue: '')
-  String get descripcion;
+  String get descripcion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'usr_responsable', defaultValue: '')
-  String get usrResponsable;
+  String get usrResponsable => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'usr_creador', defaultValue: '')
-  String get usrCreador;
+  String get usrCreador => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'estado_vc', defaultValue: '')
-  String get estadoVc;
+  String get estadoVc => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fec_fin_estimada', defaultValue: '')
-  String get fecFinEstimada;
+  String get fecFinEstimada => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cruzeta', defaultValue: '')
-  String get cruzeta;
+  String get cruzeta => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'numero_via_cedida', defaultValue: 0)
-  int get numeroViaCedida;
+  int get numeroViaCedida => throw _privateConstructorUsedError;
   @override
-  List<RamalPoint> get ramalPoints;
+  List<RamalPoint> get ramalPoints => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ViaCedidaLineCopyWith<_ViaCedidaLine> get copyWith =>
+  _$$_ViaCedidaLineCopyWith<_$_ViaCedidaLine> get copyWith =>
       throw _privateConstructorUsedError;
 }

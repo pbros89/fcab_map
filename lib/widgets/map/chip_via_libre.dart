@@ -37,19 +37,19 @@ class ChipViaLibre extends StatelessWidget {
     showMyDialog(
         context: context,
         child: Center(
-              child: SizedBox(
-                width: 400,
-                height: 450,
-                child: Card(
-                    child: CustomScrollView(
-                  slivers: [
-                    header(),
-                    headerSearch(context),
-                    listVias(),
-                  ],
-                )),
-              ),
-            ));
+          child: SizedBox(
+            width: 400,
+            height: 450,
+            child: Card(
+                child: CustomScrollView(
+              slivers: [
+                header(),
+                headerSearch(context),
+                listVias(),
+              ],
+            )),
+          ),
+        ));
   }
 
   header() {
@@ -134,8 +134,14 @@ class ChipViaLibre extends StatelessWidget {
                 ),
                 trailing: Text(via.ramalOrigen),
                 dense: true,
-                onTap: () => goToMap(context,
-                    LatLng(via.ramalPoints[0].lat, via.ramalPoints[0].lon)));
+                onTap: () {
+                  if (via.ramalPoints.isNotEmpty) {
+                    goToMap(context,
+                        LatLng(via.ramalPoints[0].lat, via.ramalPoints[0].lon));
+                  } else {
+                    
+                  }
+                });
           }, childCount: state.vias.length),
         );
       }

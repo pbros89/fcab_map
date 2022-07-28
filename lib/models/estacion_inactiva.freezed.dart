@@ -12,52 +12,11 @@ part of 'estacion_inactiva.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 EstacionInactiva _$EstacionInactivaFromJson(Map<String, dynamic> json) {
   return _EstacionInactiva.fromJson(json);
 }
-
-/// @nodoc
-class _$EstacionInactivaTearOff {
-  const _$EstacionInactivaTearOff();
-
-  _EstacionInactiva call(
-      {@JsonKey(name: 'estacion', defaultValue: '')
-          required String estacion,
-      @JsonKey(name: 'fecha_crea', defaultValue: '')
-          required String fechaCrea,
-      @JsonKey(name: 'restriccion', defaultValue: '')
-          required String restriccion,
-      @JsonKey(name: 'usuario_crea', defaultValue: '')
-          required String usuarioCrea,
-      @JsonKey(name: 'tipo', defaultValue: '')
-          required String tipo,
-      @JsonKey(name: 'habilitado', defaultValue: '')
-          required String habilitado,
-      @JsonKey(name: 'chek', defaultValue: 0)
-          required int chek,
-      @JsonKey(name: 'automatica_mr', defaultValue: '')
-          required String automaticaMr}) {
-    return _EstacionInactiva(
-      estacion: estacion,
-      fechaCrea: fechaCrea,
-      restriccion: restriccion,
-      usuarioCrea: usuarioCrea,
-      tipo: tipo,
-      habilitado: habilitado,
-      chek: chek,
-      automaticaMr: automaticaMr,
-    );
-  }
-
-  EstacionInactiva fromJson(Map<String, Object?> json) {
-    return EstacionInactiva.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $EstacionInactiva = _$EstacionInactivaTearOff();
 
 /// @nodoc
 mixin _$EstacionInactiva {
@@ -158,11 +117,11 @@ class _$EstacionInactivaCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$EstacionInactivaCopyWith<$Res>
+abstract class _$$_EstacionInactivaCopyWith<$Res>
     implements $EstacionInactivaCopyWith<$Res> {
-  factory _$EstacionInactivaCopyWith(
-          _EstacionInactiva value, $Res Function(_EstacionInactiva) then) =
-      __$EstacionInactivaCopyWithImpl<$Res>;
+  factory _$$_EstacionInactivaCopyWith(
+          _$_EstacionInactiva value, $Res Function(_$_EstacionInactiva) then) =
+      __$$_EstacionInactivaCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'estacion', defaultValue: '') String estacion,
@@ -176,15 +135,15 @@ abstract class _$EstacionInactivaCopyWith<$Res>
 }
 
 /// @nodoc
-class __$EstacionInactivaCopyWithImpl<$Res>
+class __$$_EstacionInactivaCopyWithImpl<$Res>
     extends _$EstacionInactivaCopyWithImpl<$Res>
-    implements _$EstacionInactivaCopyWith<$Res> {
-  __$EstacionInactivaCopyWithImpl(
-      _EstacionInactiva _value, $Res Function(_EstacionInactiva) _then)
-      : super(_value, (v) => _then(v as _EstacionInactiva));
+    implements _$$_EstacionInactivaCopyWith<$Res> {
+  __$$_EstacionInactivaCopyWithImpl(
+      _$_EstacionInactiva _value, $Res Function(_$_EstacionInactiva) _then)
+      : super(_value, (v) => _then(v as _$_EstacionInactiva));
 
   @override
-  _EstacionInactiva get _value => super._value as _EstacionInactiva;
+  _$_EstacionInactiva get _value => super._value as _$_EstacionInactiva;
 
   @override
   $Res call({
@@ -197,7 +156,7 @@ class __$EstacionInactivaCopyWithImpl<$Res>
     Object? chek = freezed,
     Object? automaticaMr = freezed,
   }) {
-    return _then(_EstacionInactiva(
+    return _then(_$_EstacionInactiva(
       estacion: estacion == freezed
           ? _value.estacion
           : estacion // ignore: cast_nullable_to_non_nullable
@@ -292,7 +251,7 @@ class _$_EstacionInactiva implements _EstacionInactiva {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EstacionInactiva &&
+            other is _$_EstacionInactiva &&
             const DeepCollectionEquality().equals(other.estacion, estacion) &&
             const DeepCollectionEquality().equals(other.fechaCrea, fechaCrea) &&
             const DeepCollectionEquality()
@@ -307,6 +266,7 @@ class _$_EstacionInactiva implements _EstacionInactiva {
                 .equals(other.automaticaMr, automaticaMr));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -321,8 +281,8 @@ class _$_EstacionInactiva implements _EstacionInactiva {
 
   @JsonKey(ignore: true)
   @override
-  _$EstacionInactivaCopyWith<_EstacionInactiva> get copyWith =>
-      __$EstacionInactivaCopyWithImpl<_EstacionInactiva>(this, _$identity);
+  _$$_EstacionInactivaCopyWith<_$_EstacionInactiva> get copyWith =>
+      __$$_EstacionInactivaCopyWithImpl<_$_EstacionInactiva>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -333,51 +293,51 @@ class _$_EstacionInactiva implements _EstacionInactiva {
 abstract class _EstacionInactiva implements EstacionInactiva {
   factory _EstacionInactiva(
       {@JsonKey(name: 'estacion', defaultValue: '')
-          required String estacion,
+          required final String estacion,
       @JsonKey(name: 'fecha_crea', defaultValue: '')
-          required String fechaCrea,
+          required final String fechaCrea,
       @JsonKey(name: 'restriccion', defaultValue: '')
-          required String restriccion,
+          required final String restriccion,
       @JsonKey(name: 'usuario_crea', defaultValue: '')
-          required String usuarioCrea,
+          required final String usuarioCrea,
       @JsonKey(name: 'tipo', defaultValue: '')
-          required String tipo,
+          required final String tipo,
       @JsonKey(name: 'habilitado', defaultValue: '')
-          required String habilitado,
+          required final String habilitado,
       @JsonKey(name: 'chek', defaultValue: 0)
-          required int chek,
+          required final int chek,
       @JsonKey(name: 'automatica_mr', defaultValue: '')
-          required String automaticaMr}) = _$_EstacionInactiva;
+          required final String automaticaMr}) = _$_EstacionInactiva;
 
   factory _EstacionInactiva.fromJson(Map<String, dynamic> json) =
       _$_EstacionInactiva.fromJson;
 
   @override
   @JsonKey(name: 'estacion', defaultValue: '')
-  String get estacion;
+  String get estacion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fecha_crea', defaultValue: '')
-  String get fechaCrea;
+  String get fechaCrea => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'restriccion', defaultValue: '')
-  String get restriccion;
+  String get restriccion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'usuario_crea', defaultValue: '')
-  String get usuarioCrea;
+  String get usuarioCrea => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'tipo', defaultValue: '')
-  String get tipo;
+  String get tipo => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'habilitado', defaultValue: '')
-  String get habilitado;
+  String get habilitado => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'chek', defaultValue: 0)
-  int get chek;
+  int get chek => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'automatica_mr', defaultValue: '')
-  String get automaticaMr;
+  String get automaticaMr => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$EstacionInactivaCopyWith<_EstacionInactiva> get copyWith =>
+  _$$_EstacionInactivaCopyWith<_$_EstacionInactiva> get copyWith =>
       throw _privateConstructorUsedError;
 }

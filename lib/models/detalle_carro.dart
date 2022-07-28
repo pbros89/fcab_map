@@ -8,6 +8,7 @@ class DetalleCarro with _$DetalleCarro {
   factory DetalleCarro({
     @JsonKey(name: 'estacion', defaultValue: '') required String estacion,
     @JsonKey(name: 'linea', defaultValue: '') required String linea,
+    @JsonKey(name: 'tipo_carro', defaultValue: '') required String tipoCarro,
     @JsonKey(name: 'cod_servicio', defaultValue: '') required String codServicio,
     @JsonKey(name: 'numero', defaultValue: '') required String numero,
     @JsonKey(name: 'marca_mante', defaultValue: 'SINESTADO') required String marcaMante,

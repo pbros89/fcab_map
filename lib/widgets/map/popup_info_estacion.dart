@@ -25,7 +25,7 @@ class PopupInfoEstacion extends StatelessWidget {
             length: state.sections,
             child: Center(
               child: SizedBox(
-                width: 400,
+                width: 450,
                 height: 450,
                 child: Card(
                   child: Column(mainAxisSize: MainAxisSize.max, children: [
@@ -56,7 +56,7 @@ class PopupInfoEstacion extends StatelessWidget {
     final tabs = [const Tab(child: Text("General"))];
 
     if(state.contadorLoco.isNotEmpty){
-      tabs.add(const Tab(child: Text("Locomotoras")));
+      tabs.add(const Tab(child: Text("Locos")));
     }
 
     if(state.contadorCarro.isNotEmpty){
@@ -71,7 +71,7 @@ class PopupInfoEstacion extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
             child: Text(
-              estacionPoint.codEstacion.toString(),
+              'Estación ${estacionPoint.codEstacion}',
               style: Theme.of(context).textTheme.titleMedium,
             ),
           ),
@@ -187,63 +187,62 @@ class PopupInfoEstacion extends StatelessWidget {
             ? Colors.red
             : null;
 
-    return BaseScreen(
-      child: Center(
-        child: SizedBox(
-          height: 450,
-          width: 400,
-          child: Card(
-              child: Column(
-            children: [
-              Container(
-                width: double.infinity,
-                color: color,
-                padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                child: Text(
-                  '${locoSelect.estacion} - ${locoSelect.linea} - ${locoSelect.marMante}',
-                  style: Theme.of(context).textTheme.titleMedium,
-                ),
+    return Center(
+      child: SizedBox(
+        height: 450,
+        width: 450,
+        child: Card(
+            child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              color: color,
+              padding:
+                  const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              child: Text(
+                '${locoSelect.estacion} - ${locoSelect.linea} - ${locoSelect.marMante}',
+                style: Theme.of(context).textTheme.titleMedium,
               ),
-              Expanded(
-                child: BlocBuilder<DetailEstacionBloc, DetailEstacionState>(
-                    builder: (context, state) {
-                  if (state is DetailEstacionLoaded) {
-                    return (state.detalleLoco?.length ?? 0) > 0
-                        ? ListView.separated(
-                            itemBuilder: ((context, index) {
-                              final DetalleLoco loco =
-                                  state.detalleLoco![index];
+            ),
+            
+            Expanded(
+              child: BlocBuilder<DetailEstacionBloc, DetailEstacionState>(
+                  builder: (context, state) {
+                if (state is DetailEstacionLoaded) {
+                  return (state.detalleLoco?.length ?? 0) > 0
+                      ? ListView.separated(
+                          itemBuilder: ((context, index) {
+                            final DetalleLoco loco =
+                                state.detalleLoco![index];
 
-                              return ListTile(
-                                title: Text("Locomotora ${loco.loco}"),
-                                subtitle: Text('Observación: ${loco.obsMarca}'),
-                                dense: true,
-                              );
-                            }),
-                            separatorBuilder: (_, index) => const Divider(
-                                  height: 2,
-                                ),
-                            itemCount: state.detalleLoco?.length ?? 0)
-                        : const Center(
-                            child: Text('No se encontraron locomotoras'),
-                          );
-                  }
+                            return ListTile(
+                              title: Text("Locomotora ${loco.loco}"),
+                              subtitle: Text('Observación: ${loco.obsMarca}'),
+                              dense: true,
+                            );
+                          }),
+                          separatorBuilder: (_, index) => const Divider(
+                                height: 2,
+                              ),
+                          itemCount: state.detalleLoco?.length ?? 0)
+                      : const Center(
+                          child: Text('No se encontraron locomotoras'),
+                        );
+                }
 
-                  if (state is DetailEstacionError) {
-                    return Center(
-                      child: Text('ERROR: ${state.message}'),
-                    );
-                  }
-
-                  return const Center(
-                    child: CircularProgressIndicator(),
+                if (state is DetailEstacionError) {
+                  return Center(
+                    child: Text('ERROR: ${state.message}'),
                   );
-                }),
-              ),
-            ],
-          )),
-        ),
+                }
+
+                return const Center(
+                  child: CircularProgressIndicator(),
+                );
+              }),
+            ),
+          ],
+        )),
       ),
     );
   }
@@ -252,7 +251,10 @@ class PopupInfoEstacion extends StatelessWidget {
       if (state is DetailEstacionLoaded) {
         return state.contadorCarro.isNotEmpty
             ? ListView.separated(
+                shrinkWrap: false,
+                
                 itemBuilder: ((context, index) {
+                  print(index);
                   final ContadorCarro carro = state.contadorCarro[index];
                   final color = carro.color == 'AMARILLO'
                       ? Colors.orange
@@ -260,9 +262,9 @@ class PopupInfoEstacion extends StatelessWidget {
                           ? Colors.red
                           : null;
                   return ListTile(
-                    title: Text(carro.linea),
+                    title: Text(carro.tipoCarro),
                     subtitle: Text(
-                        '${carro.marcaMante} - ${carro.codServicio} - ${carro.estadoCarga}'),
+                        '${carro.codServicio} - ${carro.linea} - ${carro.marcaMante} - ${carro.estadoCarga}'),
                     trailing: Text("${carro.cant.toString()} Carros"),
                     tileColor: color,
                     dense: true,
@@ -284,7 +286,7 @@ class PopupInfoEstacion extends StatelessWidget {
                 separatorBuilder: (_, index) => const Divider(
                       height: 2,
                     ),
-                itemCount: state.contadorLoco.length)
+                itemCount: state.contadorCarro.length)
             : const Center(
                 child: Text('No se encontraron carros'),
               );
@@ -309,64 +311,62 @@ class PopupInfoEstacion extends StatelessWidget {
             ? Colors.red
             : null;
 
-    return BaseScreen(
-      child: Center(
-        child: SizedBox(
-          height: 450,
-          width: 400,
-          child: Card(
-              child: Column(
-            children: [
-              Container(
-                width: double.infinity,
-                color: color,
-                padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                child: Text(
-                  '${carroSelect.estacion} - ${carroSelect.linea} - ${carroSelect.marcaMante}',
-                  style: Theme.of(context).textTheme.titleMedium,
-                ),
+    return Center(
+      child: SizedBox(
+        height: 450,
+        width: 450,
+        child: Card(
+            child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              color: color,
+              padding:
+                  const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              child: Text(
+                '${carroSelect.estacion} - ${carroSelect.tipoCarro} - ${carroSelect.linea} - ${carroSelect.marcaMante}',
+                style: Theme.of(context).textTheme.titleMedium,
               ),
-              Expanded(
-                child: BlocBuilder<DetailEstacionBloc, DetailEstacionState>(
-                    builder: (context, state) {
-                  if (state is DetailEstacionLoaded) {
-                    return (state.detalleCarro?.length ?? 0) > 0
-                        ? ListView.separated(
-                            itemBuilder: ((context, index) {
-                              final DetalleCarro carro =
-                                  state.detalleCarro![index];
+            ),
+            Expanded(
+              child: BlocBuilder<DetailEstacionBloc, DetailEstacionState>(
+                  builder: (context, state) {
+                if (state is DetailEstacionLoaded) {
+                  return (state.detalleCarro?.length ?? 0) > 0
+                      ? ListView.separated(
+                          itemBuilder: ((context, index) {
+                            final DetalleCarro carro =
+                                state.detalleCarro![index];
 
-                              return ListTile(
-                                title: Text("Carro ${carro.numero}"),
-                                subtitle:
-                                    Text('Observación: ${carro.obsMante}'),
-                                dense: true,
-                              );
-                            }),
-                            separatorBuilder: (_, index) => const Divider(
-                                  height: 2,
-                                ),
-                            itemCount: state.detalleCarro?.length ?? 0)
-                        : const Center(
-                            child: Text('No se encontraron carros'),
-                          );
-                  }
+                            return ListTile(
+                              title: Text("Carro ${carro.numero}"),
+                              subtitle:
+                                  Text('Observación: ${carro.obsMante}'),
+                              dense: true,
+                            );
+                          }),
+                          separatorBuilder: (_, index) => const Divider(
+                                height: 2,
+                              ),
+                          itemCount: state.detalleCarro?.length ?? 0)
+                      : const Center(
+                          child: Text('No se encontraron carros'),
+                        );
+                }
 
-                  if (state is DetailEstacionError) {
-                    return Center(
-                      child: Text('ERROR: ${state.message}'),
-                    );
-                  }
-
-                  return const Center(
-                    child: CircularProgressIndicator(),
+                if (state is DetailEstacionError) {
+                  return Center(
+                    child: Text('ERROR: ${state.message}'),
                   );
-                }),
-              ),
-            ],
-          )),
-        ),
+                }
+
+                return const Center(
+                  child: CircularProgressIndicator(),
+                );
+              }),
+            ),
+          ],
+        )),
       ),
     );
   }

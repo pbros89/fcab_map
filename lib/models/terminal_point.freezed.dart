@@ -12,44 +12,11 @@ part of 'terminal_point.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 TerminalPoint _$TerminalPointFromJson(Map<String, dynamic> json) {
   return _TerminalPoint.fromJson(json);
 }
-
-/// @nodoc
-class _$TerminalPointTearOff {
-  const _$TerminalPointTearOff();
-
-  _TerminalPoint call(
-      {@JsonKey(name: 'cod_ramal') required String codRamal,
-      @JsonKey(name: 'cod_estacion') required String codEstacion,
-      @JsonKey(name: 'kil_inicio') required double kmIni,
-      @JsonKey(name: 'kil_final') required double kmFin,
-      @JsonKey(name: 'utm_x') required double utmX,
-      @JsonKey(name: 'utm_y') required double utmY,
-      required double lat,
-      required double lon}) {
-    return _TerminalPoint(
-      codRamal: codRamal,
-      codEstacion: codEstacion,
-      kmIni: kmIni,
-      kmFin: kmFin,
-      utmX: utmX,
-      utmY: utmY,
-      lat: lat,
-      lon: lon,
-    );
-  }
-
-  TerminalPoint fromJson(Map<String, Object?> json) {
-    return TerminalPoint.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $TerminalPoint = _$TerminalPointTearOff();
 
 /// @nodoc
 mixin _$TerminalPoint {
@@ -148,11 +115,11 @@ class _$TerminalPointCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$TerminalPointCopyWith<$Res>
+abstract class _$$_TerminalPointCopyWith<$Res>
     implements $TerminalPointCopyWith<$Res> {
-  factory _$TerminalPointCopyWith(
-          _TerminalPoint value, $Res Function(_TerminalPoint) then) =
-      __$TerminalPointCopyWithImpl<$Res>;
+  factory _$$_TerminalPointCopyWith(
+          _$_TerminalPoint value, $Res Function(_$_TerminalPoint) then) =
+      __$$_TerminalPointCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'cod_ramal') String codRamal,
@@ -166,15 +133,15 @@ abstract class _$TerminalPointCopyWith<$Res>
 }
 
 /// @nodoc
-class __$TerminalPointCopyWithImpl<$Res>
+class __$$_TerminalPointCopyWithImpl<$Res>
     extends _$TerminalPointCopyWithImpl<$Res>
-    implements _$TerminalPointCopyWith<$Res> {
-  __$TerminalPointCopyWithImpl(
-      _TerminalPoint _value, $Res Function(_TerminalPoint) _then)
-      : super(_value, (v) => _then(v as _TerminalPoint));
+    implements _$$_TerminalPointCopyWith<$Res> {
+  __$$_TerminalPointCopyWithImpl(
+      _$_TerminalPoint _value, $Res Function(_$_TerminalPoint) _then)
+      : super(_value, (v) => _then(v as _$_TerminalPoint));
 
   @override
-  _TerminalPoint get _value => super._value as _TerminalPoint;
+  _$_TerminalPoint get _value => super._value as _$_TerminalPoint;
 
   @override
   $Res call({
@@ -187,7 +154,7 @@ class __$TerminalPointCopyWithImpl<$Res>
     Object? lat = freezed,
     Object? lon = freezed,
   }) {
-    return _then(_TerminalPoint(
+    return _then(_$_TerminalPoint(
       codRamal: codRamal == freezed
           ? _value.codRamal
           : codRamal // ignore: cast_nullable_to_non_nullable
@@ -272,7 +239,7 @@ class _$_TerminalPoint implements _TerminalPoint {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TerminalPoint &&
+            other is _$_TerminalPoint &&
             const DeepCollectionEquality().equals(other.codRamal, codRamal) &&
             const DeepCollectionEquality()
                 .equals(other.codEstacion, codEstacion) &&
@@ -284,6 +251,7 @@ class _$_TerminalPoint implements _TerminalPoint {
             const DeepCollectionEquality().equals(other.lon, lon));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -298,8 +266,8 @@ class _$_TerminalPoint implements _TerminalPoint {
 
   @JsonKey(ignore: true)
   @override
-  _$TerminalPointCopyWith<_TerminalPoint> get copyWith =>
-      __$TerminalPointCopyWithImpl<_TerminalPoint>(this, _$identity);
+  _$$_TerminalPointCopyWith<_$_TerminalPoint> get copyWith =>
+      __$$_TerminalPointCopyWithImpl<_$_TerminalPoint>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -309,42 +277,42 @@ class _$_TerminalPoint implements _TerminalPoint {
 
 abstract class _TerminalPoint implements TerminalPoint {
   factory _TerminalPoint(
-      {@JsonKey(name: 'cod_ramal') required String codRamal,
-      @JsonKey(name: 'cod_estacion') required String codEstacion,
-      @JsonKey(name: 'kil_inicio') required double kmIni,
-      @JsonKey(name: 'kil_final') required double kmFin,
-      @JsonKey(name: 'utm_x') required double utmX,
-      @JsonKey(name: 'utm_y') required double utmY,
-      required double lat,
-      required double lon}) = _$_TerminalPoint;
+      {@JsonKey(name: 'cod_ramal') required final String codRamal,
+      @JsonKey(name: 'cod_estacion') required final String codEstacion,
+      @JsonKey(name: 'kil_inicio') required final double kmIni,
+      @JsonKey(name: 'kil_final') required final double kmFin,
+      @JsonKey(name: 'utm_x') required final double utmX,
+      @JsonKey(name: 'utm_y') required final double utmY,
+      required final double lat,
+      required final double lon}) = _$_TerminalPoint;
 
   factory _TerminalPoint.fromJson(Map<String, dynamic> json) =
       _$_TerminalPoint.fromJson;
 
   @override
   @JsonKey(name: 'cod_ramal')
-  String get codRamal;
+  String get codRamal => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cod_estacion')
-  String get codEstacion;
+  String get codEstacion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'kil_inicio')
-  double get kmIni;
+  double get kmIni => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'kil_final')
-  double get kmFin;
+  double get kmFin => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'utm_x')
-  double get utmX;
+  double get utmX => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'utm_y')
-  double get utmY;
+  double get utmY => throw _privateConstructorUsedError;
   @override
-  double get lat;
+  double get lat => throw _privateConstructorUsedError;
   @override
-  double get lon;
+  double get lon => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TerminalPointCopyWith<_TerminalPoint> get copyWith =>
+  _$$_TerminalPointCopyWith<_$_TerminalPoint> get copyWith =>
       throw _privateConstructorUsedError;
 }

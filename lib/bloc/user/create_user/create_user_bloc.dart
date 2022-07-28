@@ -24,7 +24,7 @@ class CreateUserBloc extends Bloc<CreateUserEvent, CreateUserState> {
     emit.call(CreateUserLoading());
 
     try {
-      final usuario = Usuario(id: 0, email: event.email, usuario: event.usuario, estado: event.estado);
+      final usuario = Usuario(rut: event.rut, correo: event.correo, cuenta: event.cuenta, estado: event.estado, password: event.password,  nombre: event.nombre);
 
       ResponseService<Usuario> response = await _usuarioService.create(usuario);
 

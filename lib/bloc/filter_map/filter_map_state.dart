@@ -8,9 +8,13 @@ abstract class FilterMapState extends Equatable {
   final bool showViasCedidas;
   final bool showViasLibres;
   final bool showDetectoresDesrielo;
+  final String codRamal;
+  final String tipoPrecaucion;
+  final int timingRefresh;
+  final String typeView;
   final bool isLoaded;
 
-  const FilterMapState({
+  const FilterMapState( {
     required this.showEstaciones,
     required this.showPrecauciones,
     required this.showTrenes,
@@ -18,6 +22,10 @@ abstract class FilterMapState extends Equatable {
     required this.showViasCedidas,
     required this.showViasLibres,
     required this.showDetectoresDesrielo, 
+    required this.codRamal,
+    required this.tipoPrecaucion,
+    required this.timingRefresh,
+    required this.typeView,
     required this.isLoaded,
   });
   @override
@@ -34,6 +42,10 @@ class FilterMapInitial extends FilterMapState {
             showViasCedidas:  false,
             showViasLibres:  false,
             showDetectoresDesrielo:  false,
+            codRamal: 'TODOS',
+            tipoPrecaucion: 'ADMINISTRATIVA',
+            typeView: 'PLANA',
+            timingRefresh: 5,
             isLoaded: true);
 }
 
@@ -47,6 +59,10 @@ class FilterMapLoading extends FilterMapState {
             showViasCedidas:  false,
             showViasLibres:  false,
             showDetectoresDesrielo:  false,
+            codRamal: 'TODOS',
+            tipoPrecaucion: 'ADMINISTRATIVA',
+            typeView: 'PLANA',
+            timingRefresh: 5,
             isLoaded: false);
 }
 
@@ -58,7 +74,11 @@ class FilterMapLoaded extends FilterMapState {
       required bool showTrenes,
       required bool showViasCedidas,
       required bool showViasLibres,
-      required bool showDetectoresDesrielo,})
+      required bool showDetectoresDesrielo,
+      required String codRamal,
+      required String tipoPrecaucion,
+      required int timingRefresh,
+      required String typeView})
       : super(
             showEstaciones: showEstaciones,
             showPrecauciones: showPrecauciones,
@@ -67,6 +87,10 @@ class FilterMapLoaded extends FilterMapState {
             showViasCedidas:  showViasCedidas,
             showViasLibres:  showViasLibres,
             showDetectoresDesrielo:  showDetectoresDesrielo,
+            codRamal: codRamal,
+            tipoPrecaucion: tipoPrecaucion,
+            typeView: typeView,
+            timingRefresh: timingRefresh,
             isLoaded: true);
 }
 
@@ -81,5 +105,9 @@ class FilterMapError extends FilterMapState {
             showViasCedidas:  false,
             showViasLibres:  false,
             showDetectoresDesrielo:  false,
+            codRamal: 'TODOS',
+            tipoPrecaucion: 'ADMINISTRATIVA',
+            typeView: 'PLANA',
+            timingRefresh: 5,
             isLoaded: false);
 }

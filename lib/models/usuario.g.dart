@@ -7,25 +7,30 @@ part of 'usuario.dart';
 // **************************************************************************
 
 _$_Usuario _$$_UsuarioFromJson(Map<String, dynamic> json) => _$_Usuario(
-      id: json['id'] as int? ?? 0,
-      email: json['email'] as String? ?? '',
-      usuario: json['usuario'] as String? ?? '',
-      ultimoLogin: json['ultimo_login'] == null
-          ? null
-          : DateTime.parse(json['ultimo_login'] as String),
-      estado: json['estado'] as String? ?? 'INACTIVO',
-      accesos: (json['accesos'] as List<dynamic>?)
-              ?.map((e) => UsuarioAcceso.fromJson(e as Map<String, dynamic>))
+      rut: json['rut'] as int? ?? 0,
+      password: json['password'] as String? ?? '',
+      correo: json['correo'] as String? ?? '',
+      cuenta: json['cuenta'] as String? ?? '',
+      nombre: json['nombre'] as String? ?? '',
+      estado: json['estado'] as String? ?? 'I',
+      filtros: (json['filtros'] as List<dynamic>?)
+              ?.map((e) => FiltroUsuario.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      roles: (json['roles'] as List<dynamic>?)
+              ?.map((e) => RolUsuario.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
     );
 
 Map<String, dynamic> _$$_UsuarioToJson(_$_Usuario instance) =>
     <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'usuario': instance.usuario,
-      'ultimo_login': instance.ultimoLogin?.toIso8601String(),
+      'rut': instance.rut,
+      'password': instance.password,
+      'correo': instance.correo,
+      'cuenta': instance.cuenta,
+      'nombre': instance.nombre,
       'estado': instance.estado,
-      'accesos': instance.accesos,
+      'filtros': instance.filtros,
+      'roles': instance.roles,
     };

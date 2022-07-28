@@ -28,21 +28,21 @@ class DrawerMenu extends StatelessWidget {
                   title: const Text(
                     "Administración de Usuarios",
                   ),
-                  onTap: () => context.router.pushNamed('/admin_user'),
+                  onTap: () => context.router.replaceNamed('/admin_user'),
                 ),
                 ListTile(
                   leading: const Icon(Icons.map),
                   title: const Text(
-                    "Mapa FCAB",
+                    "Mapa Operacional",
                   ),
-                  onTap: () => context.router.pushNamed('/map'),
+                  onTap: () => context.router.replaceNamed('/map'),
                 ),
                 ListTile(
                   leading: const Icon(Icons.settings),
                   title: const Text(
                     "Configuraciones",
                   ),
-                  onTap: () => context.router.pushNamed('/setting'),
+                  onTap: () => context.router.replaceNamed('/setting'),
                 ),
                 ListTile(
                   leading: const Icon(Icons.exit_to_app),
@@ -50,7 +50,7 @@ class DrawerMenu extends StatelessWidget {
                     "Salir",
                   ),
                   onTap: ()  {
-                    context.router.popUntilRoot();
+                    context.router.replaceNamed('/splash');
                   }
                 )
               ],

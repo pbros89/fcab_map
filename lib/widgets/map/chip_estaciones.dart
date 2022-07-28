@@ -11,6 +11,7 @@ import '../../bloc/global_setting/global_setting_bloc.dart';
 
 class ChipEstaciones extends StatelessWidget {
   final TextEditingController searchController = TextEditingController();
+  final Color colorPnl = Colors.blue;
 
   final List<EstacionPoint> estaciones;
   ChipEstaciones({Key? key, required this.estaciones}) : super(key: key);
@@ -22,7 +23,7 @@ class ChipEstaciones extends StatelessWidget {
         .caption
         ?.copyWith(fontWeight: FontWeight.bold);
     return Badge(
-        badgeColor: Colors.blue,
+        badgeColor: colorPnl,
         badgeContent: Text(estaciones.length.toString(), style: textTheme),
         child: ElevatedButton(
             child: Text(
@@ -40,7 +41,7 @@ class ChipEstaciones extends StatelessWidget {
         child: Center(
           child: SizedBox(
             width: 400,
-            height: 450,
+            height: 500,
             child: Card(
                 child: CustomScrollView(
               slivers: [
@@ -54,15 +55,15 @@ class ChipEstaciones extends StatelessWidget {
   }
 
   header() {
-    return const SliverAppBar(
-      floating: false,
+    return SliverAppBar(
+      floating: true,
       pinned: false,
       centerTitle: true,
-      elevation: 0,
+      elevation: 10,
       expandedHeight: 150.0,
-      backgroundColor: Colors.blue,
-      leading: SizedBox(),
-      flexibleSpace: FlexibleSpaceBar(
+      backgroundColor: colorPnl,
+      leading: const SizedBox(),
+      flexibleSpace: const FlexibleSpaceBar(
         title: Text(
           'Estaciones',
         ),
@@ -78,8 +79,9 @@ class ChipEstaciones extends StatelessWidget {
         pinned: true,
         leadingWidth: 0,
         elevation: 0,
-        backgroundColor: Colors.blue,
+        backgroundColor: colorPnl,
         leading: const SizedBox(),
+
         title: Container(
           padding: const EdgeInsets.symmetric(horizontal: 10),
           margin: const EdgeInsets.all(10),
@@ -114,6 +116,7 @@ class ChipEstaciones extends StatelessWidget {
         builder: (context, state) {
       if (state is ChipEstacionLoaded) {
         return SliverList(
+
           delegate:
               SliverChildBuilderDelegate((BuildContext context, int index) {
             final EstacionPoint estacion = state.estaciones[index];
@@ -121,10 +124,11 @@ class ChipEstaciones extends StatelessWidget {
             return ListTile(
               title: Text(estacion.codEstacion),
               trailing: Text(estacion.codRamal),
+              tileColor: Theme.of(context).cardColor,
               dense: true,
               onTap: () => goToMap(context, LatLng(estacion.lat, estacion.lon)),
             );
-          }, childCount: state.estaciones.length),
+          }, childCount: state.estaciones.length,),
         );
       }
 

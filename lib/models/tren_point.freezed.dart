@@ -12,62 +12,11 @@ part of 'tren_point.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 TrenPoint _$TrenPointFromJson(Map<String, dynamic> json) {
   return _TrenPoint.fromJson(json);
 }
-
-/// @nodoc
-class _$TrenPointTearOff {
-  const _$TrenPointTearOff();
-
-  _TrenPoint call(
-      {@JsonKey(name: 'nro_prog') required int nroProg,
-      @JsonKey(name: 'nro_tren') required int nroTren,
-      @JsonKey(name: 'hr_salida') required String hrSalida,
-      @JsonKey(name: 'hr_llegada') required String hrLlegada,
-      @JsonKey(name: 'nombre_tren') required int nombreTren,
-      @JsonKey(name: 'sentido') required String sentido,
-      @JsonKey(name: 'color') required String color,
-      @JsonKey(name: 'evento_actual') required String eventoActual,
-      @JsonKey(name: 'fecha_pos') required String fechaPos,
-      @JsonKey(name: 'fecha_tren') required String fechaTren,
-      @JsonKey(name: 'km') required double km,
-      @JsonKey(name: 'velocidad') required int velocidad,
-      @JsonKey(name: 'cod_ramal') required String codRamal,
-      @JsonKey(name: 'utm_x') required double utmX,
-      @JsonKey(name: 'utm_y') required double utmY,
-      required double lat,
-      required double lon}) {
-    return _TrenPoint(
-      nroProg: nroProg,
-      nroTren: nroTren,
-      hrSalida: hrSalida,
-      hrLlegada: hrLlegada,
-      nombreTren: nombreTren,
-      sentido: sentido,
-      color: color,
-      eventoActual: eventoActual,
-      fechaPos: fechaPos,
-      fechaTren: fechaTren,
-      km: km,
-      velocidad: velocidad,
-      codRamal: codRamal,
-      utmX: utmX,
-      utmY: utmY,
-      lat: lat,
-      lon: lon,
-    );
-  }
-
-  TrenPoint fromJson(Map<String, Object?> json) {
-    return TrenPoint.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $TrenPoint = _$TrenPointTearOff();
 
 /// @nodoc
 mixin _$TrenPoint {
@@ -236,10 +185,10 @@ class _$TrenPointCopyWithImpl<$Res> implements $TrenPointCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$TrenPointCopyWith<$Res> implements $TrenPointCopyWith<$Res> {
-  factory _$TrenPointCopyWith(
-          _TrenPoint value, $Res Function(_TrenPoint) then) =
-      __$TrenPointCopyWithImpl<$Res>;
+abstract class _$$_TrenPointCopyWith<$Res> implements $TrenPointCopyWith<$Res> {
+  factory _$$_TrenPointCopyWith(
+          _$_TrenPoint value, $Res Function(_$_TrenPoint) then) =
+      __$$_TrenPointCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'nro_prog') int nroProg,
@@ -262,13 +211,14 @@ abstract class _$TrenPointCopyWith<$Res> implements $TrenPointCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TrenPointCopyWithImpl<$Res> extends _$TrenPointCopyWithImpl<$Res>
-    implements _$TrenPointCopyWith<$Res> {
-  __$TrenPointCopyWithImpl(_TrenPoint _value, $Res Function(_TrenPoint) _then)
-      : super(_value, (v) => _then(v as _TrenPoint));
+class __$$_TrenPointCopyWithImpl<$Res> extends _$TrenPointCopyWithImpl<$Res>
+    implements _$$_TrenPointCopyWith<$Res> {
+  __$$_TrenPointCopyWithImpl(
+      _$_TrenPoint _value, $Res Function(_$_TrenPoint) _then)
+      : super(_value, (v) => _then(v as _$_TrenPoint));
 
   @override
-  _TrenPoint get _value => super._value as _TrenPoint;
+  _$_TrenPoint get _value => super._value as _$_TrenPoint;
 
   @override
   $Res call({
@@ -290,7 +240,7 @@ class __$TrenPointCopyWithImpl<$Res> extends _$TrenPointCopyWithImpl<$Res>
     Object? lat = freezed,
     Object? lon = freezed,
   }) {
-    return _then(_TrenPoint(
+    return _then(_$_TrenPoint(
       nroProg: nroProg == freezed
           ? _value.nroProg
           : nroProg // ignore: cast_nullable_to_non_nullable
@@ -447,7 +397,7 @@ class _$_TrenPoint implements _TrenPoint {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TrenPoint &&
+            other is _$_TrenPoint &&
             const DeepCollectionEquality().equals(other.nroProg, nroProg) &&
             const DeepCollectionEquality().equals(other.nroTren, nroTren) &&
             const DeepCollectionEquality().equals(other.hrSalida, hrSalida) &&
@@ -469,6 +419,7 @@ class _$_TrenPoint implements _TrenPoint {
             const DeepCollectionEquality().equals(other.lon, lon));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -492,8 +443,8 @@ class _$_TrenPoint implements _TrenPoint {
 
   @JsonKey(ignore: true)
   @override
-  _$TrenPointCopyWith<_TrenPoint> get copyWith =>
-      __$TrenPointCopyWithImpl<_TrenPoint>(this, _$identity);
+  _$$_TrenPointCopyWith<_$_TrenPoint> get copyWith =>
+      __$$_TrenPointCopyWithImpl<_$_TrenPoint>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -503,78 +454,78 @@ class _$_TrenPoint implements _TrenPoint {
 
 abstract class _TrenPoint implements TrenPoint {
   factory _TrenPoint(
-      {@JsonKey(name: 'nro_prog') required int nroProg,
-      @JsonKey(name: 'nro_tren') required int nroTren,
-      @JsonKey(name: 'hr_salida') required String hrSalida,
-      @JsonKey(name: 'hr_llegada') required String hrLlegada,
-      @JsonKey(name: 'nombre_tren') required int nombreTren,
-      @JsonKey(name: 'sentido') required String sentido,
-      @JsonKey(name: 'color') required String color,
-      @JsonKey(name: 'evento_actual') required String eventoActual,
-      @JsonKey(name: 'fecha_pos') required String fechaPos,
-      @JsonKey(name: 'fecha_tren') required String fechaTren,
-      @JsonKey(name: 'km') required double km,
-      @JsonKey(name: 'velocidad') required int velocidad,
-      @JsonKey(name: 'cod_ramal') required String codRamal,
-      @JsonKey(name: 'utm_x') required double utmX,
-      @JsonKey(name: 'utm_y') required double utmY,
-      required double lat,
-      required double lon}) = _$_TrenPoint;
+      {@JsonKey(name: 'nro_prog') required final int nroProg,
+      @JsonKey(name: 'nro_tren') required final int nroTren,
+      @JsonKey(name: 'hr_salida') required final String hrSalida,
+      @JsonKey(name: 'hr_llegada') required final String hrLlegada,
+      @JsonKey(name: 'nombre_tren') required final int nombreTren,
+      @JsonKey(name: 'sentido') required final String sentido,
+      @JsonKey(name: 'color') required final String color,
+      @JsonKey(name: 'evento_actual') required final String eventoActual,
+      @JsonKey(name: 'fecha_pos') required final String fechaPos,
+      @JsonKey(name: 'fecha_tren') required final String fechaTren,
+      @JsonKey(name: 'km') required final double km,
+      @JsonKey(name: 'velocidad') required final int velocidad,
+      @JsonKey(name: 'cod_ramal') required final String codRamal,
+      @JsonKey(name: 'utm_x') required final double utmX,
+      @JsonKey(name: 'utm_y') required final double utmY,
+      required final double lat,
+      required final double lon}) = _$_TrenPoint;
 
   factory _TrenPoint.fromJson(Map<String, dynamic> json) =
       _$_TrenPoint.fromJson;
 
   @override
   @JsonKey(name: 'nro_prog')
-  int get nroProg;
+  int get nroProg => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'nro_tren')
-  int get nroTren;
+  int get nroTren => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'hr_salida')
-  String get hrSalida;
+  String get hrSalida => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'hr_llegada')
-  String get hrLlegada;
+  String get hrLlegada => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'nombre_tren')
-  int get nombreTren;
+  int get nombreTren => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'sentido')
-  String get sentido;
+  String get sentido => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'color')
-  String get color;
+  String get color => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'evento_actual')
-  String get eventoActual;
+  String get eventoActual => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fecha_pos')
-  String get fechaPos;
+  String get fechaPos => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'fecha_tren')
-  String get fechaTren;
+  String get fechaTren => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km')
-  double get km;
+  double get km => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'velocidad')
-  int get velocidad;
+  int get velocidad => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cod_ramal')
-  String get codRamal;
+  String get codRamal => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'utm_x')
-  double get utmX;
+  double get utmX => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'utm_y')
-  double get utmY;
+  double get utmY => throw _privateConstructorUsedError;
   @override
-  double get lat;
+  double get lat => throw _privateConstructorUsedError;
   @override
-  double get lon;
+  double get lon => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TrenPointCopyWith<_TrenPoint> get copyWith =>
+  _$$_TrenPointCopyWith<_$_TrenPoint> get copyWith =>
       throw _privateConstructorUsedError;
 }

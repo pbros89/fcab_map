@@ -20,3 +20,17 @@ class MinusScaleTextEvent extends GlobalSettingEvent {
 class PlusScaleTextEvent extends GlobalSettingEvent {
   const PlusScaleTextEvent();
 }
+
+
+class SetUserEvent extends GlobalSettingEvent {
+  final Usuario usuario;
+
+  const SetUserEvent(this.usuario);
+
+}
+
+
+class SetScaleTextEvent extends GlobalSettingEvent {
+  final double scale;
+  const SetScaleTextEvent(this.scale);
+}

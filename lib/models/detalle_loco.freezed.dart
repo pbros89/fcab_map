@@ -12,40 +12,11 @@ part of 'detalle_loco.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 DetalleLoco _$DetalleLocoFromJson(Map<String, dynamic> json) {
   return _DetalleLoco.fromJson(json);
 }
-
-/// @nodoc
-class _$DetalleLocoTearOff {
-  const _$DetalleLocoTearOff();
-
-  _DetalleLoco call(
-      {@JsonKey(name: 'estacion', defaultValue: '') required String estacion,
-      @JsonKey(name: 'linea', defaultValue: '') required String linea,
-      @JsonKey(name: 'loco', defaultValue: 0) required int loco,
-      @JsonKey(name: 'color', defaultValue: '') required String color,
-      @JsonKey(name: 'obs_marca', defaultValue: '') required String obsMarca,
-      @JsonKey(name: 'mar_mante', defaultValue: '') required String marMante}) {
-    return _DetalleLoco(
-      estacion: estacion,
-      linea: linea,
-      loco: loco,
-      color: color,
-      obsMarca: obsMarca,
-      marMante: marMante,
-    );
-  }
-
-  DetalleLoco fromJson(Map<String, Object?> json) {
-    return DetalleLoco.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $DetalleLoco = _$DetalleLocoTearOff();
 
 /// @nodoc
 mixin _$DetalleLoco {
@@ -129,11 +100,11 @@ class _$DetalleLocoCopyWithImpl<$Res> implements $DetalleLocoCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$DetalleLocoCopyWith<$Res>
+abstract class _$$_DetalleLocoCopyWith<$Res>
     implements $DetalleLocoCopyWith<$Res> {
-  factory _$DetalleLocoCopyWith(
-          _DetalleLoco value, $Res Function(_DetalleLoco) then) =
-      __$DetalleLocoCopyWithImpl<$Res>;
+  factory _$$_DetalleLocoCopyWith(
+          _$_DetalleLoco value, $Res Function(_$_DetalleLoco) then) =
+      __$$_DetalleLocoCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'estacion', defaultValue: '') String estacion,
@@ -145,14 +116,14 @@ abstract class _$DetalleLocoCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DetalleLocoCopyWithImpl<$Res> extends _$DetalleLocoCopyWithImpl<$Res>
-    implements _$DetalleLocoCopyWith<$Res> {
-  __$DetalleLocoCopyWithImpl(
-      _DetalleLoco _value, $Res Function(_DetalleLoco) _then)
-      : super(_value, (v) => _then(v as _DetalleLoco));
+class __$$_DetalleLocoCopyWithImpl<$Res> extends _$DetalleLocoCopyWithImpl<$Res>
+    implements _$$_DetalleLocoCopyWith<$Res> {
+  __$$_DetalleLocoCopyWithImpl(
+      _$_DetalleLoco _value, $Res Function(_$_DetalleLoco) _then)
+      : super(_value, (v) => _then(v as _$_DetalleLoco));
 
   @override
-  _DetalleLoco get _value => super._value as _DetalleLoco;
+  _$_DetalleLoco get _value => super._value as _$_DetalleLoco;
 
   @override
   $Res call({
@@ -163,7 +134,7 @@ class __$DetalleLocoCopyWithImpl<$Res> extends _$DetalleLocoCopyWithImpl<$Res>
     Object? obsMarca = freezed,
     Object? marMante = freezed,
   }) {
-    return _then(_DetalleLoco(
+    return _then(_$_DetalleLoco(
       estacion: estacion == freezed
           ? _value.estacion
           : estacion // ignore: cast_nullable_to_non_nullable
@@ -234,7 +205,7 @@ class _$_DetalleLoco implements _DetalleLoco {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DetalleLoco &&
+            other is _$_DetalleLoco &&
             const DeepCollectionEquality().equals(other.estacion, estacion) &&
             const DeepCollectionEquality().equals(other.linea, linea) &&
             const DeepCollectionEquality().equals(other.loco, loco) &&
@@ -243,6 +214,7 @@ class _$_DetalleLoco implements _DetalleLoco {
             const DeepCollectionEquality().equals(other.marMante, marMante));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -255,8 +227,8 @@ class _$_DetalleLoco implements _DetalleLoco {
 
   @JsonKey(ignore: true)
   @override
-  _$DetalleLocoCopyWith<_DetalleLoco> get copyWith =>
-      __$DetalleLocoCopyWithImpl<_DetalleLoco>(this, _$identity);
+  _$$_DetalleLocoCopyWith<_$_DetalleLoco> get copyWith =>
+      __$$_DetalleLocoCopyWithImpl<_$_DetalleLoco>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -267,41 +239,41 @@ class _$_DetalleLoco implements _DetalleLoco {
 abstract class _DetalleLoco implements DetalleLoco {
   factory _DetalleLoco(
       {@JsonKey(name: 'estacion', defaultValue: '')
-          required String estacion,
+          required final String estacion,
       @JsonKey(name: 'linea', defaultValue: '')
-          required String linea,
+          required final String linea,
       @JsonKey(name: 'loco', defaultValue: 0)
-          required int loco,
+          required final int loco,
       @JsonKey(name: 'color', defaultValue: '')
-          required String color,
+          required final String color,
       @JsonKey(name: 'obs_marca', defaultValue: '')
-          required String obsMarca,
+          required final String obsMarca,
       @JsonKey(name: 'mar_mante', defaultValue: '')
-          required String marMante}) = _$_DetalleLoco;
+          required final String marMante}) = _$_DetalleLoco;
 
   factory _DetalleLoco.fromJson(Map<String, dynamic> json) =
       _$_DetalleLoco.fromJson;
 
   @override
   @JsonKey(name: 'estacion', defaultValue: '')
-  String get estacion;
+  String get estacion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'linea', defaultValue: '')
-  String get linea;
+  String get linea => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'loco', defaultValue: 0)
-  int get loco;
+  int get loco => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'color', defaultValue: '')
-  String get color;
+  String get color => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'obs_marca', defaultValue: '')
-  String get obsMarca;
+  String get obsMarca => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'mar_mante', defaultValue: '')
-  String get marMante;
+  String get marMante => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$DetalleLocoCopyWith<_DetalleLoco> get copyWith =>
+  _$$_DetalleLocoCopyWith<_$_DetalleLoco> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -25,10 +25,10 @@ class ChangePasswordBloc extends Bloc<ChangePasswordEvent, ChangePasswordState> 
     try {
       await Future.delayed(Duration(milliseconds: 500), () {});
 
-      Usuario usuario = Usuario(id: 1, email: 'pedro.bros@fcab.cl', usuario: 'admin', estado: 'ACTIVO');
+      //Usuario usuario = Usuario(id: 1, email: 'pedro.bros@fcab.cl', usuario: 'admin', estado: 'ACTIVO', token: '');
 
       if(event.username == 'admin') {
-        emit.call(ChangePasswordSuccess(usuario));
+        //emit.call(ChangePasswordSuccess(usuario));
       }else{
          emit.call(const ChangePasswordError('Usuario incorrecto'));
       }

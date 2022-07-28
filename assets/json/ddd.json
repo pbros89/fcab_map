@@ -1,0 +1,152 @@
+{"items":
+[
+{"id_detector":78,"km":0.2,"ramal":"RESCONDI","descripcion":"ESCONDIDA","canal":3,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4084}
+,{"id_detector":72,"km":2.5,"ramal":"RABRA","descripcion":"RAMAL EL  ABRA","canal":5,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4068}
+,{"id_detector":79,"km":0.2,"ramal":"RCMZ","descripcion":"ZALDIVAR","canal":3,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4083}
+,{"id_detector":80,"km":0.2,"ramal":"RGABY","descripcion":"GABY 0+150","canal":3,"habilitado":"SI","zona_ded":"CALAMA","id_radio":4082}
+,{"id_detector":93,"km":52.5,"ramal":"RMEJIL","descripcion":"ACCESO ESTACIÓN NIVEL","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4090}
+,{"id_detector":81,"km":1,"ramal":"RMSG","descripcion":"KM 1 RSG","canal":3,"habilitado":"SI","zona_ded":"CALAMA","id_radio":4086}
+,{"id_detector":82,"km":0.7,"ramal":"RSPENCE","descripcion":"KM 0 + 700 SPENCE","canal":3,"habilitado":"SI","zona_ded":"CALAMA","id_radio":4087}
+,{"id_detector":84,"km":13.6,"ramal":"RMEJIL","descripcion":"KM 13 600 RMEJI","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4085}
+,{"id_detector":73,"km":4.7,"ramal":"RALTONOR","descripcion":"ALTONORTE","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4069}
+,{"id_detector":74,"km":48,"ramal":"PPAL","descripcion":"ESTACION URIBE","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4072}
+,{"id_detector":85,"km":208.5,"ramal":"PPAL","descripcion":"KM 208 +500","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4074}
+,{"id_detector":86,"km":269.1,"ramal":"PPAL","descripcion":"KM 269  100","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4075}
+,{"id_detector":87,"km":277,"ramal":"PPAL","descripcion":"KM 277","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4076}
+,{"id_detector":88,"km":319.6,"ramal":"PPAL","descripcion":"KM 319   600","canal":5,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4077}
+,{"id_detector":89,"km":377.1,"ramal":"PPAL","descripcion":"KM 377+100","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4078}
+,{"id_detector":90,"km":397.2,"ramal":"PPAL","descripcion":"KM 397 + 200","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4079}
+,{"id_detector":91,"km":430.3,"ramal":"PPAL","descripcion":"KM 430 + 300","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4080}
+,{"id_detector":92,"km":16.5,"ramal":"RSOCOMPA","descripcion":"PROXIMO ESTACION PASCUA","canal":3,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4088}
+,{"id_detector":94,"km":49.1,"ramal":"RMEJIL","descripcion":"ANTES DE NIVEL","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4089}
+,{"id_detector":95,"km":56,"ramal":"RMEJIL","descripcion":"CERCA ESTACION LOSVIENTOS","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4091}
+,{"id_detector":5,"km":10,"ramal":"RPAMPA","descripcion":"6,5 - DESESPERADO","canal":8,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4023}
+,{"id_detector":6,"km":19.1,"ramal":"RPAMPA","descripcion":"6,5 - DESESPERADO","canal":8,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4024}
+,{"id_detector":7,"km":31.2,"ramal":"RPAMPA","descripcion":"SUBIENDO A CUMBRE","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4025}
+,{"id_detector":8,"km":36.5,"ramal":"RPAMPA","descripcion":"SECTOR CRUCE CAMINO RURAL","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4026}
+,{"id_detector":9,"km":46.5,"ramal":"RMEJIL","descripcion":"PAMPA","canal":8,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4020}
+,{"id_detector":10,"km":10,"ramal":"PPAL","descripcion":"8,4 - LA NEGRA","canal":1,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4001}
+,{"id_detector":26,"km":176.5,"ramal":"PPAL","descripcion":"SIERRA GORDA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4011}
+,{"id_detector":39,"km":23,"ramal":"RPAMPA","descripcion":"SECTOR CUMBRE, SUBIENDO","canal":8,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4036}
+,{"id_detector":43,"km":380,"ramal":"PPAL","descripcion":"CERCA DE OLLAGUE","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4041}
+,{"id_detector":17,"km":150,"ramal":"PPAL","descripcion":"CHELA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4008}
+,{"id_detector":4,"km":40,"ramal":"RPAMPA","descripcion":"DED PRUEBAS 8","canal":5,"habilitado":"NO","zona":"6","id_radio":4980}
+,{"id_detector":1,"km":92,"ramal":"PPAL","descripcion":"BAQUEDANO","canal":9,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4003}
+,{"id_detector":2,"km":46.6,"ramal":"RPAMPA","descripcion":"CRUCE A PRAT","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4027}
+,{"id_detector":12,"km":19,"ramal":"RAVICTO","descripcion":"O'HIGGINS - LATA","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4029}
+,{"id_detector":13,"km":29.5,"ramal":"RAVICTO","descripcion":"LATA","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4030}
+,{"id_detector":14,"km":76,"ramal":"RAVICTO","descripcion":"ANTES SUBIENDO A CERRO NEGRO","canal":1,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4031}
+,{"id_detector":15,"km":87.5,"ramal":"RAVICTO","descripcion":"DESPUES CERRO NEGRO, SUBIENDO","canal":1,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4032}
+,{"id_detector":16,"km":92.9,"ramal":"RAVICTO","descripcion":"ANTES DE DESVIO KM 97","canal":1,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4033}
+,{"id_detector":20,"km":41.1,"ramal":"RMEJIL","descripcion":"PAMPA-CRUCE A NIVEL","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4021}
+,{"id_detector":21,"km":1,"ramal":"RINTERAC","descripcion":"EMPALME","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4022}
+,{"id_detector":22,"km":75,"ramal":"PPAL","descripcion":"CUEVITA - LA TORRE","canal":9,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4002}
+,{"id_detector":23,"km":110.7,"ramal":"PPAL","descripcion":"CERRILLOS","canal":9,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4005}
+,{"id_detector":24,"km":125,"ramal":"PPAL","descripcion":"CERRILLOS - CRUCE OASIS","canal":9,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4006}
+,{"id_detector":25,"km":127.5,"ramal":"PPAL","descripcion":"CRUCE OASIS - SALINAS","canal":9,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4007}
+,{"id_detector":27,"km":191,"ramal":"PPAL","descripcion":"COCHRANE","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4012}
+,{"id_detector":28,"km":199.2,"ramal":"PPAL","descripcion":"C. BAYOS Y KM. 195","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4013}
+,{"id_detector":29,"km":233.5,"ramal":"PPAL","descripcion":"CALAMA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4014}
+,{"id_detector":30,"km":236.5,"ramal":"PPAL","descripcion":"PARK HOTEL - PUENTE LOA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4015}
+,{"id_detector":31,"km":238,"ramal":"PPAL","descripcion":"PUENTE LOA - ESTACION CALAMA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4016}
+,{"id_detector":32,"km":244,"ramal":"PPAL","descripcion":"CALAMA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4017}
+,{"id_detector":33,"km":250,"ramal":"PPAL","descripcion":"SOBRE CALAMA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4018}
+,{"id_detector":34,"km":309,"ramal":"PPAL","descripcion":"ENTRE CONCHI Y SAN PEDRO","canal":5,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4019}
+,{"id_detector":41,"km":41.5,"ramal":"RPAMPA","descripcion":"CRUCE A PRAT","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4038}
+,{"id_detector":44,"km":222,"ramal":"PPAL","descripcion":"C. BAYOS Y KM. 195","habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4040}
+,{"id_detector":45,"km":294,"ramal":"PPAL","descripcion":"CONCHI - SAN PEDRO","canal":5,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4042}
+,{"id_detector":48,"km":43,"ramal":"RAVICTO","descripcion":"KM 43","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4045}
+,{"id_detector":56,"km":49.2,"ramal":"RSOCOMPA","descripcion":"KM 49 200","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4054}
+,{"id_detector":3,"km":100.5,"ramal":"PPAL","descripcion":"BAQUEDANO","canal":9,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4004}
+,{"id_detector":18,"km":162,"ramal":"PPAL","descripcion":"CHELA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4009}
+,{"id_detector":19,"km":169.45,"ramal":"PPAL","descripcion":"ANTES DE SIERRA GORDA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4010}
+,{"id_detector":40,"km":34.5,"ramal":"RPAMPA","descripcion":"SECTOR CRUCE CAMINO RURAL","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4037}
+,{"id_detector":38,"km":13.5,"ramal":"RPAMPA","descripcion":"En Los Morros","canal":8,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4035}
+,{"id_detector":46,"km":306,"ramal":"PPAL","descripcion":"CONCHI - SAN PEDRO","habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4043}
+,{"id_detector":47,"km":240,"ramal":"PPAL","descripcion":"SALIENDO ESTACION CALAMA","habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4044}
+,{"id_detector":51,"km":9.5,"ramal":"RSOCOMPA","descripcion":"KM 9 500","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4048}
+,{"id_detector":52,"km":20,"ramal":"RSOCOMPA","descripcion":"KM 21","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4049}
+,{"id_detector":53,"km":29.5,"ramal":"RSOCOMPA","descripcion":"KM 29 500","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4050}
+,{"id_detector":54,"km":36,"ramal":"RSOCOMPA","descripcion":"KM 36","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4051}
+,{"id_detector":55,"km":43.2,"ramal":"RSOCOMPA","descripcion":"KM 43 200","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4052}
+,{"id_detector":58,"km":334,"ramal":"PPAL","descripcion":"KM 334","habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4057}
+,{"id_detector":59,"km":349,"ramal":"PPAL","descripcion":"KM 349","habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4058}
+,{"id_detector":60,"km":402,"ramal":"PPAL","descripcion":"KM 402","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4059}
+,{"id_detector":61,"km":414.3,"ramal":"PPAL","descripcion":"KM 414 + 300","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4060}
+,{"id_detector":62,"km":436,"ramal":"PPAL","descripcion":"KM 436","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4061}
+,{"id_detector":63,"km":32.2,"ramal":"RMEJIL","descripcion":"KM 32 200 (detras CMoreno)","canal":8,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4063}
+,{"id_detector":64,"km":63,"ramal":"RMEJIL","descripcion":"KM 63","canal":8,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4064}
+,{"id_detector":11,"km":10.5,"ramal":"RAVICTO","descripcion":"OHIGGINS - LATA","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4028}
+,{"id_detector":42,"km":137.5,"ramal":"PPAL","descripcion":"PASADO OASIS","habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4039}
+,{"id_detector":49,"km":59.5,"ramal":"RAVICTO","descripcion":"KM 59 500","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4046}
+,{"id_detector":50,"km":110.5,"ramal":"RAVICTO","descripcion":"KM 110 500","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4047}
+,{"id_detector":57,"km":45,"ramal":"RSOCOMPA","descripcion":"KM 45.000","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4053}
+,{"id_detector":65,"km":32.6,"ramal":"PPAL","descripcion":"KM 32 600","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4055}
+,{"id_detector":66,"km":33.5,"ramal":"PPAL","descripcion":"KM 33 500","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4056}
+,{"id_detector":67,"km":26.2,"ramal":"RMEJIL","descripcion":"KM 26 200 (cerca CMoreno)","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4062}
+,{"id_detector":68,"km":3.8,"ramal":"RPAMPA","descripcion":"KM 3 800","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4065}
+,{"id_detector":69,"km":7.7,"ramal":"RPAMPA","descripcion":"KM 7  700","canal":8,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4066}
+,{"id_detector":70,"km":27.1,"ramal":"RPAMPA","descripcion":"KM 27 100 (EN SGALVAN)","canal":8,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4067}
+,{"id_detector":75,"km":70,"ramal":"PPAL","descripcion":"ESTACION LATORRE","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4073}
+,{"id_detector":76,"km":7.3,"ramal":"PPAL","descripcion":"COVIEFI","canal":1,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4070}
+,{"id_detector":77,"km":25,"ramal":"PPAL","descripcion":"KM 25","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4071}
+,{"id_detector":83,"km":6.1,"ramal":"RINTERAC","descripcion":"KM 6 + 100 INTER","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4081}
+,{"id_detector":96,"km":62,"ramal":"RAVICTO","descripcion":"PALESTINA","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4092}
+,{"id_detector":97,"km":64,"ramal":"RAVICTO","descripcion":"PALESTINA","habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4093}
+,{"id_detector":100,"km":135,"ramal":"PPAL","descripcion":"DONA ELENA","canal":3,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":1678}
+,{"id_detector":122,"km":18.25,"ramal":"RMEJIL","descripcion":"KM 18.25","habilitado":"SI","id_radio":4130}
+,{"id_detector":152,"km":71,"ramal":"PPAL","descripcion":"ESTACION LATORRE","habilitado":"SI","id_radio":4160}
+,{"id_detector":106,"km":301.8,"ramal":"PPAL","descripcion":"PPAL KM 301+800","canal":9,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4106}
+,{"id_detector":107,"km":316.9,"ramal":"PPAL","descripcion":"PPAL KM 316+900","canal":9,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4107}
+,{"id_detector":108,"km":318.8,"ramal":"PPAL","descripcion":"PPAL KM 319+300","canal":5,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4108}
+,{"id_detector":109,"km":344.8,"ramal":"PPAL","descripcion":"PPAL KM 344+800","canal":5,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4109}
+,{"id_detector":110,"km":365.1,"ramal":"PPAL","descripcion":"PPAL KM 365+100","canal":5,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4110}
+,{"id_detector":153,"km":71,"ramal":"PPAL","descripcion":"ESTACION LA TORRE KM 71 210","habilitado":"SI","id_radio":4161}
+,{"id_detector":101,"km":0.8,"ramal":"RPAMPA","descripcion":"PAMPA KM 0+800","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4101}
+,{"id_detector":102,"km":12.1,"ramal":"RPAMPA","descripcion":"PAMPA KM 12+100","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4102}
+,{"id_detector":103,"km":29.2,"ramal":"RPAMPA","descripcion":"PAMPA KM 29+200","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4103}
+,{"id_detector":104,"km":44.05,"ramal":"RPAMPA","descripcion":"PAMPA KM 44+050","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4104}
+,{"id_detector":105,"km":98.2,"ramal":"PPAL","descripcion":"PPAL KM 98+200","canal":5,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4105}
+,{"id_detector":111,"km":367.2,"ramal":"PPAL","descripcion":"PPAL KM 367 600","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4111}
+,{"id_detector":112,"km":392.4,"ramal":"PPAL","descripcion":"PPAL KM 392+400","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4112}
+,{"id_detector":113,"km":407.6,"ramal":"PPAL","descripcion":"PPAL KM 407+600","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4113}
+,{"id_detector":114,"km":409.6,"ramal":"PPAL","descripcion":"PPAL KM 409+600","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4114}
+,{"id_detector":115,"km":415.6,"ramal":"PPAL","descripcion":"PPAL KM 415+600","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4115}
+,{"id_detector":116,"km":418,"ramal":"PPAL","descripcion":"PPAL KM 418 000","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4116}
+,{"id_detector":117,"km":426,"ramal":"PPAL","descripcion":"PPAL KM 426+000","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4117}
+,{"id_detector":118,"km":440.5,"ramal":"PPAL","descripcion":"PPAL KM 440+500","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4118}
+,{"id_detector":123,"km":20,"ramal":"RMEJIL","descripcion":"KM 19,90","habilitado":"SI","id_radio":4131}
+,{"id_detector":124,"km":39,"ramal":"RMEJIL","descripcion":"KM 38,70","habilitado":"SI","id_radio":4132}
+,{"id_detector":125,"km":45,"ramal":"RMEJIL","descripcion":"KM 45,10","habilitado":"SI","id_radio":4133}
+,{"id_detector":126,"km":59,"ramal":"RMEJIL","descripcion":"KM 58,90","habilitado":"SI","id_radio":4134}
+,{"id_detector":127,"km":5,"ramal":"RPAMPA","descripcion":"KM 5","habilitado":"SI","id_radio":4135}
+,{"id_detector":128,"km":39,"ramal":"PPAL","descripcion":"KM 38,50","habilitado":"SI","id_radio":4136}
+,{"id_detector":98,"km":116.8,"ramal":"PPAL","descripcion":"KM 116+800 - S.ALADEA, LADO PRAT","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4094}
+,{"id_detector":99,"km":119.4,"ramal":"PPAL","descripcion":"KM 119+400 - S.ALADEA, LADO CALAMA","canal":5,"habilitado":"SI","zona_ded":"ANTOFAGASTA","id_radio":4095}
+,{"id_detector":119,"km":102.15,"ramal":"PPAL","descripcion":"PPAL KM 102+150","canal":1,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4119}
+,{"id_detector":120,"km":104.65,"ramal":"PPAL","descripcion":"PPAL KM 104 650","canal":1,"habilitado":"SI","zona":"6","zona_ded":"ANTOFAGASTA","id_radio":4120}
+,{"id_detector":121,"km":152.68,"ramal":"PPAL","descripcion":"PPAL KM 152+680","canal":1,"habilitado":"SI","zona":"3","zona_ded":"CALAMA","id_radio":4121}
+,{"id_detector":129,"km":160,"ramal":"PPAL","descripcion":"KM 160.000","habilitado":"SI","id_radio":4144}
+,{"id_detector":130,"km":158,"ramal":"PPAL","descripcion":"KM 157.500","habilitado":"SI","id_radio":4143}
+,{"id_detector":131,"km":145,"ramal":"PPAL","descripcion":"KM 145 400","habilitado":"SI","id_radio":4142}
+,{"id_detector":132,"km":143,"ramal":"PPAL","descripcion":"KM 142 800","habilitado":"SI","id_radio":4141}
+,{"id_detector":133,"km":130,"ramal":"PPAL","descripcion":"KM 129 800","habilitado":"SI","id_radio":4140}
+,{"id_detector":134,"km":108,"ramal":"PPAL","descripcion":"KM 108 200","habilitado":"SI","id_radio":4139}
+,{"id_detector":135,"km":61,"ramal":"PPAL","descripcion":"KM 60 500","habilitado":"SI","id_radio":4138}
+,{"id_detector":136,"km":57,"ramal":"PPAL","descripcion":"KM 56 800","habilitado":"SI","id_radio":4137}
+,{"id_detector":137,"km":164,"ramal":"PPAL","descripcion":"KM 164","habilitado":"SI","id_radio":4145}
+,{"id_detector":138,"km":167,"ramal":"PPAL","descripcion":"KM 166 800","habilitado":"SI","id_radio":4146}
+,{"id_detector":139,"km":172,"ramal":"PPAL","descripcion":"KM 172 300","habilitado":"SI","id_radio":4147}
+,{"id_detector":140,"km":174,"ramal":"PPAL","descripcion":"KM 174 300","habilitado":"SI","id_radio":4148}
+,{"id_detector":141,"km":181,"ramal":"PPAL","descripcion":"KM 180 800","habilitado":"SI","id_radio":4149}
+,{"id_detector":142,"km":195,"ramal":"PPAL","descripcion":"KM 194 600","habilitado":"SI","id_radio":4150}
+,{"id_detector":143,"km":197,"ramal":"PPAL","descripcion":"KM 197 400","habilitado":"SI","id_radio":4151}
+,{"id_detector":144,"km":205,"ramal":"PPAL","descripcion":"KM 204 500","habilitado":"SI","id_radio":4152}
+,{"id_detector":145,"km":230,"ramal":"PPAL","descripcion":"KM 229 800","habilitado":"SI","id_radio":4153}
+,{"id_detector":146,"km":254,"ramal":"PPAL","descripcion":"KM 254 300","habilitado":"SI","id_radio":4154}
+,{"id_detector":147,"km":258,"ramal":"PPAL","descripcion":"KM 258 100","habilitado":"SI","id_radio":4155}
+,{"id_detector":148,"km":272,"ramal":"PPAL","descripcion":"KM 272 000","habilitado":"SI","id_radio":4156}
+,{"id_detector":149,"km":285,"ramal":"PPAL","descripcion":"KM 285 400","habilitado":"SI","id_radio":4157}
+,{"id_detector":150,"km":288,"ramal":"PPAL","descripcion":"KM 288 050","habilitado":"SI","id_radio":4158}
+,{"id_detector":151,"km":299,"ramal":"PPAL","descripcion":"KM 299","habilitado":"SI","id_radio":4159}
+]}

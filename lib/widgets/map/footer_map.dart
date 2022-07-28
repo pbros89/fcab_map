@@ -4,6 +4,8 @@ import 'package:fcab_map/bloc/global_setting/global_setting_bloc.dart';
 import 'package:fcab_map/bloc/map/map_bloc.dart';
 import 'package:fcab_map/utils/dialog_utils.dart';
 import 'package:fcab_map/widgets/glass_container.dart';
+import 'package:fcab_map/widgets/map/chip_detector_desrielo.dart';
+import 'package:fcab_map/widgets/map/chip_precauciones.dart';
 import 'package:fcab_map/widgets/map/chip_terminal.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -74,20 +76,22 @@ class FooterMap extends StatelessWidget {
 
     if (filterMapState.showViasLibres) {
       chips.add(ChipViaLibre(vias: mapState.viasLibres,));
-      chips.add(SizedBox(
+      chips.add(const SizedBox(
         width: 10,
       ));
     }
 
     if (filterMapState.showPrecauciones) {
-      chips.add(
-          chipFilter(context, "Precauciones", "10", colorBadge: Colors.green));
-      chips.add(const SizedBox(width: 10));
+      chips.add(ChipPrecauciones(precauciones: mapState.precauciones,));
+      chips.add(const SizedBox(
+        width: 10,
+      ));
     }
-    if (filterMapState.showPrecauciones) {
-      chips
-          .add(chipFilter(context, "Detectores", "10", colorBadge: Colors.red));
-      chips.add(const SizedBox(width: 10));
+    if (filterMapState.showDetectoresDesrielo) {
+      chips.add(ChipDetectorDesrielo(detectoresDesrielo: mapState.detectoresDesrielo,));
+      chips.add(const SizedBox(
+        width: 10,
+      ));
     }
 
     return chips;

@@ -12,54 +12,28 @@ part of 'usuario.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Usuario _$UsuarioFromJson(Map<String, dynamic> json) {
   return _Usuario.fromJson(json);
 }
 
 /// @nodoc
-class _$UsuarioTearOff {
-  const _$UsuarioTearOff();
-
-  _Usuario call(
-      {@JsonKey(name: 'id', defaultValue: 0) required int id,
-      @JsonKey(name: 'email', defaultValue: '') required String email,
-      @JsonKey(name: 'usuario', defaultValue: '') required String usuario,
-      @JsonKey(name: 'ultimo_login') DateTime? ultimoLogin,
-      @JsonKey(name: 'estado', defaultValue: 'INACTIVO') required String estado,
-      List<UsuarioAcceso> accesos = const []}) {
-    return _Usuario(
-      id: id,
-      email: email,
-      usuario: usuario,
-      ultimoLogin: ultimoLogin,
-      estado: estado,
-      accesos: accesos,
-    );
-  }
-
-  Usuario fromJson(Map<String, Object?> json) {
-    return Usuario.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Usuario = _$UsuarioTearOff();
-
-/// @nodoc
 mixin _$Usuario {
-  @JsonKey(name: 'id', defaultValue: 0)
-  int get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'email', defaultValue: '')
-  String get email => throw _privateConstructorUsedError;
-  @JsonKey(name: 'usuario', defaultValue: '')
-  String get usuario => throw _privateConstructorUsedError;
-  @JsonKey(name: 'ultimo_login')
-  DateTime? get ultimoLogin => throw _privateConstructorUsedError;
-  @JsonKey(name: 'estado', defaultValue: 'INACTIVO')
+  @JsonKey(name: 'rut', defaultValue: 0)
+  int get rut => throw _privateConstructorUsedError;
+  @JsonKey(name: 'password', defaultValue: '')
+  String get password => throw _privateConstructorUsedError;
+  @JsonKey(name: 'correo', defaultValue: '')
+  String get correo => throw _privateConstructorUsedError;
+  @JsonKey(name: 'cuenta', defaultValue: '')
+  String get cuenta => throw _privateConstructorUsedError;
+  @JsonKey(name: 'nombre', defaultValue: '')
+  String get nombre => throw _privateConstructorUsedError;
+  @JsonKey(name: 'estado', defaultValue: 'I')
   String get estado => throw _privateConstructorUsedError;
-  List<UsuarioAcceso> get accesos => throw _privateConstructorUsedError;
+  List<FiltroUsuario> get filtros => throw _privateConstructorUsedError;
+  List<RolUsuario> get roles => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -71,12 +45,14 @@ abstract class $UsuarioCopyWith<$Res> {
   factory $UsuarioCopyWith(Usuario value, $Res Function(Usuario) then) =
       _$UsuarioCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'id', defaultValue: 0) int id,
-      @JsonKey(name: 'email', defaultValue: '') String email,
-      @JsonKey(name: 'usuario', defaultValue: '') String usuario,
-      @JsonKey(name: 'ultimo_login') DateTime? ultimoLogin,
-      @JsonKey(name: 'estado', defaultValue: 'INACTIVO') String estado,
-      List<UsuarioAcceso> accesos});
+      {@JsonKey(name: 'rut', defaultValue: 0) int rut,
+      @JsonKey(name: 'password', defaultValue: '') String password,
+      @JsonKey(name: 'correo', defaultValue: '') String correo,
+      @JsonKey(name: 'cuenta', defaultValue: '') String cuenta,
+      @JsonKey(name: 'nombre', defaultValue: '') String nombre,
+      @JsonKey(name: 'estado', defaultValue: 'I') String estado,
+      List<FiltroUsuario> filtros,
+      List<RolUsuario> roles});
 }
 
 /// @nodoc
@@ -89,99 +65,122 @@ class _$UsuarioCopyWithImpl<$Res> implements $UsuarioCopyWith<$Res> {
 
   @override
   $Res call({
-    Object? id = freezed,
-    Object? email = freezed,
-    Object? usuario = freezed,
-    Object? ultimoLogin = freezed,
+    Object? rut = freezed,
+    Object? password = freezed,
+    Object? correo = freezed,
+    Object? cuenta = freezed,
+    Object? nombre = freezed,
     Object? estado = freezed,
-    Object? accesos = freezed,
+    Object? filtros = freezed,
+    Object? roles = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
+      rut: rut == freezed
+          ? _value.rut
+          : rut // ignore: cast_nullable_to_non_nullable
               as int,
-      email: email == freezed
-          ? _value.email
-          : email // ignore: cast_nullable_to_non_nullable
+      password: password == freezed
+          ? _value.password
+          : password // ignore: cast_nullable_to_non_nullable
               as String,
-      usuario: usuario == freezed
-          ? _value.usuario
-          : usuario // ignore: cast_nullable_to_non_nullable
+      correo: correo == freezed
+          ? _value.correo
+          : correo // ignore: cast_nullable_to_non_nullable
               as String,
-      ultimoLogin: ultimoLogin == freezed
-          ? _value.ultimoLogin
-          : ultimoLogin // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+      cuenta: cuenta == freezed
+          ? _value.cuenta
+          : cuenta // ignore: cast_nullable_to_non_nullable
+              as String,
+      nombre: nombre == freezed
+          ? _value.nombre
+          : nombre // ignore: cast_nullable_to_non_nullable
+              as String,
       estado: estado == freezed
           ? _value.estado
           : estado // ignore: cast_nullable_to_non_nullable
               as String,
-      accesos: accesos == freezed
-          ? _value.accesos
-          : accesos // ignore: cast_nullable_to_non_nullable
-              as List<UsuarioAcceso>,
+      filtros: filtros == freezed
+          ? _value.filtros
+          : filtros // ignore: cast_nullable_to_non_nullable
+              as List<FiltroUsuario>,
+      roles: roles == freezed
+          ? _value.roles
+          : roles // ignore: cast_nullable_to_non_nullable
+              as List<RolUsuario>,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$UsuarioCopyWith<$Res> implements $UsuarioCopyWith<$Res> {
-  factory _$UsuarioCopyWith(_Usuario value, $Res Function(_Usuario) then) =
-      __$UsuarioCopyWithImpl<$Res>;
+abstract class _$$_UsuarioCopyWith<$Res> implements $UsuarioCopyWith<$Res> {
+  factory _$$_UsuarioCopyWith(
+          _$_Usuario value, $Res Function(_$_Usuario) then) =
+      __$$_UsuarioCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'id', defaultValue: 0) int id,
-      @JsonKey(name: 'email', defaultValue: '') String email,
-      @JsonKey(name: 'usuario', defaultValue: '') String usuario,
-      @JsonKey(name: 'ultimo_login') DateTime? ultimoLogin,
-      @JsonKey(name: 'estado', defaultValue: 'INACTIVO') String estado,
-      List<UsuarioAcceso> accesos});
+      {@JsonKey(name: 'rut', defaultValue: 0) int rut,
+      @JsonKey(name: 'password', defaultValue: '') String password,
+      @JsonKey(name: 'correo', defaultValue: '') String correo,
+      @JsonKey(name: 'cuenta', defaultValue: '') String cuenta,
+      @JsonKey(name: 'nombre', defaultValue: '') String nombre,
+      @JsonKey(name: 'estado', defaultValue: 'I') String estado,
+      List<FiltroUsuario> filtros,
+      List<RolUsuario> roles});
 }
 
 /// @nodoc
-class __$UsuarioCopyWithImpl<$Res> extends _$UsuarioCopyWithImpl<$Res>
-    implements _$UsuarioCopyWith<$Res> {
-  __$UsuarioCopyWithImpl(_Usuario _value, $Res Function(_Usuario) _then)
-      : super(_value, (v) => _then(v as _Usuario));
+class __$$_UsuarioCopyWithImpl<$Res> extends _$UsuarioCopyWithImpl<$Res>
+    implements _$$_UsuarioCopyWith<$Res> {
+  __$$_UsuarioCopyWithImpl(_$_Usuario _value, $Res Function(_$_Usuario) _then)
+      : super(_value, (v) => _then(v as _$_Usuario));
 
   @override
-  _Usuario get _value => super._value as _Usuario;
+  _$_Usuario get _value => super._value as _$_Usuario;
 
   @override
   $Res call({
-    Object? id = freezed,
-    Object? email = freezed,
-    Object? usuario = freezed,
-    Object? ultimoLogin = freezed,
+    Object? rut = freezed,
+    Object? password = freezed,
+    Object? correo = freezed,
+    Object? cuenta = freezed,
+    Object? nombre = freezed,
     Object? estado = freezed,
-    Object? accesos = freezed,
+    Object? filtros = freezed,
+    Object? roles = freezed,
   }) {
-    return _then(_Usuario(
-      id: id == freezed
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
+    return _then(_$_Usuario(
+      rut: rut == freezed
+          ? _value.rut
+          : rut // ignore: cast_nullable_to_non_nullable
               as int,
-      email: email == freezed
-          ? _value.email
-          : email // ignore: cast_nullable_to_non_nullable
+      password: password == freezed
+          ? _value.password
+          : password // ignore: cast_nullable_to_non_nullable
               as String,
-      usuario: usuario == freezed
-          ? _value.usuario
-          : usuario // ignore: cast_nullable_to_non_nullable
+      correo: correo == freezed
+          ? _value.correo
+          : correo // ignore: cast_nullable_to_non_nullable
               as String,
-      ultimoLogin: ultimoLogin == freezed
-          ? _value.ultimoLogin
-          : ultimoLogin // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+      cuenta: cuenta == freezed
+          ? _value.cuenta
+          : cuenta // ignore: cast_nullable_to_non_nullable
+              as String,
+      nombre: nombre == freezed
+          ? _value.nombre
+          : nombre // ignore: cast_nullable_to_non_nullable
+              as String,
       estado: estado == freezed
           ? _value.estado
           : estado // ignore: cast_nullable_to_non_nullable
               as String,
-      accesos: accesos == freezed
-          ? _value.accesos
-          : accesos // ignore: cast_nullable_to_non_nullable
-              as List<UsuarioAcceso>,
+      filtros: filtros == freezed
+          ? _value._filtros
+          : filtros // ignore: cast_nullable_to_non_nullable
+              as List<FiltroUsuario>,
+      roles: roles == freezed
+          ? _value._roles
+          : roles // ignore: cast_nullable_to_non_nullable
+              as List<RolUsuario>,
     ));
   }
 }
@@ -190,68 +189,91 @@ class __$UsuarioCopyWithImpl<$Res> extends _$UsuarioCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_Usuario implements _Usuario {
   _$_Usuario(
-      {@JsonKey(name: 'id', defaultValue: 0) required this.id,
-      @JsonKey(name: 'email', defaultValue: '') required this.email,
-      @JsonKey(name: 'usuario', defaultValue: '') required this.usuario,
-      @JsonKey(name: 'ultimo_login') this.ultimoLogin,
-      @JsonKey(name: 'estado', defaultValue: 'INACTIVO') required this.estado,
-      this.accesos = const []});
+      {@JsonKey(name: 'rut', defaultValue: 0) required this.rut,
+      @JsonKey(name: 'password', defaultValue: '') required this.password,
+      @JsonKey(name: 'correo', defaultValue: '') required this.correo,
+      @JsonKey(name: 'cuenta', defaultValue: '') required this.cuenta,
+      @JsonKey(name: 'nombre', defaultValue: '') required this.nombre,
+      @JsonKey(name: 'estado', defaultValue: 'I') required this.estado,
+      final List<FiltroUsuario> filtros = const [],
+      final List<RolUsuario> roles = const []})
+      : _filtros = filtros,
+        _roles = roles;
 
   factory _$_Usuario.fromJson(Map<String, dynamic> json) =>
       _$$_UsuarioFromJson(json);
 
   @override
-  @JsonKey(name: 'id', defaultValue: 0)
-  final int id;
+  @JsonKey(name: 'rut', defaultValue: 0)
+  final int rut;
   @override
-  @JsonKey(name: 'email', defaultValue: '')
-  final String email;
+  @JsonKey(name: 'password', defaultValue: '')
+  final String password;
   @override
-  @JsonKey(name: 'usuario', defaultValue: '')
-  final String usuario;
+  @JsonKey(name: 'correo', defaultValue: '')
+  final String correo;
   @override
-  @JsonKey(name: 'ultimo_login')
-  final DateTime? ultimoLogin;
+  @JsonKey(name: 'cuenta', defaultValue: '')
+  final String cuenta;
   @override
-  @JsonKey(name: 'estado', defaultValue: 'INACTIVO')
+  @JsonKey(name: 'nombre', defaultValue: '')
+  final String nombre;
+  @override
+  @JsonKey(name: 'estado', defaultValue: 'I')
   final String estado;
-  @JsonKey()
+  final List<FiltroUsuario> _filtros;
   @override
-  final List<UsuarioAcceso> accesos;
+  @JsonKey()
+  List<FiltroUsuario> get filtros {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_filtros);
+  }
+
+  final List<RolUsuario> _roles;
+  @override
+  @JsonKey()
+  List<RolUsuario> get roles {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_roles);
+  }
 
   @override
   String toString() {
-    return 'Usuario(id: $id, email: $email, usuario: $usuario, ultimoLogin: $ultimoLogin, estado: $estado, accesos: $accesos)';
+    return 'Usuario(rut: $rut, password: $password, correo: $correo, cuenta: $cuenta, nombre: $nombre, estado: $estado, filtros: $filtros, roles: $roles)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Usuario &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.usuario, usuario) &&
-            const DeepCollectionEquality()
-                .equals(other.ultimoLogin, ultimoLogin) &&
+            other is _$_Usuario &&
+            const DeepCollectionEquality().equals(other.rut, rut) &&
+            const DeepCollectionEquality().equals(other.password, password) &&
+            const DeepCollectionEquality().equals(other.correo, correo) &&
+            const DeepCollectionEquality().equals(other.cuenta, cuenta) &&
+            const DeepCollectionEquality().equals(other.nombre, nombre) &&
             const DeepCollectionEquality().equals(other.estado, estado) &&
-            const DeepCollectionEquality().equals(other.accesos, accesos));
+            const DeepCollectionEquality().equals(other._filtros, _filtros) &&
+            const DeepCollectionEquality().equals(other._roles, _roles));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(usuario),
-      const DeepCollectionEquality().hash(ultimoLogin),
-      const DeepCollectionEquality().hash(estado),
-      const DeepCollectionEquality().hash(accesos));
 
   @JsonKey(ignore: true)
   @override
-  _$UsuarioCopyWith<_Usuario> get copyWith =>
-      __$UsuarioCopyWithImpl<_Usuario>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(rut),
+      const DeepCollectionEquality().hash(password),
+      const DeepCollectionEquality().hash(correo),
+      const DeepCollectionEquality().hash(cuenta),
+      const DeepCollectionEquality().hash(nombre),
+      const DeepCollectionEquality().hash(estado),
+      const DeepCollectionEquality().hash(_filtros),
+      const DeepCollectionEquality().hash(_roles));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_UsuarioCopyWith<_$_Usuario> get copyWith =>
+      __$$_UsuarioCopyWithImpl<_$_Usuario>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -261,34 +283,47 @@ class _$_Usuario implements _Usuario {
 
 abstract class _Usuario implements Usuario {
   factory _Usuario(
-      {@JsonKey(name: 'id', defaultValue: 0) required int id,
-      @JsonKey(name: 'email', defaultValue: '') required String email,
-      @JsonKey(name: 'usuario', defaultValue: '') required String usuario,
-      @JsonKey(name: 'ultimo_login') DateTime? ultimoLogin,
-      @JsonKey(name: 'estado', defaultValue: 'INACTIVO') required String estado,
-      List<UsuarioAcceso> accesos}) = _$_Usuario;
+      {@JsonKey(name: 'rut', defaultValue: 0)
+          required final int rut,
+      @JsonKey(name: 'password', defaultValue: '')
+          required final String password,
+      @JsonKey(name: 'correo', defaultValue: '')
+          required final String correo,
+      @JsonKey(name: 'cuenta', defaultValue: '')
+          required final String cuenta,
+      @JsonKey(name: 'nombre', defaultValue: '')
+          required final String nombre,
+      @JsonKey(name: 'estado', defaultValue: 'I')
+          required final String estado,
+      final List<FiltroUsuario> filtros,
+      final List<RolUsuario> roles}) = _$_Usuario;
 
   factory _Usuario.fromJson(Map<String, dynamic> json) = _$_Usuario.fromJson;
 
   @override
-  @JsonKey(name: 'id', defaultValue: 0)
-  int get id;
+  @JsonKey(name: 'rut', defaultValue: 0)
+  int get rut => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: 'email', defaultValue: '')
-  String get email;
+  @JsonKey(name: 'password', defaultValue: '')
+  String get password => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: 'usuario', defaultValue: '')
-  String get usuario;
+  @JsonKey(name: 'correo', defaultValue: '')
+  String get correo => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: 'ultimo_login')
-  DateTime? get ultimoLogin;
+  @JsonKey(name: 'cuenta', defaultValue: '')
+  String get cuenta => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: 'estado', defaultValue: 'INACTIVO')
-  String get estado;
+  @JsonKey(name: 'nombre', defaultValue: '')
+  String get nombre => throw _privateConstructorUsedError;
   @override
-  List<UsuarioAcceso> get accesos;
+  @JsonKey(name: 'estado', defaultValue: 'I')
+  String get estado => throw _privateConstructorUsedError;
+  @override
+  List<FiltroUsuario> get filtros => throw _privateConstructorUsedError;
+  @override
+  List<RolUsuario> get roles => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$UsuarioCopyWith<_Usuario> get copyWith =>
+  _$$_UsuarioCopyWith<_$_Usuario> get copyWith =>
       throw _privateConstructorUsedError;
 }

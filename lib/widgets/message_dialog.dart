@@ -35,7 +35,16 @@ class MessageDialog extends StatelessWidget {
                       Icon(getIcon(), color: getTextColor(), size: 50,),
                       Text(getTitle(), style: styleTitle,),
                       Text(message, style: styleMessage, softWrap: true,),
-                      OutlinedButton(onPressed: () => aceptarClick(context), child: Text('Aceptar',style: TextStyle(color: getTextColor()),))
+                      if(typeMessage == TypeMessage.confirm)
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            OutlinedButton(onPressed: () => Navigator.pop(context), child: Text('Cancelar',style: TextStyle(color: getTextColor()),)),
+                            OutlinedButton(onPressed: () => aceptarClick(context), child: Text('Aceptar',style: TextStyle(color: getTextColor()),)),
+                          ],
+                        ),
+                      if(typeMessage != TypeMessage.confirm)
+                        OutlinedButton(onPressed: () => aceptarClick(context), child: Text('Aceptar',style: TextStyle(color: getTextColor()),)),
                     ],
                   ),
                 )
@@ -58,6 +67,8 @@ class MessageDialog extends StatelessWidget {
         return Icons.warning;
       case TypeMessage.success:
         return Icons.task_alt;
+      case TypeMessage.confirm:
+        return Icons.question_mark;
     }
   }
 
@@ -71,6 +82,8 @@ class MessageDialog extends StatelessWidget {
         return 'Advertencia';
       case TypeMessage.success:
         return 'Correcto';
+      case TypeMessage.confirm:
+        return 'Confirmar';
     }
   }
 
@@ -85,6 +98,8 @@ class MessageDialog extends StatelessWidget {
         return Colors.orange[700];
       case TypeMessage.success:
         return Colors.green[700];
+      case TypeMessage.confirm:
+        return Colors.purple;
     }
   }
 
@@ -97,6 +112,8 @@ class MessageDialog extends StatelessWidget {
       case TypeMessage.warning:
         return Colors.white;
       case TypeMessage.success:
+        return Colors.white;
+      case TypeMessage.confirm:
         return Colors.white;
     }
   }

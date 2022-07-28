@@ -45,28 +45,60 @@ class UserEditForm extends StatelessWidget {
                       ),
                       const SizedBox(height: 10,),
                       FormBuilderTextField(
-                        name: 'txtUsuario',
+                        name: 'txtRut',
                         decoration: const InputDecoration(
-                          labelText: 'Usuario',
+                          labelText: 'Rut',
                         ),
+                        initialValue: usuario.rut.toString(),
                         readOnly: true,
                         keyboardType: TextInputType.number,
-                        initialValue: usuario.usuario,
                         validator: FormBuilderValidators.compose([
                           FormBuilderValidators.required(
-                              errorText: 'Usuario es requerido'),
+                              errorText: 'Rut requerido'),
+                          FormBuilderValidators.min( 1111111,
+                              errorText: 'Rut incorrecto'),
+                          FormBuilderValidators.max( 99999999,
+                              errorText: 'Rut incorrecto'),
+                        ]),
+                      ),
+                      const SizedBox(height: 10,),
+                      FormBuilderTextField(
+                        name: 'txtNombre',
+                        decoration: const InputDecoration(
+                          labelText: 'Nombre',
+                        ),
+                        initialValue: usuario.nombre,
+                        keyboardType: TextInputType.text,
+                        validator: FormBuilderValidators.compose([
+                          FormBuilderValidators.required(
+                              errorText: 'Nombre es requerida'),
                           FormBuilderValidators.maxLength(100,
                               errorText: 'No puede superar los 100 caracteres'),
                         ]),
                       ),
                       const SizedBox(height: 10,),
                       FormBuilderTextField(
-                        name: 'txtEmail',
+                        name: 'txtCuenta',
                         decoration: const InputDecoration(
-                          labelText: 'Email',
+                          labelText: 'Cuenta',
                         ),
-                        keyboardType: TextInputType.number,
-                        initialValue: usuario.email,
+                        initialValue: usuario.cuenta,
+                        keyboardType: TextInputType.text,
+                        validator: FormBuilderValidators.compose([
+                          FormBuilderValidators.required(
+                              errorText: 'Cuenta es requerida'),
+                          FormBuilderValidators.maxLength(100,
+                              errorText: 'No puede superar los 100 caracteres'),
+                        ]),
+                      ),
+                      const SizedBox(height: 10,),
+                      FormBuilderTextField(
+                        name: 'txtCorreo',
+                        decoration: const InputDecoration(
+                          labelText: 'Correo',
+                        ),
+                        initialValue: usuario.correo,
+                        keyboardType: TextInputType.emailAddress,
                         validator: FormBuilderValidators.compose([
                           FormBuilderValidators.required(
                               errorText: 'Email es requerido'),
@@ -92,7 +124,7 @@ class UserEditForm extends StatelessWidget {
                         items: listEstadosUsuarios
                             .map((estado) => DropdownMenuItem(
                                   value: estado,
-                                  child: Text('$estado'),
+                                  child: Text(estado),
                                 ))
                             .toList(),
                       ),
@@ -136,8 +168,10 @@ class UserEditForm extends StatelessWidget {
       final fields = _formKey.currentState?.fields ?? {};
 
       Usuario usuarioEdit = usuario.copyWith(
-        email: fields['txtEmail'].toString(),
-        estado: fields['cmbEstado'].toString(),);
+        correo: fields['txtEmail'].toString(),
+        estado: fields['cmbEstado'].toString(),
+        nombre: fields['txtNombre'].toString(),
+        cuenta: fields['cuenta'].toString(),);
 
       provider.add(EditUserSubmitEvent(usuarioEdit));
     }

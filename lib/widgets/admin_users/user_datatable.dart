@@ -21,7 +21,6 @@ class UsuarioDatatable extends StatelessWidget {
     final provider = BlocProvider.of<AdminUserBloc>(context);
     //print(state.usuarios);
     return PaginatedDataTable(
-      header: const Text('Administración de usuarios'),
       rowsPerPage: PaginatedDataTable.defaultRowsPerPage,
       columns: getColumns(), 
       onPageChanged: (value) {
@@ -66,10 +65,10 @@ class UsuarioDataTableSource extends DataTableSource{
     if(data.isNotEmpty) {
       return DataRow(
         cells: [
-        DataCell(Text(data[index].id.toString())),
-        DataCell(Text(data[index].usuario)),
-        DataCell(Text(data[index].email)),
-        DataCell(Text(data[index].ultimoLogin?.toLocal().toString() ?? '')),
+        DataCell(Text(data[index].rut.toString())),
+        DataCell(Text(data[index].nombre)),
+        DataCell(Text(data[index].cuenta)),
+        DataCell(Text(data[index].correo)),
         DataCell(Text(data[index].estado)),
         DataCell(Row(
           children: [
@@ -111,7 +110,7 @@ class UsuarioDataTableSource extends DataTableSource{
             create: (context) => EditUserBloc(usuario),
             child: BaseScreen(
                 child: Center(
-              child: UserListAccesos(usuario: usuario),
+              child: ListFiltroUsuario(usuario: usuario),
             )),
           );
         });

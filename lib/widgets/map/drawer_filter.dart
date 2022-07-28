@@ -1,11 +1,13 @@
 import 'package:fcab_map/bloc/filter_map/filter_map_bloc.dart';
 import 'package:fcab_map/bloc/global_setting/global_setting_bloc.dart';
 import 'package:fcab_map/bloc/map/map_bloc.dart';
-import 'package:fcab_map/utils/geo_utils.dart';
+import 'package:fcab_map/constants/tipos_precauciones_mock.dart';
 import 'package:fcab_map/widgets/glass_container.dart';
 import 'package:fcab_map/widgets/my_combo_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../constants/ramales_mock.dart';
 
 class DrawerFilter extends StatelessWidget {
   const DrawerFilter({Key? key}) : super(key: key);
@@ -29,21 +31,26 @@ class DrawerFilter extends StatelessWidget {
                     return Column(
                       children: [
                         barButton(context, state),
-                        header(context, "Filtros Generales"),
                         const Divider(),
+                        header(context, "Temporarizador"),
+                        barTiming(context, state),
+                        const Divider(),
+                        header(context, "Tipos de Vistas"),
+                        barView(context, state),
+                        const Divider(),
+                        header(context, "Filtros Generales"),
                         checkTrenes(context, state),
                         checkEstaciones(context, state),
                         checkTerminales(context, state),
-                        //checkRamales(context, state),
-                        checkDetectores(context, state),
                         checkViasCedidas(context, state),
+                        checkViasLibres(context, state),
+                        checkPrecaucion(context, state),
+                        checkDetectores(context, state),
                         const Divider(),
                         header(context, "Filtros Avanzados"),
-                        const Divider(),
                         cmbRamales(context, state),
-                        cmbTrenes(context, state),
-                        checkPrecaucion(context, state),
-                        checkViasLibres(context, state),
+                        cmbTiposPrecauciones(context, state),
+                        
                       ],
                     );
                   }
@@ -58,30 +65,169 @@ class DrawerFilter extends StatelessWidget {
         ));
   }
 
+  barView(BuildContext context, FilterMapState state) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Tooltip(
+          message: 'Vista Plana',
+          child: OutlinedButton(
+            style: state.typeView == 'PLANA' ? OutlinedButton.styleFrom(
+              backgroundColor: Theme.of(context).primaryColor,
+              primary: Colors.white
+            ) : null,
+            onPressed: ()  => BlocProvider.of<FilterMapBloc>(context).add(
+                    FilterMapChangeEvent(
+                        showPrecauciones: state.showPrecauciones,
+                        showTerminales: state.showTerminales,
+                        showEstaciones: state.showEstaciones,
+                        showTrenes: state.showTrenes,
+                        showViasCedidas: state.showViasCedidas,
+                        showDetectoresDesrielo: state.showDetectoresDesrielo,
+                        showViasLibres: state.showViasLibres, 
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: 'PLANA')),
+            child: const Text('Plana')
+              
+          ),
+        ),
+        Tooltip(
+          message: 'Vista Satelite',
+          child: OutlinedButton(
+            style: state.typeView == 'SATELITE' ? OutlinedButton.styleFrom(
+              backgroundColor: Theme.of(context).primaryColor,
+              primary: Colors.white
+            ) : null,
+            onPressed: () => BlocProvider.of<FilterMapBloc>(context).add(
+                    FilterMapChangeEvent(
+                        showPrecauciones: state.showPrecauciones,
+                        showTerminales: state.showTerminales,
+                        showEstaciones: state.showEstaciones,
+                        showTrenes: state.showTrenes,
+                        showViasCedidas: state.showViasCedidas,
+                        showDetectoresDesrielo: state.showDetectoresDesrielo,
+                        showViasLibres: state.showViasLibres, 
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: 'SATELITE')),
+            child: const Text('Satelite')
+          ),
+        ),
+      ],
+    );
+  }
+
+
+  barTiming(BuildContext context, FilterMapState state) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Tooltip(
+          message: '1 minuto',
+          child: OutlinedButton(
+            style: state.timingRefresh == 1 ? OutlinedButton.styleFrom(
+              backgroundColor: Theme.of(context).primaryColor,
+              primary: Colors.white
+            ) : null,
+            onPressed: () => BlocProvider.of<FilterMapBloc>(context).add(
+                    FilterMapChangeEvent(
+                        showPrecauciones: state.showPrecauciones,
+                        showTerminales: state.showTerminales,
+                        showEstaciones: state.showEstaciones,
+                        showTrenes: state.showTrenes,
+                        showViasCedidas: state.showViasCedidas,
+                        showDetectoresDesrielo: state.showDetectoresDesrielo,
+                        showViasLibres: state.showViasLibres, 
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: 1,
+                        typeView: state.typeView)),
+            child: const Text('1'),
+          ),
+        ),
+        Tooltip(
+          message: '3 minutos',
+          child: OutlinedButton(
+            style: state.timingRefresh == 3 ? OutlinedButton.styleFrom(
+              backgroundColor: Theme.of(context).primaryColor,
+              primary: Colors.white
+            ) : null,
+            onPressed: () => BlocProvider.of<FilterMapBloc>(context).add(
+                    FilterMapChangeEvent(
+                        showPrecauciones: state.showPrecauciones,
+                        showTerminales: state.showTerminales,
+                        showEstaciones: state.showEstaciones,
+                        showTrenes: state.showTrenes,
+                        showViasCedidas: state.showViasCedidas,
+                        showDetectoresDesrielo: state.showDetectoresDesrielo,
+                        showViasLibres: state.showViasLibres, 
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: 3,
+                        typeView: state.typeView)),
+            child: const Text('3'),
+          ),
+        ),
+        Tooltip(
+          message: '5 minutos',
+          child: OutlinedButton(
+            style: state.timingRefresh == 5 ? OutlinedButton.styleFrom(
+              backgroundColor: Theme.of(context).primaryColor,
+              primary: Colors.white
+            ) : null,
+            onPressed: () => BlocProvider.of<FilterMapBloc>(context).add(
+                    FilterMapChangeEvent(
+                        showPrecauciones: state.showPrecauciones,
+                        showTerminales: state.showTerminales,
+                        showEstaciones: state.showEstaciones,
+                        showTrenes: state.showTrenes,
+                        showViasCedidas: state.showViasCedidas,
+                        showDetectoresDesrielo: state.showDetectoresDesrielo,
+                        showViasLibres: state.showViasLibres, 
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: 5,
+                        typeView: state.typeView)),
+            child: const Text('5'),
+          ),
+        ),
+      ],
+    );
+  }
+
   barButton(BuildContext context, FilterMapState state) {
     return Flex(
       direction: Axis.horizontal,
       children: [
         Expanded(
           flex: 1,
-          child: SizedBox(
-              height: 50,
-              child: OutlinedButton(
-                child: const Icon(Icons.search),
-                onPressed: () => _loadMapFilter(context, state),
-              )),
+          child: Tooltip(
+            message: 'Buscar',
+            child: SizedBox(
+                height: 50,
+                child: OutlinedButton(
+                  child: const Icon(Icons.search),
+                  onPressed: () => _loadMapFilter(context, state),
+                )),
+          ),
         ),
         const SizedBox(
           width: 10,
         ),
         Expanded(
           flex: 1,
-          child: SizedBox(
-              height: 50,
-              child: OutlinedButton(
-                child: const Icon(Icons.cleaning_services_rounded),
-                onPressed: () => _resetFilter(context, state),
-              )),
+          child: Tooltip(
+            message: 'Limpiar Filtros',
+            child: SizedBox(
+                height: 50,
+                child: OutlinedButton(
+                  child: const Icon(Icons.cleaning_services_rounded),
+                  onPressed: () => _resetFilter(context, state),
+                )),
+          ),
         ),
       ],
     );
@@ -116,7 +262,11 @@ class DrawerFilter extends StatelessWidget {
                         showTrenes: state.showTrenes,
                         showViasCedidas: state.showViasCedidas,
                         showDetectoresDesrielo: state.showDetectoresDesrielo,
-                        showViasLibres: state.showViasLibres));
+                        showViasLibres: state.showViasLibres, 
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: state.typeView));
               }
             }),
         const Text(
@@ -141,7 +291,11 @@ class DrawerFilter extends StatelessWidget {
                         showTrenes: state.showTrenes,
                         showViasCedidas: state.showViasCedidas,
                         showDetectoresDesrielo: state.showDetectoresDesrielo,
-                        showViasLibres: state.showViasLibres));
+                        showViasLibres: state.showViasLibres,
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: state.typeView));
               }
             }),
         const Text(
@@ -166,7 +320,11 @@ class DrawerFilter extends StatelessWidget {
                         showTrenes: newValue,
                         showViasCedidas: state.showViasCedidas,
                         showDetectoresDesrielo: state.showDetectoresDesrielo,
-                        showViasLibres: state.showViasLibres));
+                        showViasLibres: state.showViasLibres,
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: state.typeView));
               }
             }),
         const Text(
@@ -187,11 +345,15 @@ class DrawerFilter extends StatelessWidget {
                     FilterMapChangeEvent(
                         showPrecauciones: state.showPrecauciones,
                         showTerminales: state.showTerminales,
-                        showEstaciones: newValue,
+                        showEstaciones: state.showEstaciones,
                         showTrenes: state.showTrenes,
                         showViasCedidas: state.showViasCedidas,
-                        showDetectoresDesrielo: state.showDetectoresDesrielo,
-                        showViasLibres: state.showViasLibres));
+                        showDetectoresDesrielo: newValue,
+                        showViasLibres: state.showViasLibres,
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: state.typeView));
               }
             }),
         const Text(
@@ -216,7 +378,11 @@ class DrawerFilter extends StatelessWidget {
                         showTrenes: state.showTrenes,
                         showViasCedidas: state.showViasCedidas,
                         showDetectoresDesrielo: state.showDetectoresDesrielo,
-                        showViasLibres: state.showViasLibres));
+                        showViasLibres: state.showViasLibres,
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: state.typeView));
               }
             }),
         const Text(
@@ -241,7 +407,11 @@ class DrawerFilter extends StatelessWidget {
                         showTrenes: state.showTrenes,
                         showViasCedidas: state.showViasCedidas,
                         showDetectoresDesrielo: state.showDetectoresDesrielo,
-                        showViasLibres: newValue));
+                        showViasLibres: newValue,
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: state.typeView));
               }
             }),
         const Text(
@@ -266,7 +436,11 @@ class DrawerFilter extends StatelessWidget {
                         showTrenes: state.showTrenes,
                         showViasCedidas: newValue,
                         showDetectoresDesrielo: state.showDetectoresDesrielo,
-                        showViasLibres: state.showViasLibres));
+                        showViasLibres: state.showViasLibres,
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: state.typeView));
               }
             }),
         const Text(
@@ -276,24 +450,49 @@ class DrawerFilter extends StatelessWidget {
     );
   }
 
-  cmbTrenes(BuildContext context, FilterMapState state) {
+  cmbTiposPrecauciones(BuildContext context, FilterMapState state) {
+    //final tiposPrecauciones = ['TODOS']..addAll(tiposPrecacionesMock);
     return MyComboBox<String>(
-        value: 'Todos',
-        listValue: const ['Todos', '202', '2404'],
-        name: 'Trenes',
+        value: state.tipoPrecaucion,
+        listValue: tiposPrecacionesMock,
+        name: 'Tipo Precaución',
         onChanged: (value) {
-          print(value);
+          BlocProvider.of<FilterMapBloc>(context).add(
+                    FilterMapChangeEvent(
+                        showPrecauciones: state.showPrecauciones,
+                        showTerminales: state.showTerminales,
+                        showEstaciones: state.showEstaciones,
+                        showTrenes: state.showTrenes,
+                        showViasCedidas: state.showViasCedidas,
+                        showDetectoresDesrielo: state.showDetectoresDesrielo,
+                        showViasLibres: state.showViasLibres,
+                        codRamal: state.codRamal,
+                        tipoPrecaucion: value ?? 'ADMINISTRATIVA',
+                        timingRefresh: state.timingRefresh,
+                        typeView: state.typeView));
         });
   }
 
   cmbRamales(BuildContext context, FilterMapState state) {
-    final ramales = ['Todos']..addAll(ramalesMock);
+    final ramales = ['TODOS']..addAll(ramalesMock);
     return MyComboBox<String>(
-        value: 'Todos',
+        value: state.codRamal,
         listValue: ramales,
-        name: 'Ramales',
+        name: 'Ramal',
         onChanged: (value) {
-          print(value);
+          BlocProvider.of<FilterMapBloc>(context).add(
+                    FilterMapChangeEvent(
+                        showPrecauciones: state.showPrecauciones,
+                        showTerminales: state.showTerminales,
+                        showEstaciones: state.showEstaciones,
+                        showTrenes: state.showTrenes,
+                        showViasCedidas: state.showViasCedidas,
+                        showDetectoresDesrielo: state.showDetectoresDesrielo,
+                        showViasLibres: state.showViasLibres,
+                        codRamal: value ?? 'TODOS',
+                        tipoPrecaucion: state.tipoPrecaucion,
+                        timingRefresh: state.timingRefresh,
+                        typeView: state.typeView));
         });
   }
 
@@ -307,6 +506,10 @@ class DrawerFilter extends StatelessWidget {
       showViasCedidas: state.showViasCedidas,
       showViasLibres: state.showViasLibres,
       showDetectoresDesrielo: state.showDetectoresDesrielo,
+      codRamal: state.codRamal,
+      tipoPrecaucion: state.tipoPrecaucion,
+      timingRefresh: state.timingRefresh,
+      typeView: state.typeView
     ));
 
     Navigator.pop(context);

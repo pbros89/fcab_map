@@ -5,25 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:latlong2/latlong.dart';
 
-List<String> ramalesMock = [
-  'PPAL',
-  'RESCONDI',
-  'RCMZ',
-  'RCUABRA',
-  'RAVICTO',
-  'RALTONOR',
-  'RCPM',
-  'RCHUQUI',
-  'RSPENCE',
-  'RABRA',
-  'RPAMPA',
-  'RMSG',
-  'RMEJIL',
-  'RSOCOMPA',
-  'RGABY',
-  'RINTERAC',
-  'RREFIMET'
-];
+
+
+
 
 List<double> UtmToGeo(double utm_x, double utm_y) {
   final List<double> coordenadas_calculadas = [];

@@ -31,11 +31,9 @@ class DetailEstacionBloc extends Bloc<DetailEstacionEvent, DetailEstacionState> 
         final contadorLoco = await _geoServiceMock.loadContadorLocomotoras(event.estacionPoint.codEstacion);
         if(contadorLoco.isNotEmpty) sections++;
 
-        print('loco cargo' + contadorLoco.length.toString());
         List<ContadorCarro> contadorCarro = await _geoServiceMock.loadContadorCarros(event.estacionPoint.codEstacion);
         if(contadorCarro.isNotEmpty) sections++;
 
-        print('carro cargo' + contadorCarro.length.toString());
         emit.call(DetailEstacionLoaded(
           contadorCarro: contadorCarro,
           contadorLoco: contadorLoco,
@@ -75,6 +73,7 @@ class DetailEstacionBloc extends Bloc<DetailEstacionEvent, DetailEstacionState> 
         print('loading');
         final detalleCarro = await _geoServiceMock.loadDetalleCarros(
             event.contadorCarroSelect.estacion, 
+            event.contadorCarroSelect.tipoCarro,
             event.contadorCarroSelect.linea,
             event.contadorCarroSelect.marcaMante);
         print(detalleCarro.length);

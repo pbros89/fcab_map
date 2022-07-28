@@ -17,15 +17,21 @@ class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
+    SplashPageRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+          routeData: routeData, child: const SplashPage());
+    },
+    EmailValidatePageRoute.name: (routeData) {
+      final args = routeData.argsAs<EmailValidatePageRouteArgs>(
+          orElse: () => const EmailValidatePageRouteArgs());
+      return MaterialPageX<dynamic>(
+          routeData: routeData, child: EmailValidatePage(key: args.key));
+    },
     LoginPageRoute.name: (routeData) {
       final args = routeData.argsAs<LoginPageRouteArgs>(
           orElse: () => const LoginPageRouteArgs());
       return MaterialPageX<dynamic>(
           routeData: routeData, child: LoginPage(key: args.key));
-    },
-    RegisterPageRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
-          routeData: routeData, child: const RegisterPage());
     },
     ChangePasswordPageRoute.name: (routeData) {
       final args = routeData.argsAs<ChangePasswordPageRouteArgs>(
@@ -52,15 +58,46 @@ class _$AppRouter extends RootStackRouter {
   @override
   List<RouteConfig> get routes => [
         RouteConfig('/#redirect',
-            path: '/', redirectTo: '/map', fullMatch: true),
+            path: '/', redirectTo: '/splash', fullMatch: true),
+        RouteConfig(SplashPageRoute.name, path: '/splash'),
+        RouteConfig(EmailValidatePageRoute.name, path: '/email_validate'),
         RouteConfig(LoginPageRoute.name, path: '/auth/login'),
-        RouteConfig(RegisterPageRoute.name, path: '/auth/register'),
         RouteConfig(ChangePasswordPageRoute.name,
             path: '/auth/change_password'),
         RouteConfig(AdminUsersPageRoute.name, path: '/admin_user'),
         RouteConfig(MapPageRoute.name, path: '/map'),
         RouteConfig(SettingPageRoute.name, path: '/setting')
       ];
+}
+
+/// generated route for
+/// [SplashPage]
+class SplashPageRoute extends PageRouteInfo<void> {
+  const SplashPageRoute() : super(SplashPageRoute.name, path: '/splash');
+
+  static const String name = 'SplashPageRoute';
+}
+
+/// generated route for
+/// [EmailValidatePage]
+class EmailValidatePageRoute extends PageRouteInfo<EmailValidatePageRouteArgs> {
+  EmailValidatePageRoute({Key? key})
+      : super(EmailValidatePageRoute.name,
+            path: '/email_validate',
+            args: EmailValidatePageRouteArgs(key: key));
+
+  static const String name = 'EmailValidatePageRoute';
+}
+
+class EmailValidatePageRouteArgs {
+  const EmailValidatePageRouteArgs({this.key});
+
+  final Key? key;
+
+  @override
+  String toString() {
+    return 'EmailValidatePageRouteArgs{key: $key}';
+  }
 }
 
 /// generated route for
@@ -82,15 +119,6 @@ class LoginPageRouteArgs {
   String toString() {
     return 'LoginPageRouteArgs{key: $key}';
   }
-}
-
-/// generated route for
-/// [RegisterPage]
-class RegisterPageRoute extends PageRouteInfo<void> {
-  const RegisterPageRoute()
-      : super(RegisterPageRoute.name, path: '/auth/register');
-
-  static const String name = 'RegisterPageRoute';
 }
 
 /// generated route for

@@ -8,10 +8,11 @@ abstract class MapState extends Equatable {
   final List<PrecaucionLine> precauciones;
   final List<ViaCedidaLine> viasCedidas;
   final List<ViaLibreLine> viasLibres;
-  final List detectoresDesrielo;
+  final List<DetectorDesrieloPoint> detectoresDesrielo;
+  String typeView;
   final bool isLoaded;
 
-  const MapState({
+  MapState({
       required this.estaciones,
       required this.estacionesInactivas,
       required this.terminales,
@@ -20,6 +21,7 @@ abstract class MapState extends Equatable {
       required this.viasCedidas,
       required this.viasLibres,
       required this.detectoresDesrielo,
+      required this.typeView,
       required this.isLoaded});
 
   @override
@@ -37,6 +39,7 @@ class MapInitialState extends MapState {
             viasCedidas: [],
             viasLibres: [],
             detectoresDesrielo: [],
+            typeView: 'PLANA',
             isLoaded: true);
 }
 
@@ -51,11 +54,12 @@ class MapLoadingState extends MapState {
             viasCedidas: [],
             viasLibres: [],
             detectoresDesrielo: [],
+            typeView: 'PLANA',
             isLoaded: true);
 }
 
 class MapLoadedState extends MapState {
-  const MapLoadedState({
+  MapLoadedState({
       required List<EstacionPoint> estaciones,
       required List<EstacionInactiva> estacionesInactivas,
       required List<TerminalPoint> terminales,
@@ -63,7 +67,8 @@ class MapLoadedState extends MapState {
       required List<ViaCedidaLine> viasCedidas,
       required List<PrecaucionLine> precauciones,
       required List<ViaLibreLine> viasLibres,
-      required List detectoresDesrielo})
+      required List<DetectorDesrieloPoint> detectoresDesrielo,
+      required String typeView })
       : super(
             estaciones: estaciones,
             estacionesInactivas: estacionesInactivas,
@@ -73,6 +78,7 @@ class MapLoadedState extends MapState {
             viasCedidas: viasCedidas,
             viasLibres: viasLibres,
             detectoresDesrielo: detectoresDesrielo,
+            typeView: typeView,
             isLoaded: true);
 }
 
@@ -89,5 +95,6 @@ class MapErrorState extends MapState {
             viasCedidas: [],
             viasLibres: [],
             detectoresDesrielo: [],
+            typeView: 'PLANA',
             isLoaded: true);
 }

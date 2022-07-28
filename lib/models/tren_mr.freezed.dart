@@ -12,97 +12,11 @@ part of 'tren_mr.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 TrenMr _$TrenMrFromJson(Map<String, dynamic> json) {
   return _TrenMr.fromJson(json);
 }
-
-/// @nodoc
-class _$TrenMrTearOff {
-  const _$TrenMrTearOff();
-
-  _TrenMr call(
-      {@JsonKey(name: 'nrotrenmr', defaultValue: 0)
-          required int nrotrenmr,
-      @JsonKey(name: 'tipomr', defaultValue: '')
-          required String tipomr,
-      @JsonKey(name: 'numero', defaultValue: '')
-          required String numero,
-      @JsonKey(name: 'nummr', defaultValue: '')
-          required String nummr,
-      @JsonKey(name: 'modelomr', defaultValue: '')
-          required String modelomr,
-      @JsonKey(name: 'tonnetasmr', defaultValue: 0.0)
-          required double tonnetasmr,
-      @JsonKey(name: 'tonbrutasmr', defaultValue: 0.0)
-          required double tonbrutasmr,
-      @JsonKey(name: 'estadomr', defaultValue: '')
-          required String estadomr,
-      @JsonKey(name: 'marcamr', defaultValue: 0)
-          required int marcamr,
-      @JsonKey(name: 'activarmr', defaultValue: '')
-          required String activarmr,
-      @JsonKey(name: 'postrenmr', defaultValue: 0)
-          required int postrenmr,
-      @JsonKey(name: 'largomr', defaultValue: 0.0)
-          required double largomr,
-      @JsonKey(name: 'cargado', defaultValue: 0)
-          required int cargado,
-      @JsonKey(name: 'vacio', defaultValue: 0)
-          required int vacio,
-      @JsonKey(name: 'locoEmpuje', defaultValue: '')
-          required String locoEmpuje,
-      @JsonKey(name: 'descmarca', defaultValue: '')
-          required String descmarca,
-      @JsonKey(name: 'ssgmr', defaultValue: '')
-          required String ssgmr,
-      @JsonKey(name: 'ssxamr', defaultValue: '')
-          required String ssxamr,
-      @JsonKey(name: 'solicitudmr', defaultValue: 0)
-          required int solicitudmr,
-      @JsonKey(name: 'nroGuia', defaultValue: '')
-          required String nroGuia,
-      @JsonKey(name: 'codProducto', defaultValue: '')
-          required String codProducto,
-      @JsonKey(name: 'sectorOrigen', defaultValue: '')
-          required String sectorOrigen,
-      @JsonKey(name: 'sectorDestino', defaultValue: '')
-          required String sectorDestino}) {
-    return _TrenMr(
-      nrotrenmr: nrotrenmr,
-      tipomr: tipomr,
-      numero: numero,
-      nummr: nummr,
-      modelomr: modelomr,
-      tonnetasmr: tonnetasmr,
-      tonbrutasmr: tonbrutasmr,
-      estadomr: estadomr,
-      marcamr: marcamr,
-      activarmr: activarmr,
-      postrenmr: postrenmr,
-      largomr: largomr,
-      cargado: cargado,
-      vacio: vacio,
-      locoEmpuje: locoEmpuje,
-      descmarca: descmarca,
-      ssgmr: ssgmr,
-      ssxamr: ssxamr,
-      solicitudmr: solicitudmr,
-      nroGuia: nroGuia,
-      codProducto: codProducto,
-      sectorOrigen: sectorOrigen,
-      sectorDestino: sectorDestino,
-    );
-  }
-
-  TrenMr fromJson(Map<String, Object?> json) {
-    return TrenMr.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $TrenMr = _$TrenMrTearOff();
 
 /// @nodoc
 mixin _$TrenMr {
@@ -320,9 +234,9 @@ class _$TrenMrCopyWithImpl<$Res> implements $TrenMrCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$TrenMrCopyWith<$Res> implements $TrenMrCopyWith<$Res> {
-  factory _$TrenMrCopyWith(_TrenMr value, $Res Function(_TrenMr) then) =
-      __$TrenMrCopyWithImpl<$Res>;
+abstract class _$$_TrenMrCopyWith<$Res> implements $TrenMrCopyWith<$Res> {
+  factory _$$_TrenMrCopyWith(_$_TrenMr value, $Res Function(_$_TrenMr) then) =
+      __$$_TrenMrCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'nrotrenmr', defaultValue: 0) int nrotrenmr,
@@ -351,13 +265,13 @@ abstract class _$TrenMrCopyWith<$Res> implements $TrenMrCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TrenMrCopyWithImpl<$Res> extends _$TrenMrCopyWithImpl<$Res>
-    implements _$TrenMrCopyWith<$Res> {
-  __$TrenMrCopyWithImpl(_TrenMr _value, $Res Function(_TrenMr) _then)
-      : super(_value, (v) => _then(v as _TrenMr));
+class __$$_TrenMrCopyWithImpl<$Res> extends _$TrenMrCopyWithImpl<$Res>
+    implements _$$_TrenMrCopyWith<$Res> {
+  __$$_TrenMrCopyWithImpl(_$_TrenMr _value, $Res Function(_$_TrenMr) _then)
+      : super(_value, (v) => _then(v as _$_TrenMr));
 
   @override
-  _TrenMr get _value => super._value as _TrenMr;
+  _$_TrenMr get _value => super._value as _$_TrenMr;
 
   @override
   $Res call({
@@ -385,7 +299,7 @@ class __$TrenMrCopyWithImpl<$Res> extends _$TrenMrCopyWithImpl<$Res>
     Object? sectorOrigen = freezed,
     Object? sectorDestino = freezed,
   }) {
-    return _then(_TrenMr(
+    return _then(_$_TrenMr(
       nrotrenmr: nrotrenmr == freezed
           ? _value.nrotrenmr
           : nrotrenmr // ignore: cast_nullable_to_non_nullable
@@ -615,7 +529,7 @@ class _$_TrenMr implements _TrenMr {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TrenMr &&
+            other is _$_TrenMr &&
             const DeepCollectionEquality().equals(other.nrotrenmr, nrotrenmr) &&
             const DeepCollectionEquality().equals(other.tipomr, tipomr) &&
             const DeepCollectionEquality().equals(other.numero, numero) &&
@@ -648,6 +562,7 @@ class _$_TrenMr implements _TrenMr {
                 .equals(other.sectorDestino, sectorDestino));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -678,8 +593,8 @@ class _$_TrenMr implements _TrenMr {
 
   @JsonKey(ignore: true)
   @override
-  _$TrenMrCopyWith<_TrenMr> get copyWith =>
-      __$TrenMrCopyWithImpl<_TrenMr>(this, _$identity);
+  _$$_TrenMrCopyWith<_$_TrenMr> get copyWith =>
+      __$$_TrenMrCopyWithImpl<_$_TrenMr>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -690,124 +605,125 @@ class _$_TrenMr implements _TrenMr {
 abstract class _TrenMr implements TrenMr {
   factory _TrenMr(
       {@JsonKey(name: 'nrotrenmr', defaultValue: 0)
-          required int nrotrenmr,
+          required final int nrotrenmr,
       @JsonKey(name: 'tipomr', defaultValue: '')
-          required String tipomr,
+          required final String tipomr,
       @JsonKey(name: 'numero', defaultValue: '')
-          required String numero,
+          required final String numero,
       @JsonKey(name: 'nummr', defaultValue: '')
-          required String nummr,
+          required final String nummr,
       @JsonKey(name: 'modelomr', defaultValue: '')
-          required String modelomr,
+          required final String modelomr,
       @JsonKey(name: 'tonnetasmr', defaultValue: 0.0)
-          required double tonnetasmr,
+          required final double tonnetasmr,
       @JsonKey(name: 'tonbrutasmr', defaultValue: 0.0)
-          required double tonbrutasmr,
+          required final double tonbrutasmr,
       @JsonKey(name: 'estadomr', defaultValue: '')
-          required String estadomr,
+          required final String estadomr,
       @JsonKey(name: 'marcamr', defaultValue: 0)
-          required int marcamr,
+          required final int marcamr,
       @JsonKey(name: 'activarmr', defaultValue: '')
-          required String activarmr,
+          required final String activarmr,
       @JsonKey(name: 'postrenmr', defaultValue: 0)
-          required int postrenmr,
+          required final int postrenmr,
       @JsonKey(name: 'largomr', defaultValue: 0.0)
-          required double largomr,
+          required final double largomr,
       @JsonKey(name: 'cargado', defaultValue: 0)
-          required int cargado,
+          required final int cargado,
       @JsonKey(name: 'vacio', defaultValue: 0)
-          required int vacio,
+          required final int vacio,
       @JsonKey(name: 'locoEmpuje', defaultValue: '')
-          required String locoEmpuje,
+          required final String locoEmpuje,
       @JsonKey(name: 'descmarca', defaultValue: '')
-          required String descmarca,
+          required final String descmarca,
       @JsonKey(name: 'ssgmr', defaultValue: '')
-          required String ssgmr,
+          required final String ssgmr,
       @JsonKey(name: 'ssxamr', defaultValue: '')
-          required String ssxamr,
+          required final String ssxamr,
       @JsonKey(name: 'solicitudmr', defaultValue: 0)
-          required int solicitudmr,
+          required final int solicitudmr,
       @JsonKey(name: 'nroGuia', defaultValue: '')
-          required String nroGuia,
+          required final String nroGuia,
       @JsonKey(name: 'codProducto', defaultValue: '')
-          required String codProducto,
+          required final String codProducto,
       @JsonKey(name: 'sectorOrigen', defaultValue: '')
-          required String sectorOrigen,
+          required final String sectorOrigen,
       @JsonKey(name: 'sectorDestino', defaultValue: '')
-          required String sectorDestino}) = _$_TrenMr;
+          required final String sectorDestino}) = _$_TrenMr;
 
   factory _TrenMr.fromJson(Map<String, dynamic> json) = _$_TrenMr.fromJson;
 
   @override
   @JsonKey(name: 'nrotrenmr', defaultValue: 0)
-  int get nrotrenmr;
+  int get nrotrenmr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'tipomr', defaultValue: '')
-  String get tipomr;
+  String get tipomr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'numero', defaultValue: '')
-  String get numero;
+  String get numero => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'nummr', defaultValue: '')
-  String get nummr;
+  String get nummr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'modelomr', defaultValue: '')
-  String get modelomr;
+  String get modelomr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'tonnetasmr', defaultValue: 0.0)
-  double get tonnetasmr;
+  double get tonnetasmr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'tonbrutasmr', defaultValue: 0.0)
-  double get tonbrutasmr;
+  double get tonbrutasmr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'estadomr', defaultValue: '')
-  String get estadomr;
+  String get estadomr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'marcamr', defaultValue: 0)
-  int get marcamr;
+  int get marcamr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'activarmr', defaultValue: '')
-  String get activarmr;
+  String get activarmr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'postrenmr', defaultValue: 0)
-  int get postrenmr;
+  int get postrenmr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'largomr', defaultValue: 0.0)
-  double get largomr;
+  double get largomr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cargado', defaultValue: 0)
-  int get cargado;
+  int get cargado => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'vacio', defaultValue: 0)
-  int get vacio;
+  int get vacio => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'locoEmpuje', defaultValue: '')
-  String get locoEmpuje;
+  String get locoEmpuje => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'descmarca', defaultValue: '')
-  String get descmarca;
+  String get descmarca => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'ssgmr', defaultValue: '')
-  String get ssgmr;
+  String get ssgmr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'ssxamr', defaultValue: '')
-  String get ssxamr;
+  String get ssxamr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'solicitudmr', defaultValue: 0)
-  int get solicitudmr;
+  int get solicitudmr => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'nroGuia', defaultValue: '')
-  String get nroGuia;
+  String get nroGuia => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'codProducto', defaultValue: '')
-  String get codProducto;
+  String get codProducto => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'sectorOrigen', defaultValue: '')
-  String get sectorOrigen;
+  String get sectorOrigen => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'sectorDestino', defaultValue: '')
-  String get sectorDestino;
+  String get sectorDestino => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TrenMrCopyWith<_TrenMr> get copyWith => throw _privateConstructorUsedError;
+  _$$_TrenMrCopyWith<_$_TrenMr> get copyWith =>
+      throw _privateConstructorUsedError;
 }

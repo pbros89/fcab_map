@@ -10,6 +10,7 @@ _$_DetalleCarro _$$_DetalleCarroFromJson(Map<String, dynamic> json) =>
     _$_DetalleCarro(
       estacion: json['estacion'] as String? ?? '',
       linea: json['linea'] as String? ?? '',
+      tipoCarro: json['tipo_carro'] as String? ?? '',
       codServicio: json['cod_servicio'] as String? ?? '',
       numero: json['numero'] as String? ?? '',
       marcaMante: json['marca_mante'] as String? ?? 'SINESTADO',
@@ -22,6 +23,7 @@ Map<String, dynamic> _$$_DetalleCarroToJson(_$_DetalleCarro instance) =>
     <String, dynamic>{
       'estacion': instance.estacion,
       'linea': instance.linea,
+      'tipo_carro': instance.tipoCarro,
       'cod_servicio': instance.codServicio,
       'numero': instance.numero,
       'marca_mante': instance.marcaMante,

@@ -12,46 +12,11 @@ part of 'tren_tripulacion.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 TrenTripulacion _$TrenTripulacionFromJson(Map<String, dynamic> json) {
   return _TrenTripulacion.fromJson(json);
 }
-
-/// @nodoc
-class _$TrenTripulacionTearOff {
-  const _$TrenTripulacionTearOff();
-
-  _TrenTripulacion call(
-      {@JsonKey(name: 'nro_tren', defaultValue: 0)
-          required int nroTren,
-      @JsonKey(name: 'nro_tripulacion', defaultValue: 0)
-          required int nroTripulacion,
-      @JsonKey(name: 'nom_oper', defaultValue: '')
-          required String nomOper,
-      @JsonKey(name: 'hora_toma', defaultValue: '')
-          required String horaToma,
-      @JsonKey(name: 'codrut', defaultValue: '')
-          required String codrut,
-      @JsonKey(name: 'tipo_operador', defaultValue: '')
-          required String tipoOperador}) {
-    return _TrenTripulacion(
-      nroTren: nroTren,
-      nroTripulacion: nroTripulacion,
-      nomOper: nomOper,
-      horaToma: horaToma,
-      codrut: codrut,
-      tipoOperador: tipoOperador,
-    );
-  }
-
-  TrenTripulacion fromJson(Map<String, Object?> json) {
-    return TrenTripulacion.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $TrenTripulacion = _$TrenTripulacionTearOff();
 
 /// @nodoc
 mixin _$TrenTripulacion {
@@ -136,11 +101,11 @@ class _$TrenTripulacionCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$TrenTripulacionCopyWith<$Res>
+abstract class _$$_TrenTripulacionCopyWith<$Res>
     implements $TrenTripulacionCopyWith<$Res> {
-  factory _$TrenTripulacionCopyWith(
-          _TrenTripulacion value, $Res Function(_TrenTripulacion) then) =
-      __$TrenTripulacionCopyWithImpl<$Res>;
+  factory _$$_TrenTripulacionCopyWith(
+          _$_TrenTripulacion value, $Res Function(_$_TrenTripulacion) then) =
+      __$$_TrenTripulacionCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'nro_tren', defaultValue: 0) int nroTren,
@@ -152,15 +117,15 @@ abstract class _$TrenTripulacionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$TrenTripulacionCopyWithImpl<$Res>
+class __$$_TrenTripulacionCopyWithImpl<$Res>
     extends _$TrenTripulacionCopyWithImpl<$Res>
-    implements _$TrenTripulacionCopyWith<$Res> {
-  __$TrenTripulacionCopyWithImpl(
-      _TrenTripulacion _value, $Res Function(_TrenTripulacion) _then)
-      : super(_value, (v) => _then(v as _TrenTripulacion));
+    implements _$$_TrenTripulacionCopyWith<$Res> {
+  __$$_TrenTripulacionCopyWithImpl(
+      _$_TrenTripulacion _value, $Res Function(_$_TrenTripulacion) _then)
+      : super(_value, (v) => _then(v as _$_TrenTripulacion));
 
   @override
-  _TrenTripulacion get _value => super._value as _TrenTripulacion;
+  _$_TrenTripulacion get _value => super._value as _$_TrenTripulacion;
 
   @override
   $Res call({
@@ -171,7 +136,7 @@ class __$TrenTripulacionCopyWithImpl<$Res>
     Object? codrut = freezed,
     Object? tipoOperador = freezed,
   }) {
-    return _then(_TrenTripulacion(
+    return _then(_$_TrenTripulacion(
       nroTren: nroTren == freezed
           ? _value.nroTren
           : nroTren // ignore: cast_nullable_to_non_nullable
@@ -248,7 +213,7 @@ class _$_TrenTripulacion implements _TrenTripulacion {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TrenTripulacion &&
+            other is _$_TrenTripulacion &&
             const DeepCollectionEquality().equals(other.nroTren, nroTren) &&
             const DeepCollectionEquality()
                 .equals(other.nroTripulacion, nroTripulacion) &&
@@ -259,6 +224,7 @@ class _$_TrenTripulacion implements _TrenTripulacion {
                 .equals(other.tipoOperador, tipoOperador));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -271,8 +237,8 @@ class _$_TrenTripulacion implements _TrenTripulacion {
 
   @JsonKey(ignore: true)
   @override
-  _$TrenTripulacionCopyWith<_TrenTripulacion> get copyWith =>
-      __$TrenTripulacionCopyWithImpl<_TrenTripulacion>(this, _$identity);
+  _$$_TrenTripulacionCopyWith<_$_TrenTripulacion> get copyWith =>
+      __$$_TrenTripulacionCopyWithImpl<_$_TrenTripulacion>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -283,41 +249,41 @@ class _$_TrenTripulacion implements _TrenTripulacion {
 abstract class _TrenTripulacion implements TrenTripulacion {
   factory _TrenTripulacion(
       {@JsonKey(name: 'nro_tren', defaultValue: 0)
-          required int nroTren,
+          required final int nroTren,
       @JsonKey(name: 'nro_tripulacion', defaultValue: 0)
-          required int nroTripulacion,
+          required final int nroTripulacion,
       @JsonKey(name: 'nom_oper', defaultValue: '')
-          required String nomOper,
+          required final String nomOper,
       @JsonKey(name: 'hora_toma', defaultValue: '')
-          required String horaToma,
+          required final String horaToma,
       @JsonKey(name: 'codrut', defaultValue: '')
-          required String codrut,
+          required final String codrut,
       @JsonKey(name: 'tipo_operador', defaultValue: '')
-          required String tipoOperador}) = _$_TrenTripulacion;
+          required final String tipoOperador}) = _$_TrenTripulacion;
 
   factory _TrenTripulacion.fromJson(Map<String, dynamic> json) =
       _$_TrenTripulacion.fromJson;
 
   @override
   @JsonKey(name: 'nro_tren', defaultValue: 0)
-  int get nroTren;
+  int get nroTren => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'nro_tripulacion', defaultValue: 0)
-  int get nroTripulacion;
+  int get nroTripulacion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'nom_oper', defaultValue: '')
-  String get nomOper;
+  String get nomOper => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'hora_toma', defaultValue: '')
-  String get horaToma;
+  String get horaToma => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'codrut', defaultValue: '')
-  String get codrut;
+  String get codrut => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'tipo_operador', defaultValue: '')
-  String get tipoOperador;
+  String get tipoOperador => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TrenTripulacionCopyWith<_TrenTripulacion> get copyWith =>
+  _$$_TrenTripulacionCopyWith<_$_TrenTripulacion> get copyWith =>
       throw _privateConstructorUsedError;
 }

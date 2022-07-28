@@ -38,12 +38,13 @@ class ChangePasswordPage extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            const CircleAvatar(
-                                  radius: 50,
-                                  child: Icon(
-                                    Icons.map,
-                                    size: 50,
-                                  ),
+                            CircleAvatar(
+                                  backgroundColor: Colors.blueGrey[900],
+                                  radius: 60,
+                                  child: Image.asset(
+                                    'assets/img/logo_transparente.png', 
+                                    width: 80,
+                                    filterQuality: FilterQuality.high,),
                                 ),
                             const SizedBox(height: 20,),
                             Row(
@@ -105,7 +106,7 @@ class ChangePasswordPage extends StatelessWidget {
                   if(state is ChangePasswordSuccess){
                     return MessageDialog(
                       typeMessage: TypeMessage.success, 
-                      message: 'La nueva contraseña se ha enviado al correo ${state.usuario.email}', 
+                      message: 'La nueva contraseña se ha enviado al correo ${state.usuario.correo}', 
                       aceptarClick: _onSuccess,);
                   }
 

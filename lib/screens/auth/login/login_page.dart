@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:fcab_map/bloc/global_setting/global_setting_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
@@ -21,7 +22,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaKey,
-      appBar: AppBar(title: Text('Mapa Operacional'), centerTitle: false, actions: [AccebilityMenu()],),
+      appBar: AppBar(actions: const [AccebilityMenu()],),
       body: BaseScreen(
         child: Stack(
           children: [
@@ -43,12 +44,13 @@ class LoginPage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                const CircleAvatar(
-                                  radius: 50,
-                                  child: Icon(
-                                    Icons.map,
-                                    size: 50,
-                                  ),
+                                CircleAvatar(
+                                  backgroundColor: Colors.blueGrey[900],
+                                  radius: 60,
+                                  child: Image.asset(
+                                    'assets/img/logo_transparente.png', 
+                                    width: 80,
+                                    filterQuality: FilterQuality.high,),
                                 ),
                                 const SizedBox(height: 20,),
                                 Row(
@@ -125,7 +127,8 @@ class LoginPage extends StatelessWidget {
               listener: (context, state) {
                 if(state is LoginSuccess) {
                   _formKey.currentState?.reset();
-                  context.router.navigateNamed('/map');
+                  BlocProvider.of<GlobalSettingBloc>(context).add(SetUserEvent(state.usuario));
+                  context.router.replaceNamed('/email_validate');
                 }
               },
               builder: (context, state) {

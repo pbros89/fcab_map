@@ -12,42 +12,11 @@ part of 'terminal_acido.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 TerminalAcido _$TerminalAcidoFromJson(Map<String, dynamic> json) {
   return _TerminalAcido.fromJson(json);
 }
-
-/// @nodoc
-class _$TerminalAcidoTearOff {
-  const _$TerminalAcidoTearOff();
-
-  _TerminalAcido call(
-      {@JsonKey(name: 'pfk_cod_servicio') required String codServicio,
-      @JsonKey(name: 'pfk_cod_terminal') required String codTerminal,
-      @JsonKey(name: 'pfk_tipo_terminal') required String tipoTerminal,
-      @JsonKey(name: 'pfk_cod_estanque') required String codEstanque,
-      @JsonKey(name: 'pk_fecha_control') required String fechaControl,
-      @JsonKey(name: 'nivel_acido') required double nivelAcido,
-      @JsonKey(name: 'ton_acido') required double tonAcido}) {
-    return _TerminalAcido(
-      codServicio: codServicio,
-      codTerminal: codTerminal,
-      tipoTerminal: tipoTerminal,
-      codEstanque: codEstanque,
-      fechaControl: fechaControl,
-      nivelAcido: nivelAcido,
-      tonAcido: tonAcido,
-    );
-  }
-
-  TerminalAcido fromJson(Map<String, Object?> json) {
-    return TerminalAcido.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $TerminalAcido = _$TerminalAcidoTearOff();
 
 /// @nodoc
 mixin _$TerminalAcido {
@@ -140,11 +109,11 @@ class _$TerminalAcidoCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$TerminalAcidoCopyWith<$Res>
+abstract class _$$_TerminalAcidoCopyWith<$Res>
     implements $TerminalAcidoCopyWith<$Res> {
-  factory _$TerminalAcidoCopyWith(
-          _TerminalAcido value, $Res Function(_TerminalAcido) then) =
-      __$TerminalAcidoCopyWithImpl<$Res>;
+  factory _$$_TerminalAcidoCopyWith(
+          _$_TerminalAcido value, $Res Function(_$_TerminalAcido) then) =
+      __$$_TerminalAcidoCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'pfk_cod_servicio') String codServicio,
@@ -157,15 +126,15 @@ abstract class _$TerminalAcidoCopyWith<$Res>
 }
 
 /// @nodoc
-class __$TerminalAcidoCopyWithImpl<$Res>
+class __$$_TerminalAcidoCopyWithImpl<$Res>
     extends _$TerminalAcidoCopyWithImpl<$Res>
-    implements _$TerminalAcidoCopyWith<$Res> {
-  __$TerminalAcidoCopyWithImpl(
-      _TerminalAcido _value, $Res Function(_TerminalAcido) _then)
-      : super(_value, (v) => _then(v as _TerminalAcido));
+    implements _$$_TerminalAcidoCopyWith<$Res> {
+  __$$_TerminalAcidoCopyWithImpl(
+      _$_TerminalAcido _value, $Res Function(_$_TerminalAcido) _then)
+      : super(_value, (v) => _then(v as _$_TerminalAcido));
 
   @override
-  _TerminalAcido get _value => super._value as _TerminalAcido;
+  _$_TerminalAcido get _value => super._value as _$_TerminalAcido;
 
   @override
   $Res call({
@@ -177,7 +146,7 @@ class __$TerminalAcidoCopyWithImpl<$Res>
     Object? nivelAcido = freezed,
     Object? tonAcido = freezed,
   }) {
-    return _then(_TerminalAcido(
+    return _then(_$_TerminalAcido(
       codServicio: codServicio == freezed
           ? _value.codServicio
           : codServicio // ignore: cast_nullable_to_non_nullable
@@ -256,7 +225,7 @@ class _$_TerminalAcido implements _TerminalAcido {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TerminalAcido &&
+            other is _$_TerminalAcido &&
             const DeepCollectionEquality()
                 .equals(other.codServicio, codServicio) &&
             const DeepCollectionEquality()
@@ -272,6 +241,7 @@ class _$_TerminalAcido implements _TerminalAcido {
             const DeepCollectionEquality().equals(other.tonAcido, tonAcido));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -285,8 +255,8 @@ class _$_TerminalAcido implements _TerminalAcido {
 
   @JsonKey(ignore: true)
   @override
-  _$TerminalAcidoCopyWith<_TerminalAcido> get copyWith =>
-      __$TerminalAcidoCopyWithImpl<_TerminalAcido>(this, _$identity);
+  _$$_TerminalAcidoCopyWith<_$_TerminalAcido> get copyWith =>
+      __$$_TerminalAcidoCopyWithImpl<_$_TerminalAcido>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -296,40 +266,47 @@ class _$_TerminalAcido implements _TerminalAcido {
 
 abstract class _TerminalAcido implements TerminalAcido {
   factory _TerminalAcido(
-      {@JsonKey(name: 'pfk_cod_servicio') required String codServicio,
-      @JsonKey(name: 'pfk_cod_terminal') required String codTerminal,
-      @JsonKey(name: 'pfk_tipo_terminal') required String tipoTerminal,
-      @JsonKey(name: 'pfk_cod_estanque') required String codEstanque,
-      @JsonKey(name: 'pk_fecha_control') required String fechaControl,
-      @JsonKey(name: 'nivel_acido') required double nivelAcido,
-      @JsonKey(name: 'ton_acido') required double tonAcido}) = _$_TerminalAcido;
+      {@JsonKey(name: 'pfk_cod_servicio')
+          required final String codServicio,
+      @JsonKey(name: 'pfk_cod_terminal')
+          required final String codTerminal,
+      @JsonKey(name: 'pfk_tipo_terminal')
+          required final String tipoTerminal,
+      @JsonKey(name: 'pfk_cod_estanque')
+          required final String codEstanque,
+      @JsonKey(name: 'pk_fecha_control')
+          required final String fechaControl,
+      @JsonKey(name: 'nivel_acido')
+          required final double nivelAcido,
+      @JsonKey(name: 'ton_acido')
+          required final double tonAcido}) = _$_TerminalAcido;
 
   factory _TerminalAcido.fromJson(Map<String, dynamic> json) =
       _$_TerminalAcido.fromJson;
 
   @override
   @JsonKey(name: 'pfk_cod_servicio')
-  String get codServicio;
+  String get codServicio => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'pfk_cod_terminal')
-  String get codTerminal;
+  String get codTerminal => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'pfk_tipo_terminal')
-  String get tipoTerminal;
+  String get tipoTerminal => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'pfk_cod_estanque')
-  String get codEstanque;
+  String get codEstanque => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'pk_fecha_control')
-  String get fechaControl;
+  String get fechaControl => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'nivel_acido')
-  double get nivelAcido;
+  double get nivelAcido => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'ton_acido')
-  double get tonAcido;
+  double get tonAcido => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TerminalAcidoCopyWith<_TerminalAcido> get copyWith =>
+  _$$_TerminalAcidoCopyWith<_$_TerminalAcido> get copyWith =>
       throw _privateConstructorUsedError;
 }

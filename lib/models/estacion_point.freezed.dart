@@ -12,46 +12,11 @@ part of 'estacion_point.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 EstacionPoint _$EstacionPointFromJson(Map<String, dynamic> json) {
   return _EstacionPoint.fromJson(json);
 }
-
-/// @nodoc
-class _$EstacionPointTearOff {
-  const _$EstacionPointTearOff();
-
-  _EstacionPoint call(
-      {@JsonKey(name: 'cod_ramal') required String codRamal,
-      @JsonKey(name: 'cod_estacion') required String codEstacion,
-      @JsonKey(name: 'km_ini') required double kmIni,
-      @JsonKey(name: 'km_fin') required double kmFin,
-      @JsonKey(name: 'km_posicionamiento') required double kmPos,
-      @JsonKey(name: 'utm_x') required double utmX,
-      @JsonKey(name: 'utm_y') required double utmY,
-      required double lat,
-      required double lon}) {
-    return _EstacionPoint(
-      codRamal: codRamal,
-      codEstacion: codEstacion,
-      kmIni: kmIni,
-      kmFin: kmFin,
-      kmPos: kmPos,
-      utmX: utmX,
-      utmY: utmY,
-      lat: lat,
-      lon: lon,
-    );
-  }
-
-  EstacionPoint fromJson(Map<String, Object?> json) {
-    return EstacionPoint.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $EstacionPoint = _$EstacionPointTearOff();
 
 /// @nodoc
 mixin _$EstacionPoint {
@@ -158,11 +123,11 @@ class _$EstacionPointCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$EstacionPointCopyWith<$Res>
+abstract class _$$_EstacionPointCopyWith<$Res>
     implements $EstacionPointCopyWith<$Res> {
-  factory _$EstacionPointCopyWith(
-          _EstacionPoint value, $Res Function(_EstacionPoint) then) =
-      __$EstacionPointCopyWithImpl<$Res>;
+  factory _$$_EstacionPointCopyWith(
+          _$_EstacionPoint value, $Res Function(_$_EstacionPoint) then) =
+      __$$_EstacionPointCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'cod_ramal') String codRamal,
@@ -177,15 +142,15 @@ abstract class _$EstacionPointCopyWith<$Res>
 }
 
 /// @nodoc
-class __$EstacionPointCopyWithImpl<$Res>
+class __$$_EstacionPointCopyWithImpl<$Res>
     extends _$EstacionPointCopyWithImpl<$Res>
-    implements _$EstacionPointCopyWith<$Res> {
-  __$EstacionPointCopyWithImpl(
-      _EstacionPoint _value, $Res Function(_EstacionPoint) _then)
-      : super(_value, (v) => _then(v as _EstacionPoint));
+    implements _$$_EstacionPointCopyWith<$Res> {
+  __$$_EstacionPointCopyWithImpl(
+      _$_EstacionPoint _value, $Res Function(_$_EstacionPoint) _then)
+      : super(_value, (v) => _then(v as _$_EstacionPoint));
 
   @override
-  _EstacionPoint get _value => super._value as _EstacionPoint;
+  _$_EstacionPoint get _value => super._value as _$_EstacionPoint;
 
   @override
   $Res call({
@@ -199,7 +164,7 @@ class __$EstacionPointCopyWithImpl<$Res>
     Object? lat = freezed,
     Object? lon = freezed,
   }) {
-    return _then(_EstacionPoint(
+    return _then(_$_EstacionPoint(
       codRamal: codRamal == freezed
           ? _value.codRamal
           : codRamal // ignore: cast_nullable_to_non_nullable
@@ -292,7 +257,7 @@ class _$_EstacionPoint implements _EstacionPoint {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EstacionPoint &&
+            other is _$_EstacionPoint &&
             const DeepCollectionEquality().equals(other.codRamal, codRamal) &&
             const DeepCollectionEquality()
                 .equals(other.codEstacion, codEstacion) &&
@@ -305,6 +270,7 @@ class _$_EstacionPoint implements _EstacionPoint {
             const DeepCollectionEquality().equals(other.lon, lon));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -320,8 +286,8 @@ class _$_EstacionPoint implements _EstacionPoint {
 
   @JsonKey(ignore: true)
   @override
-  _$EstacionPointCopyWith<_EstacionPoint> get copyWith =>
-      __$EstacionPointCopyWithImpl<_EstacionPoint>(this, _$identity);
+  _$$_EstacionPointCopyWith<_$_EstacionPoint> get copyWith =>
+      __$$_EstacionPointCopyWithImpl<_$_EstacionPoint>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -331,46 +297,46 @@ class _$_EstacionPoint implements _EstacionPoint {
 
 abstract class _EstacionPoint implements EstacionPoint {
   factory _EstacionPoint(
-      {@JsonKey(name: 'cod_ramal') required String codRamal,
-      @JsonKey(name: 'cod_estacion') required String codEstacion,
-      @JsonKey(name: 'km_ini') required double kmIni,
-      @JsonKey(name: 'km_fin') required double kmFin,
-      @JsonKey(name: 'km_posicionamiento') required double kmPos,
-      @JsonKey(name: 'utm_x') required double utmX,
-      @JsonKey(name: 'utm_y') required double utmY,
-      required double lat,
-      required double lon}) = _$_EstacionPoint;
+      {@JsonKey(name: 'cod_ramal') required final String codRamal,
+      @JsonKey(name: 'cod_estacion') required final String codEstacion,
+      @JsonKey(name: 'km_ini') required final double kmIni,
+      @JsonKey(name: 'km_fin') required final double kmFin,
+      @JsonKey(name: 'km_posicionamiento') required final double kmPos,
+      @JsonKey(name: 'utm_x') required final double utmX,
+      @JsonKey(name: 'utm_y') required final double utmY,
+      required final double lat,
+      required final double lon}) = _$_EstacionPoint;
 
   factory _EstacionPoint.fromJson(Map<String, dynamic> json) =
       _$_EstacionPoint.fromJson;
 
   @override
   @JsonKey(name: 'cod_ramal')
-  String get codRamal;
+  String get codRamal => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cod_estacion')
-  String get codEstacion;
+  String get codEstacion => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_ini')
-  double get kmIni;
+  double get kmIni => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_fin')
-  double get kmFin;
+  double get kmFin => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'km_posicionamiento')
-  double get kmPos;
+  double get kmPos => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'utm_x')
-  double get utmX;
+  double get utmX => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'utm_y')
-  double get utmY;
+  double get utmY => throw _privateConstructorUsedError;
   @override
-  double get lat;
+  double get lat => throw _privateConstructorUsedError;
   @override
-  double get lon;
+  double get lon => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$EstacionPointCopyWith<_EstacionPoint> get copyWith =>
+  _$$_EstacionPointCopyWith<_$_EstacionPoint> get copyWith =>
       throw _privateConstructorUsedError;
 }

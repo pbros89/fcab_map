@@ -1,12 +1,15 @@
 import 'package:bloc/bloc.dart';
+import 'package:fcab_map/services/auth_service.dart';
 import 'package:fcab_map/services/mock/usuario_service_mock.dart';
 import 'package:meta/meta.dart';
+
+import '../../../models/usuario.dart';
 
 part 'login_event.dart';
 part 'login_state.dart';
 
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
-  final UsuarioServiceMock _usuarioService = UsuarioServiceMock();
+  final _authService = AuthService();
   
   LoginBloc() : super(LoginInitial()) {
     on<LoginInitEvent>(_onInit);
@@ -21,13 +24,16 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     emit.call(LoginLoading());
 
     try {
-      await Future.delayed(Duration(milliseconds: 500), () {});
-      
-      print(event.username + ' ' + event.password);
-      if(event.username == 'admin' && event.password == 'admin') {
-        emit.call(LoginSuccess());
+      //await Future.delayed(Duration(milliseconds: 500), () {});
+      //var response = await _authService.login(event.username, event.password);
+      final login = await _authService.login(event.username, event.password);
+
+      if(login.success) {
+        final usuario = Usuario.fromJson(login.items[0]);
+
+        emit.call(LoginSuccess(usuario));
       }else{
-         emit.call(const LoginError('Usuario o contrasena incorrecta'));
+         emit.call(LoginError(login.message));
       }
     }catch(e){
       print(e.toString());
